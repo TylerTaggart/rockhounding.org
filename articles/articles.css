@@ -1,0 +1,62 @@
+/* Article styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    margin: 24px 96px 48px 96px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+main h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    color: #8B4513;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+main p {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+main a {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    background-color: #8B4513;
+    color: #F0E68C;
+    padding: 3px 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main a:hover {
+    background-color: #6A350A;
+    color: #F0E68C;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 24px 48px 48px 48px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    main a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

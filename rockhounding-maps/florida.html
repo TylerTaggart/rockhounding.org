@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNYQWRCKJ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNYQWRCKJ3');
+  </script>
+
+  <title>Rockhounding in Florida: Maps and Locations Guide | RockHounding.Org</title>
+  <meta name="description" content="Explore the best rockhounding locations in Florida with our comprehensive maps and guide. Discover Florida's rich mineral resources on RockHounding.Org">
+  <meta name="keywords" content="Rockhounding, Florida, Rockhounding maps in Florida, Rockhounding locations in Florida">
+  <meta name="google-adsense-account" content="ca-pub-2987233570389325">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="rockhounding-maps.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987233570389325"
+     crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <header id="top">
+    <div class="logo">
+      <img src="../images/rockhoundingLogo.png" alt="Logo">
+    </div>
+    <h1 class="title">Florida Rockhounding Map</h1>
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://www.rockhounding.org">Home</a></li>
+        <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
+        <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
+        <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
+        <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
+        <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="left-sidebar">
+    <nav class="left-nav">
+      <ul class="left-nav-links">
+        <h3>Quick Nav</h3>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#maps">Maps</a></li>
+        <li><a href="#popular-rocks">Popular Rocks</a></li>
+        <li><a href="#popular-areas">Popular Areas</a></li>
+        <li><a href="#geological-information">Geology</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+
+  <main>
+    <div class="top-grid">
+      <div class="left-item">
+        <h2>New here?</h2>
+        <img class="non-gallery" src="../images/prospector.png">
+        <p>New to rockhounding and don't know where to start? Not to worry, we will show you the ropes. Click below to
+          head over to our "Getting Started" guide</p>
+        <a href="https://www.rockhounding.org/getting-started" class="button">Getting Started</a>
+      </div>
+      <div class="center-item">
+        <h2>Rocks & Minerals In Florida</h2>
+        <div class="three-image-gallery">
+          <img class="gallery" src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1024,h_732/https://rockhound.in/wp-content/uploads/2021/02/Fossil_agatized_coral_Florida-1024x732.jpg">
+          <img class="gallery" src="https://img-aws.ehowcdn.com/700x/www.onlyinyourstate.com/wp-content/uploads/2021/02/fort-drum-crystal-mine.jpg">
+          <img class="gallery" src="https://img-aws.ehowcdn.com/700x/www.onlyinyourstate.com/wp-content/uploads/2021/02/fort-drum-crystal-mine-1-2.jpg">
+        </div>
+        <p>Florida's diverse geology and subtropical climate provide a range of rockhounding opportunities, from hunting for shark teeth on Venice Beach to discovering calcite crystals in Ruck's Pit. With numerous fossil-rich rivers and crystal-filled mines, Florida is a rockhound's paradise.</p>
+        <button id="full-list-button" class="button">Full List</button>
+      </div>
+      <div class="right-item">
+        <h2>Sponsored Dig Site</h2>
+        <img class="non-gallery" src="../images/crystalsAndMinerals/topazCrystalfadedBackground.png">
+        <p>Own a digsite you would like to advertize in Florida? Contact us for more information about being our sponsor of the month! Email sponsors@rockhounding.org for more information.</p>
+        <a href="https://topazmountainadventures.com/" class="button" target="_blank">Dig With Us</a>
+      </div>
+    </div>
+    <div class="map" id="maps"><iframe class="map-iframe"
+        src="https://www.google.com/maps/d/embed?mid=12IVQpYBXXlNqTAMexhJb11G4uHc539H8&ehbc=2E312F"></iframe>
+    </div>
+    <div class="state-list" id="popular-rocks">
+      <h2 id="popular-rocks">Popular Rocks In Florida</h2>
+      <div class="filter-container">
+        <nav class="type-of-rock">
+          <ul>
+            <li class="nav-filter" data-category="mineral">
+              <img src="./rockhounding-maps-shared-images/mineral.png" alt="Mineral Icon">
+              <span>Mineral</span>
+            </li>
+            <li class="nav-filter" data-category="crystal">
+              <img src="./rockhounding-maps-shared-images/crystal.png" alt="Crystal Icon">
+              <span>Crystal</span>
+            </li>
+            <li class="nav-filter" data-category="metal">
+              <img src="./rockhounding-maps-shared-images/metalBar.png" alt="Metal Icon">
+              <span>Metal</span>
+            </li>
+            <li class="nav-filter" data-category="fossil">
+              <img src="./rockhounding-maps-shared-images/fossil.png" alt="Fossil Icon">
+              <span>Fossil</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="color-of-rock hidden">
+          <ul>
+            <li class="nav-filter" data-category="black">
+              <img src="./rockhounding-maps-shared-images/black.png" alt="Black Icon">
+              <span>Black</span>
+            </li>
+            <li class="nav-filter" data-category="white">
+              <img src="./rockhounding-maps-shared-images/white.png" alt="White Icon">
+              <span>White</span>
+            </li>
+            <li class="nav-filter" data-category="metallic">
+              <img src="./rockhounding-maps-shared-images/metalic.png" alt="Metallic Icon">
+              <span>Metallic</span>
+            </li>
+            <li class="nav-filter" data-category="red">
+              <img src="./rockhounding-maps-shared-images/red.png" alt="Red Icon">
+              <span>Red</span>
+            </li>
+            <li class="nav-filter" data-category="orange">
+              <img src="./rockhounding-maps-shared-images/orange.png" alt="Orange Icon">
+              <span>Orange</span>
+            </li>
+            <li class="nav-filter" data-category="yellow">
+              <img src="./rockhounding-maps-shared-images/yellow.png" alt="Yellow Icon">
+              <span>Yellow</span>
+            </li>
+            <li class="nav-filter" data-category="green">
+              <img src="./rockhounding-maps-shared-images/green.png" alt="Green Icon">
+              <span>Green</span>
+            </li>
+            <li class="nav-filter" data-category="blue">
+              <img src="./rockhounding-maps-shared-images/blue.png" alt="Blue Icon">
+              <span>Blue</span>
+            </li>
+            <li class="nav-filter" data-category="purple">
+              <img src="./rockhounding-maps-shared-images/purple.png" alt="Purple Icon">
+              <span>Purple</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="metal-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="platinum">
+              <img src="./rockhounding-maps-shared-images/platinum.png" alt="Black Icon">
+              <span>Platinum</span>
+            </li>
+            <li class="nav-filter" data-category="gold">
+              <img src="./rockhounding-maps-shared-images/gold.png" alt="White Icon">
+              <span>Gold</span>
+            </li>
+            <li class="nav-filter" data-category="silver">
+              <img src="./rockhounding-maps-shared-images/silver.png" alt="Metallic Icon">
+              <span>Silver</span>
+            </li>
+            <li class="nav-filter" data-category="copper">
+              <img src="./rockhounding-maps-shared-images/copper.png" alt="Red Icon">
+              <span>Copper</span>
+            </li>
+            <li class="nav-filter" data-category="iron">
+              <img src="./rockhounding-maps-shared-images/iron.png" alt="Orange Icon">
+              <span>Iron</span>
+            </li>
+            <li class="nav-filter" data-category="tin">
+              <img src="./rockhounding-maps-shared-images/tin.png" alt="Yellow Icon">
+              <span>Tin</span>
+            </li>
+            <li class="nav-filter" data-category="zinc">
+              <img src="./rockhounding-maps-shared-images/zinc.png" alt="Green Icon">
+              <span>Zinc</span>
+            </li>
+            <li class="nav-filter" data-category="mercury">
+              <img src="./rockhounding-maps-shared-images/mercury.png" alt="Blue Icon">
+              <span>Mercury</span>
+            </li>
+            <li class="nav-filter" data-category="other">
+              <img src="./rockhounding-maps-shared-images/otherMetals.png" alt="Purple Icon">
+              <span>Other</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="fossil-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="body">
+              <img src="./rockhounding-maps-shared-images/body.png" alt="Body Fossil Icon">
+              <span>Body</span>
+            </li>
+            <li class="nav-filter" data-category="trace">
+              <img src="./rockhounding-maps-shared-images/trace.png" alt="Trace Fossil Icon">
+              <span>Trace</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="rocks-found-here">
+        <li class="fossil body">
+          <img src="../images/crystalsAndMinerals/sharkTooth.jpg" alt="Shark Teeth">
+          <div><span>Shark Teeth</span>
+            <p>Florida's beaches and riverbeds are well-known for an abundance of fossilized shark teeth, especially in Venice Beach.</p>
+            <a href="https://en.wikipedia.org/wiki/Fossil_shark_tooth" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral orange">
+          <img src="../images/crystalsAndMinerals/agatizedCoral.jpg" alt="Agatized Coral">
+          <div><span>Agatized Coral</span>
+            <p>Agatized coral, Florida's state stone, is a colorful fossil that can be found in various locations, especially around Tampa Bay.</p>
+            <a href="https://en.wikipedia.org/wiki/Agatized_coral" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral purple">
+          <img src="../images/crystalsAndMinerals/calcite.jpg" alt="Calcite">
+          <div><span>Calcite</span>
+            <p>Calcite crystals can be found in Florida's limestone caves and other sedimentary rock formations.</p>
+            <a href="https://en.wikipedia.org/wiki/Calcite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="fossil trace">
+          <img src="../images/crystalsAndMinerals/echinoidsFossil.jpg" alt="Fossil Echinoids">
+          <div><span>Fossil Echinoids</span>
+            <p>Florida is home to a variety of fossil echinoids, which can be found in the state's sedimentary rock layers.</p>
+            <a href="https://en.wikipedia.org/wiki/Echinoderm" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral green">
+          <img src="../images/crystalsAndMinerals/apatite.jpg" alt="Apatite">
+          <div><span>Apatite</span>
+            <p>Apatite, a phosphate mineral, can be found in Florida's phosphate mines, particularly in the Bone Valley Formation.</p>
+            <a href="https://en.wikipedia.org/wiki/Apatite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral red">
+          <img src="../images/crystalsAndMinerals/kyanite.jpg" alt="Kyanite">
+          <div><span>Kyanite</span>
+            <p>Kyanite, a metamorphic mineral, has been found in northern Florida, particularly in the Georgia border region.</p>
+            <a href="https://en.wikipedia.org/wiki/Kyanite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="fossil body">
+          <img src="../images/crystalsAndMinerals/mammothTooth.jpg" alt="Mammoth Teeth">
+          <div><span>Mammoth Teeth</span>
+            <p>Fossilized mammoth teeth can occasionally be found in Florida's rivers and creeks, particularly in the northern part of the state.</p>
+            <a href="https://en.wikipedia.org/wiki/Mammoth" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral yellow">
+          <img src="../images/crystalsAndMinerals/barite.jpg" alt="Barite">
+          <div><span>Barite</span>
+            <p>Barite, a sulfate mineral, can be found in Florida's limestone formations and sedimentary rock layers.</p>
+            <a href="https://en.wikipedia.org/wiki/Barite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral brown">
+          <img src="../images/crystalsAndMinerals/fluorite.jpg" alt="Fluorite">
+          <div><span>Fluorite</span>
+            <p>Fluorite crystals have been found in Florida, particularly in the northern part of the state and around phosphate mines.</p>
+            <a href="https://en.wikipedia.org/wiki/Fluorite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral blue">
+          <img src="../images/crystalsAndMinerals/azurite.png" alt="Azurite">
+          <div><span>Azurite</span>
+            <p>Azurite, a copper carbonate mineral, has been found in small amounts in Florida, particularly in the northern part of the state.</p>
+            <a href="https://en.wikipedia.org/wiki/Azurite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <!--add more list items here if desired-->
+      </ul>
+
+      </ul>
+      <div class="popular-areas" id="popular-areas">
+        <h2>Popular Areas In Florida</h2>
+          <ul class="list-of-popular-areas">
+            <li class="fossil body">
+              <img src="../images/placeholderImg.jpg" alt="Peace River">
+              <div><span>Peace River</span>
+                <p>Peace River in central Florida is a well-known spot for finding shark teeth, mammal fossils, and marine fossils from the Miocene and Pliocene epochs.</p>
+                <a href="#" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+            <li class="mineral">
+              <img src="../images/placeholderImg.jpg" alt="Ruck's Pit">
+              <div><span>Ruck's Pit</span>
+                <p>Located in Fort Drum, Ruck's Pit is famous for its calcite crystal-filled fossilized clamshells, also known as "Fort Drum Crystal."</p>
+                <a href="#" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+            <li class="fossil body">
+              <img src="../images/placeholderImg.jpg" alt="Venice Beach">
+              <div><span>Venice Beach</span>
+                <p>Venice Beach on Florida's Gulf Coast is often referred to as the "Shark Tooth Capital of the World," making it a prime destination for fossil hunters.</p>
+                <a href="#" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+            <li class="mineral">
+              <img src="../images/placeholderImg.jpg" alt="Jackson's Crossroads Amethyst Mine">
+              <div><span>Jackson's Crossroads Amethyst Mine</span>
+                <p>Located in northwestern Florida, this mine is famous for producing beautiful, deep purple amethyst crystals with unique red hematite inclusions.</p>
+                <a href="#" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+            <li class="fossil trace">
+              <img src="../images/placeholderImg.jpg" alt="Withlacoochee River">
+              <div><span>Withlacoochee River</span>
+                <p>The Withlacoochee River in central Florida is known for its abundant trace fossils, such as coprolites (fossilized feces), as well as shark teeth and other marine fossils.</p>
+                <a href="#" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+            <li class="mineral">
+              <img src="../images/placeholderImg.jpg" alt="Hogtown Creek">
+              <div><span>Hogtown Creek</span>
+                <p>Hogtown Creek in Gainesville, Florida, is a popular spot for rockhounding enthusiasts, where they can find quartz crystals, chert, and various types of agates.</p>
+                <a href="#" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+          <!--add more list items here if desired-->
+        </ul>
+      </div>
+    </div>
+
+    </div>
+    <div class="geological-information" id="geological-information">
+      <h2>Geology of Florida</h2>
+      <p>Florida's geology is characterized by its flat landscape and extensive coastal plains, with most of the state's rock formations consisting of sedimentary materials, such as limestone, dolomite, and sandstone. These rocks were formed in shallow marine environments over millions of years, from the Mesozoic to the Cenozoic era.</p>
+      <p>Florida's limestone formations are rich in fossils, including marine invertebrates, sharks' teeth, and the remains of ancient coral reefs. Additionally, the state is known for its phosphate deposits, which have contributed to its industrial development and are a source of various minerals and fossils.</p>
+      <p>The Florida peninsula is underlain by a large carbonate platform, which has given rise to the state's extensive karst topography, including numerous sinkholes, springs, and caves. Florida's unique geology offers a variety of rockhounding opportunities, from searching for fossils and minerals in phosphate mines to exploring the state's karst landscape and its associated geological features.</p>
+      
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/rockhoundingLogo.png" alt="Logo">
+      </div>
+      <p class="copyright">© 2023 Rockhounding.org. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+  <script src="sortRocks.js"></script>
+  <script src="scrollTo.js"></script>
+</body>
+
+</html>

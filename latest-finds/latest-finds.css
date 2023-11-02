@@ -1,0 +1,19 @@
+/* Style for the gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for each gallery item */
+.gallery-item {
+    flex-basis: calc(25% - 20px);  /* 4 items per row, accounting for 10px margin on each side */
+    margin: 10px;
+    text-align: center;
+}
+
+/* Style for images */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}

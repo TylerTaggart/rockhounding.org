@@ -1,0 +1,343 @@
+/* Add this section to your CSS */
+.left-sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  /* Position the sidebar at 50% from the top */
+  transform: translateY(-50%);
+  /* Shift the sidebar up by 50% of its height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8B4513;
+  box-shadow: 3px 0 8px rgba(0, 0, 0, 0.7);
+  /* Add box shadow */
+}
+
+.nav.left-nav {
+  width: 80%;
+  /* Adjust the width to your preference */
+  display: inline-block;
+  /* Add this line */
+}
+
+.left-nav-links h3 {
+  color: #F0E68C;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Cinzel', serif;
+}
+
+.left-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-nav-links li {
+  padding: 10px 20px;
+}
+
+.left-nav-links a {
+  color: #F0E68C;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Cinzel', serif;
+}
+
+.left-nav-links a:hover,
+.left-nav-links a.active {
+  color: #FFD700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Adjust the main content to accommodate the left sidebar */
+main {
+  margin-left: 200px;
+}
+
+
+.map {
+  width: 880px; /* This should match the width of your iframe */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-iframe {
+  width: 880px;
+  height: 720px;
+}
+
+.type-of-rock, .color-of-rock, .fossil-type, .metal-type {
+  display: flex;
+  justify-content: center;
+}
+
+.type-of-rock ul, .color-of-rock ul, .fossil-type ul, .metal-type ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+ justify-content: center;
+}
+
+.type-of-rock li, .color-of-rock li, .fossil-type li, .metal-type li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.type-of-rock li.active, .color-of-rock li.active, .fossil-type li.active, .metal-type li.active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.type-of-rock li img, .color-of-rock li img, .fossil-type li img, .metal-type li img {
+  width: 48px;
+  height: 48px;
+}
+
+.type-of-rock li span, .color-of-rock li span, .fossil-type li span, .metal-type li span {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 4px;
+  font-family: 'Cinzel', serif;
+  color: #8B4513;
+}
+
+
+h2 {
+  margin-top: 48px;
+  font-family: 'Cinzel', serif;
+  color: #8B4513;
+  text-align: center;
+  font-size: 34px;
+}
+
+.rocks-found-here {
+  list-style: none;
+  padding: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center the items horizontally */
+  gap: 20px;
+  /* Add some space between the items */
+}
+
+.rocks-found-here li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  max-width: 580px;
+  padding-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  flex-basis: calc(50% - 10px);
+  /* Set the base width to 50% minus the gap */
+}
+
+.rocks-found-here img {
+  width: 148px;
+  height: 148px;
+  margin-right: 10px;
+}
+
+.rocks-found-here span {
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  color: #8B4513;
+}
+
+.rocks-found-here p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.geological-information {
+  font-family: 'Arial', sans-serif; /* Choose the same font-family as the rest of the page */
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: justify;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.geological-information h2 {
+  font-size: 32px; /* Adjust the font size of the heading to match the rest of the page */
+  font-weight: bold;
+  color: #8B4513; /* Adjust the heading color to match the rest of the page */
+  margin-bottom: 20px;
+}
+
+.geological-information p {
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.geological-information p:last-child {
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.displayed {
+  display: flex;
+}
+
+.list-of-popular-areas {
+  list-style: none;
+  padding: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center the items horizontally */
+  gap: 20px;
+  /* Add some space between the items */
+}
+
+.list-of-popular-areas li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  max-width: 590px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  flex-basis: calc(50% - 10px);
+  /* Set the base width to 50% minus the gap */
+}
+
+.list-of-popular-areas img {
+  width: 148px;
+  height: 148px;
+  margin-right: 10px;
+}
+
+.list-of-popular-areas span {
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  color: #8B4513;
+}
+
+.list-of-popular-areas p {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+a.read-more {
+  display: inline-block;
+  padding: 3px 6px;
+  margin: 3px;
+  background-color: #8B4513;
+  /* Adjust this color to match your site's design */
+  border: none;
+  border-radius: 4px;
+  color: #F0E68C;
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a.read-more:hover {
+  background-color: #6A350A;
+  /* Adjust this color to match your site's design */
+}
+
+
+/* Add a media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .map {
+    width: 100%;
+    /* Update the width */
+  }
+
+  .map-iframe {
+    width: 100%;
+    /* Update the width */
+    height: 400px;
+    /* Update the height */
+  }
+
+  .type-of-rock ul {
+    grid-template-rows: repeat(4, 1fr);
+    /* Define 4 rows */
+    grid-template-columns: repeat(3, 1fr);
+    /* Define 3 columns */
+  }
+
+  .type-of-rock li img {
+    width: 36px;
+    /* Adjust the width */
+    height: 36px;
+    /* Adjust the height */
+  }
+
+  .type-of-rock li span {
+    font-size: 20px;
+  }
+
+  h2 {
+    margin-top: 24px;
+    font-size: 28px;
+  }
+
+  .rocks-found-here li,
+  .list-of-popular-areas li {
+    flex-basis: 100%;
+    /* Set the base width to 100% */
+    max-width: 100%;
+    /* Set the max-width to 100% */
+  }
+
+  .rocks-found-here img,
+  .list-of-popular-areas img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .rocks-found-here span,
+  .list-of-popular-areas span {
+    font-size: 20px;
+  }
+
+  .rocks-found-here p,
+  .list-of-popular-areas p {
+    font-size: 16px;
+  }
+
+  a.read-more {
+    font-size: 12px;
+  }
+
+  .left-sidebar {
+    display: none;
+  }
+
+ 
+  
+}

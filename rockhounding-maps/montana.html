@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNYQWRCKJ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNYQWRCKJ3');
+  </script>
+
+  <!-- HTML Meta Tags -->
+  <title>RockHounding in Montana - Maps & Locations | RockHounding.Org</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Discover the best rockhounding locations in Montana with our comprehensive maps and guides. Start your adventure with RockHounding.Org today.">
+  <meta name="keywords" content="Rockhounding, Rockhounding Montana, Rockhounding Locations, Rockhounding Maps, Montana, RockHounding.Org">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="RockHounding.Org">
+  <meta name="google-adsense-account" content="ca-pub-2987233570389325">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="RockHounding in Montana - Maps & Locations | RockHounding.Org">
+  <meta itemprop="description" content="Discover the best rockhounding locations in Montana with our comprehensive maps and guides. Start your adventure with RockHounding.Org today.">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="rockhounding-maps.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987233570389325"
+  crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <header id="top">
+    <div class="logo">
+      <img src="../images/rockhoundingLogo.png" alt="Logo">
+    </div>
+    <h1 class="title">Montana Rockhounding Map</h1>
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://www.rockhounding.org">Home</a></li>
+        <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
+        <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
+        <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
+        <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
+        <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="left-sidebar">
+    <nav class="left-nav">
+      <ul class="left-nav-links">
+        <h3>Quick Nav</h3>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#maps">Maps</a></li>
+        <li><a href="#popular-rocks">Popular Rocks</a></li>
+        <li><a href="#popular-areas">Popular Areas</a></li>
+        <li><a href="#geological-information">Geology</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+
+  <main>
+    <div class="top-grid">
+      <div class="left-item">
+        <h2>New here?</h2>
+        <img class="non-gallery" src="../images/prospector.png">
+        <p>New to rockhounding and don't know where to start? Not to worry, we will show you the ropes. Click below to
+          head over to our "Getting Started" guide</p>
+        <a href="https://www.rockhounding.org/getting-started" class="button">Getting Started</a>
+      </div>
+      <div class="center-item">
+        <h2>Rocks & Minerals In Montana</h2>
+        <div class="three-image-gallery">
+          <img class="gallery" src="https://visitgreatfallsmontana.org/wp-content/uploads/2017/09/saphire.jpg">
+          <img class="gallery" src="https://i.pinimg.com/originals/a0/80/1c/a0801c2ad4c5f12078bc1a97c42817a4.jpg">
+          <img class="gallery" src="https://scottsrocks.com/wp-content/uploads/2016/06/KevsBearCnyn.jpg">
+        </div>
+        <p>Montana, known as the "Treasure State," has a rich and diverse mineral heritage that attracts rockhounds from around the world. With its wealth of sapphires, garnets, gold, and other precious gems, Montana provides endless opportunities for rockhounding enthusiasts to explore and discover.</p>
+        <button id="full-list-button" class="button">Full List</button>
+      </div>
+      <div class="right-item">
+        <h2>Sponsored Dig Site</h2>
+        <img class="non-gallery" src="../images/crystalsAndMinerals/topazCrystalfadedBackground.png">
+        <p>Own a digsite you would like to advertize in Montana? Contact us for more information about being our sponsor of the month! Email sponsors@rockhounding.org for more information.</p>
+        <a href="https://topazmountainadventures.com/" class="button" target="_blank">Dig With Us</a>
+      </div>
+    </div>
+    <div class="map" id="maps"><iframe class="map-iframe"
+        src="https://www.google.com/maps/d/embed?mid=12DleqDI98uZArL1jiYyhHB4rtFWq13QS&ehbc=2E312F"></iframe>
+    </div>
+    <div class="state-list" id="popular-rocks">
+      <h2 id="popular-rocks">Popular Rocks In Montana</h2>
+      <div class="filter-container">
+        <nav class="type-of-rock">
+          <ul>
+            <li class="nav-filter" data-category="mineral">
+              <img src="./rockhounding-maps-shared-images/mineral.png" alt="Mineral Icon">
+              <span>Mineral</span>
+            </li>
+            <li class="nav-filter" data-category="crystal">
+              <img src="./rockhounding-maps-shared-images/crystal.png" alt="Crystal Icon">
+              <span>Crystal</span>
+            </li>
+            <li class="nav-filter" data-category="metal">
+              <img src="./rockhounding-maps-shared-images/metalBar.png" alt="Metal Icon">
+              <span>Metal</span>
+            </li>
+            <li class="nav-filter" data-category="fossil">
+              <img src="./rockhounding-maps-shared-images/fossil.png" alt="Fossil Icon">
+              <span>Fossil</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="color-of-rock hidden">
+          <ul>
+            <li class="nav-filter" data-category="black">
+              <img src="./rockhounding-maps-shared-images/black.png" alt="Black Icon">
+              <span>Black</span>
+            </li>
+            <li class="nav-filter" data-category="white">
+              <img src="./rockhounding-maps-shared-images/white.png" alt="White Icon">
+              <span>White</span>
+            </li>
+            <li class="nav-filter" data-category="metallic">
+              <img src="./rockhounding-maps-shared-images/metalic.png" alt="Metallic Icon">
+              <span>Metallic</span>
+            </li>
+            <li class="nav-filter" data-category="red">
+              <img src="./rockhounding-maps-shared-images/red.png" alt="Red Icon">
+              <span>Red</span>
+            </li>
+            <li class="nav-filter" data-category="orange">
+              <img src="./rockhounding-maps-shared-images/orange.png" alt="Orange Icon">
+              <span>Orange</span>
+            </li>
+            <li class="nav-filter" data-category="yellow">
+              <img src="./rockhounding-maps-shared-images/yellow.png" alt="Yellow Icon">
+              <span>Yellow</span>
+            </li>
+            <li class="nav-filter" data-category="green">
+              <img src="./rockhounding-maps-shared-images/green.png" alt="Green Icon">
+              <span>Green</span>
+            </li>
+            <li class="nav-filter" data-category="blue">
+              <img src="./rockhounding-maps-shared-images/blue.png" alt="Blue Icon">
+              <span>Blue</span>
+            </li>
+            <li class="nav-filter" data-category="purple">
+              <img src="./rockhounding-maps-shared-images/purple.png" alt="Purple Icon">
+              <span>Purple</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="metal-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="platinum">
+              <img src="./rockhounding-maps-shared-images/platinum.png" alt="Black Icon">
+              <span>Platinum</span>
+            </li>
+            <li class="nav-filter" data-category="gold">
+              <img src="./rockhounding-maps-shared-images/gold.png" alt="White Icon">
+              <span>Gold</span>
+            </li>
+            <li class="nav-filter" data-category="silver">
+              <img src="./rockhounding-maps-shared-images/silver.png" alt="Metallic Icon">
+              <span>Silver</span>
+            </li>
+            <li class="nav-filter" data-category="copper">
+              <img src="./rockhounding-maps-shared-images/copper.png" alt="Red Icon">
+              <span>Copper</span>
+            </li>
+            <li class="nav-filter" data-category="iron">
+              <img src="./rockhounding-maps-shared-images/iron.png" alt="Orange Icon">
+              <span>Iron</span>
+            </li>
+            <li class="nav-filter" data-category="tin">
+              <img src="./rockhounding-maps-shared-images/tin.png" alt="Yellow Icon">
+              <span>Tin</span>
+            </li>
+            <li class="nav-filter" data-category="zinc">
+              <img src="./rockhounding-maps-shared-images/zinc.png" alt="Green Icon">
+              <span>Zinc</span>
+            </li>
+            <li class="nav-filter" data-category="mercury">
+              <img src="./rockhounding-maps-shared-images/mercury.png" alt="Blue Icon">
+              <span>Mercury</span>
+            </li>
+            <li class="nav-filter" data-category="other">
+              <img src="./rockhounding-maps-shared-images/otherMetals.png" alt="Purple Icon">
+              <span>Other</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="fossil-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="body">
+              <img src="./rockhounding-maps-shared-images/body.png" alt="Body Fossil Icon">
+              <span>Body</span>
+            </li>
+            <li class="nav-filter" data-category="trace">
+              <img src="./rockhounding-maps-shared-images/trace.png" alt="Trace Fossil Icon">
+              <span>Trace</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="rocks-found-here">
+        <li class="mineral blue">
+          <img src="../images/crystalsAndMinerals/blueSapphire.jpg" alt="Blue Montana Sapphire">
+          <div><span>Montana Sapphire</span>
+            <p>Montana Sapphires, known for their unique colors, can be found in several areas, including Rock Creek and Missouri River.</p>
+            <a href="https://en.wikipedia.org/wiki/Yogo_sapphire" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral white">
+          <img src="../images/crystalsAndMinerals/quartz.jpg" alt="White Quartz">
+          <div><span>Quartz</span>
+            <p>Quartz is abundant in Montana, with notable deposits in the Butte and Philipsburg districts.</p>
+            <a href="https://en.wikipedia.org/wiki/Quartz" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral green">
+          <img src="../images/crystalsAndMinerals/malachite.png" alt="Green Malachite">
+          <div><span>Malachite</span>
+            <p>Malachite can be found in copper mines throughout Montana, especially around the Butte area.</p>
+            <a href="https://en.wikipedia.org/wiki/Malachite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral yellow">
+          <img src="../images/crystalsAndMinerals/barite.jpg" alt="Yellow Barite">
+          <div><span>Barite</span>
+            <p>Barite is found in several locations in Montana, including the Elk Creek and Highwood Mountains areas.</p>
+            <a href="https://en.wikipedia.org/wiki/Baryte" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral red">
+          <img src="../images/crystalsAndMinerals/rhodochrosite.jpg" alt="Red Rhodochrosite">
+          <div><span>Rhodochrosite</span>
+            <p>Rhodochrosite, known for its vibrant pink-red color, can be found in the Butte and Philipsburg districts in Montana.</p>
+            <a href="https://en.wikipedia.org/wiki/Rhodochrosite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="fossil trace">
+          <img src="../images/crystalsAndMinerals/dinosaurBone.jpg" alt="Dinosaur Fossils">
+          <div><span>Dinosaur Fossils</span>
+            <p>Montana is famous for its dinosaur fossils, which can be found in locations such as the Judith River Formation and Hell Creek Formation.</p>
+            <a href="https://en.wikipedia.org/wiki/Paleontology_in_Montana" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral purple">
+          <img src="../images/crystalsAndMinerals/amethyst.png" alt="Purple Amethyst">
+          <div><span>Amethyst</span>
+            <p>Amethyst crystals can be found in several locations in Montana, including the Butte and Philipsburg districts.</p>
+            <a href="https://en.wikipedia.org/wiki/Amethyst" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+            <li class="mineral orange">
+              <img src="../images/crystalsAndMinerals/calcite.jpg" alt="Orange Calcite">
+              <div><span>Calcite</span>
+                <p>Calcite can be found in various locations throughout Montana, including the Philipsburg district and Belt area.</p>
+                <a href="https://en.wikipedia.org/wiki/Calcite" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+            <li class="metal gold">
+              <img src="../images/crystalsAndMinerals/goldNugget.jpg" alt="Gold Nuggets">
+              <div><span>Gold</span>
+                <p>Gold can be found in numerous areas of Montana, such as the Alder Gulch, Confederate Gulch, and Libby Creek areas.</p>
+                <a href="https://en.wikipedia.org/wiki/Gold" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>
+            <li class="mineral red">
+              <img src="../images/crystalsAndMinerals/garnet.jpg" alt="Red Garnet">
+              <div><span>Garnet</span>
+                <p>Garnet is found in several locations in Montana, including the Ruby Range, Garnet Range, and Yogo Gulch.</p>
+                <a href="https://en.wikipedia.org/wiki/Garnet" class="read-more" target="_blank">Read More</a>
+              </div>
+            </li>      
+        <!--add more list items here if desired-->
+      </ul>
+      <div class="popular-areas" id="popular-areas">
+        <h2>Popular Areas In Montana</h2>
+        <ul class="list-of-popular-areas">
+          <li class="mineral">
+            <img src="https://gemmountainmt.com/wp-content/uploads/2017/09/gem_mountain_find_sapphires.jpg" alt="Gem Mountain">
+            <div><span>Gem Mountain</span>
+              <p>Gem Mountain, located near Philipsburg, is famous for its sapphire deposits and offers an exciting rockhounding experience.</p>
+              <a href="https://gemmountainmt.com/" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1VOt4itZ0MRyb9ATTLa7itXf6cck94yM0Rg&usqp=CAU" alt="Blanchard Mine">
+            <div><span>Blanchard Mine</span>
+              <p>The Blanchard Mine, in the Little Belt Mountains, is known for producing beautiful rhodochrosite specimens.</p>
+              <a href="https://www.mindat.org/feature-5640973.html" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://www.legacydiamondgems.com/wp-content/uploads/2020/10/yogo-gulch-mine.jpg" alt="Yogo Gulch">
+            <div><span>Yogo Gulch</span>
+              <p>Yogo Gulch, near Utica, is a famous location for finding Yogo sapphires, a unique and valuable variety of sapphire.</p>
+              <a href="https://www.mindat.org/loc-3872.html" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://s3-us-west-2.amazonaws.com/montana-surveytoolimages/general/full-size/10133h.jpg" alt="Alder Gulch">
+            <div><span>Alder Gulch</span>
+              <p>Alder Gulch, near Virginia City, was the site of a major gold discovery and is still a popular area for gold panning.</p>
+              <a href="https://www.visitmt.com/listings/general/ghost-town/alder-gulch" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://montanacountryinn.com/images/recreation/gold_panning.jpg" alt="Libby Creek">
+            <div><span>Libby Creek</span>
+              <p>Libby Creek, near Libby, offers recreational gold panning opportunities and is a popular spot for prospectors.</p>
+              <a href="https://www.libbymt.com/areaattractions/libbycreekgold.htm" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://ssl.c.photoshelter.com/img-get/I0000wVcEF5U0RXE/s/500/I0000wVcEF5U0RXE.jpg" alt="Ruby Range">
+            <div><span>Ruby Range</span>
+              <p>The Ruby Range, southwest of Dillon, is a great location for finding garnets and other interesting minerals.</p>
+              <a href="https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/ruby-mountains-wsa" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <!--add more list items here if desired-->
+        </ul>
+      </div>
+    </div>
+
+    </div>
+    <div class="geological-information" id="geological-information">
+      <h2>Geology of Montana</h2>
+      <p>Montana's diverse geology tells a fascinating story of the Earth's history, spanning more than a billion years. The state's oldest rocks, dating back to the Precambrian era, can be found in the western regions, where the remnants of ancient oceans and volcanic islands reveal a rich geological past.</p>
+      <p>Throughout its history, Montana has experienced multiple periods of mountain building, resulting in the formation of the Rocky Mountains and other ranges. The tectonic forces responsible for these events include the ancient continental collisions and the more recent Laramide Orogeny, which took place around 80 to 55 million years ago.</p>
+      <p>Montana's geological landscape also showcases evidence of ice age glaciation, with the Glacial Lake Missoula floods shaping the terrain and leaving behind a variety of unique geological features. These massive floods, occurring around 15,000 years ago, carved out the Channeled Scablands and formed the Columbia River Gorge, leaving behind vast deposits of glacial sediment.</p>
+      <p>Montana is also known for its rich fossil history, with discoveries such as the Hell Creek Formation showcasing an abundance of dinosaur remains, including the famous T. rex and Triceratops. Additionally, the state is home to the Burgess Shale-type deposits, which contain some of the most well-preserved Cambrian-era fossils in the world, offering valuable insights into the evolution of early life forms.</p>
+      <p>From its ancient beginnings to its ice age transformations, Montana's geological wealth continues to be a source of scientific discovery and fascination for rockhounds and geologists alike. The state's rich and varied geology presents an intriguing window into the Earth's past and offers a unique opportunity for those interested in uncovering its many secrets.</p>      
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/rockhoundingLogo.png" alt="Logo">
+      </div>
+      <p class="copyright">© 2023 Rockhounding.org. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+  <script src="sortRocks.js"></script>
+  <script src="scrollTo.js"></script>
+</body>
+
+</html>

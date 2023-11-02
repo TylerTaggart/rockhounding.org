@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNYQWRCKJ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNYQWRCKJ3');
+  </script>
+
+  <title>Rockhounding in Indiana: Maps and Locations Guide | RockHounding.Org</title>
+  <meta name="description" content="Explore the best rockhounding locations in Indiana with our comprehensive maps and guide. Discover Indiana's rich mineral resources on RockHounding.Org">
+  <meta name="keywords" content="Rockhounding, Indiana, Rockhounding maps in Indiana, Rockhounding locations in Indiana">
+  <meta name="google-adsense-account" content="ca-pub-2987233570389325">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="rockhounding-maps.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987233570389325"
+     crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <header id="top">
+    <div class="logo">
+      <img src="../images/rockhoundingLogo.png" alt="Logo">
+    </div>
+    <h1 class="title">Indiana Rockhounding Map</h1>
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://www.rockhounding.org">Home</a></li>
+        <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
+        <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
+        <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
+        <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
+        <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="left-sidebar">
+    <nav class="left-nav">
+      <ul class="left-nav-links">
+        <h3>Quick Nav</h3>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#maps">Maps</a></li>
+        <li><a href="#popular-rocks">Popular Rocks</a></li>
+        <li><a href="#popular-areas">Popular Areas</a></li>
+        <li><a href="#geological-information">Geology</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+
+  <main>
+    <div class="top-grid">
+      <div class="left-item">
+        <h2>New here?</h2>
+        <img class="non-gallery" src="../images/prospector.png">
+        <p>New to rockhounding and don't know where to start? Not to worry, we will show you the ropes. Click below to
+          head over to our "Getting Started" guide</p>
+        <a href="https://www.rockhounding.org/getting-started" class="button">Getting Started</a>
+      </div>
+      <div class="center-item">
+        <h2>Rocks & Minerals In Indiana</h2>
+        <div class="three-image-gallery">
+          <img class="gallery" src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1024,h_1024/https://rockhound.in/wp-content/uploads/2021/01/flourite-1024x1024.jpg">
+          <img class="gallery" src="https://preview.redd.it/found-in-freetown-indiana-in-the-hoosier-national-forest-v0-k8vssrrw65r81.jpg?width=640&crop=smart&auto=webp&s=cc6c8b5f5832ac6154aaaaf98707a973df72afee">
+          <img class="gallery" src="https://rockseeker.com/wp-content/uploads/2021/05/polished-red-jasper.jpg">
+        </div>
+        <p>Indiana offers a variety of rockhounding opportunities, from searching for geodes in the state's limestone formations to uncovering fossils in the Devonian shale deposits. Popular locations include the Falls of the Ohio State Park, where one can find fossils, and the Hoosier National Forest, a prime destination for geode hunting.</p>
+        <button id="full-list-button" class="button">Full List</button>
+      </div>
+      <div class="right-item">
+        <h2>Sponsored Dig Site</h2>
+        <img class="non-gallery" src="../images/crystalsAndMinerals/topazCrystalfadedBackground.png">
+        <p>Own a digsite you would like to advertize in Indiana? Contact us for more information about being our sponsor of the month! Email sponsors@rockhounding.org for more information.</p>
+        <a href="https://topazmountainadventures.com/" class="button" target="_blank">Dig With Us</a>
+      </div>
+    </div>
+    <div class="map" id="maps"><iframe class="map-iframe"
+        src="https://www.google.com/maps/d/embed?mid=1crg5AuD5lnO5V3TsW2PEdxexjfN2CQMu&ehbc=2E312F" ></iframe>
+    </div>
+    <div class="state-list" id="popular-rocks">
+      <h2 id="popular-rocks">Popular Rocks In Indiana</h2>
+      <div class="filter-container">
+        <nav class="type-of-rock">
+          <ul>
+            <li class="nav-filter" data-category="mineral">
+              <img src="./rockhounding-maps-shared-images/mineral.png" alt="Mineral Icon">
+              <span>Mineral</span>
+            </li>
+            <li class="nav-filter" data-category="crystal">
+              <img src="./rockhounding-maps-shared-images/crystal.png" alt="Crystal Icon">
+              <span>Crystal</span>
+            </li>
+            <li class="nav-filter" data-category="metal">
+              <img src="./rockhounding-maps-shared-images/metalBar.png" alt="Metal Icon">
+              <span>Metal</span>
+            </li>
+            <li class="nav-filter" data-category="fossil">
+              <img src="./rockhounding-maps-shared-images/fossil.png" alt="Fossil Icon">
+              <span>Fossil</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="color-of-rock hidden">
+          <ul>
+            <li class="nav-filter" data-category="black">
+              <img src="./rockhounding-maps-shared-images/black.png" alt="Black Icon">
+              <span>Black</span>
+            </li>
+            <li class="nav-filter" data-category="white">
+              <img src="./rockhounding-maps-shared-images/white.png" alt="White Icon">
+              <span>White</span>
+            </li>
+            <li class="nav-filter" data-category="metallic">
+              <img src="./rockhounding-maps-shared-images/metalic.png" alt="Metallic Icon">
+              <span>Metallic</span>
+            </li>
+            <li class="nav-filter" data-category="red">
+              <img src="./rockhounding-maps-shared-images/red.png" alt="Red Icon">
+              <span>Red</span>
+            </li>
+            <li class="nav-filter" data-category="orange">
+              <img src="./rockhounding-maps-shared-images/orange.png" alt="Orange Icon">
+              <span>Orange</span>
+            </li>
+            <li class="nav-filter" data-category="yellow">
+              <img src="./rockhounding-maps-shared-images/yellow.png" alt="Yellow Icon">
+              <span>Yellow</span>
+            </li>
+            <li class="nav-filter" data-category="green">
+              <img src="./rockhounding-maps-shared-images/green.png" alt="Green Icon">
+              <span>Green</span>
+            </li>
+            <li class="nav-filter" data-category="blue">
+              <img src="./rockhounding-maps-shared-images/blue.png" alt="Blue Icon">
+              <span>Blue</span>
+            </li>
+            <li class="nav-filter" data-category="purple">
+              <img src="./rockhounding-maps-shared-images/purple.png" alt="Purple Icon">
+              <span>Purple</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="metal-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="platinum">
+              <img src="./rockhounding-maps-shared-images/platinum.png" alt="Black Icon">
+              <span>Platinum</span>
+            </li>
+            <li class="nav-filter" data-category="gold">
+              <img src="./rockhounding-maps-shared-images/gold.png" alt="White Icon">
+              <span>Gold</span>
+            </li>
+            <li class="nav-filter" data-category="silver">
+              <img src="./rockhounding-maps-shared-images/silver.png" alt="Metallic Icon">
+              <span>Silver</span>
+            </li>
+            <li class="nav-filter" data-category="copper">
+              <img src="./rockhounding-maps-shared-images/copper.png" alt="Red Icon">
+              <span>Copper</span>
+            </li>
+            <li class="nav-filter" data-category="iron">
+              <img src="./rockhounding-maps-shared-images/iron.png" alt="Orange Icon">
+              <span>Iron</span>
+            </li>
+            <li class="nav-filter" data-category="tin">
+              <img src="./rockhounding-maps-shared-images/tin.png" alt="Yellow Icon">
+              <span>Tin</span>
+            </li>
+            <li class="nav-filter" data-category="zinc">
+              <img src="./rockhounding-maps-shared-images/zinc.png" alt="Green Icon">
+              <span>Zinc</span>
+            </li>
+            <li class="nav-filter" data-category="mercury">
+              <img src="./rockhounding-maps-shared-images/mercury.png" alt="Blue Icon">
+              <span>Mercury</span>
+            </li>
+            <li class="nav-filter" data-category="other">
+              <img src="./rockhounding-maps-shared-images/otherMetals.png" alt="Purple Icon">
+              <span>Other</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="fossil-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="body">
+              <img src="./rockhounding-maps-shared-images/body.png" alt="Body Fossil Icon">
+              <span>Body</span>
+            </li>
+            <li class="nav-filter" data-category="trace">
+              <img src="./rockhounding-maps-shared-images/trace.png" alt="Trace Fossil Icon">
+              <span>Trace</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="rocks-found-here">
+        <li class="fossil trace">
+          <img src="../images/crystalsAndMinerals/dinosaurTrack.jpg" alt="Trace Fossils">
+          <div><span>Trace Fossils</span>
+            <p>Indiana is well-known for trace fossils, which can be found in various locations, including Falls of the Ohio State Park and the Whitewater Formation.</p>
+            <a href="https://en.wikipedia.org/wiki/Trace_fossil" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral red">
+          <img src="../images/crystalsAndMinerals/calcite.jpg" alt="Calcite">
+          <div><span>Calcite</span>
+            <p>Calcite can be found throughout Indiana, especially in areas with limestone formations, such as Marengo and Bloomington.</p>
+            <a href="https://en.wikipedia.org/wiki/Calcite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="crystal purple">
+          <img src="../images/crystalsAndMinerals/fluorite.jpg" alt="Fluorite">
+          <div><span>Fluorite</span>
+            <p>Fluorite can be found in southwestern Indiana, particularly in areas near the Illinois border, such as the Cave-in-Rock district.</p>
+            <a href="https://en.wikipedia.org/wiki/Fluorite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral black">
+          <img src="../images/crystalsAndMinerals/pyrite.jpg" alt="Pyrite">
+          <div><span>Pyrite</span>
+            <p>Pyrite can be found in various locations across Indiana, including coal mines and areas with shale and limestone formations.</p>
+            <a href="https://en.wikipedia.org/wiki/Pyrite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="crystal clear">
+          <img src="../images/crystalsAndMinerals/quartz.jpg" alt="Quartz">
+          <div><span>Quartz</span>
+            <p>Quartz crystals can be found throughout Indiana, especially in areas with sandstone formations and in geodes, such as those from the Keokuk Geode Beds.</p>
+            <a href="https://en.wikipedia.org/wiki/Quartz" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral red">
+          <img src="../images/crystalsAndMinerals/siderite.jpg" alt="Siderite">
+          <div><span>Siderite</span>
+            <p>Siderite, an iron carbonate mineral, can be found in Indiana's coal mines and shale formations.</p>
+            <a href="https://en.wikipedia.org/wiki/Siderite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="fossil body">
+          <img src="../images/crystalsAndMinerals/crinoidFossil.jpg" alt="Crinoid Fossils">
+          <div><span>Crinoid Fossils</span>
+            <p>Crinoid fossils are abundant in Indiana, particularly in limestone formations, such as those found in Monroe County and the Falls of the Ohio State Park.</p>
+            <a href="https://en.wikipedia    .org/wiki/Crinoid" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral yellow">
+          <img src="../images/crystalsAndMinerals/sulfur.jpg" alt="Sulfur">
+          <div><span>Sulfur</span>
+            <p>Sulfur can be found in Indiana's coal mines and areas with gypsum formations.</p>
+            <a href="https://en.wikipedia.org/wiki/Sulfur" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral green">
+          <img src="../images/crystalsAndMinerals/malachite.jpg" alt="Malachite">
+          <div><span>Malachite</span>
+            <p>Malachite can be found in various locations across Indiana, particularly in areas with copper deposits, such as those near the Ohio River.</p>
+            <a href="https://en.wikipedia.org/wiki/Malachite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral blue">
+          <img src="../images/crystalsAndMinerals/azurite.jpg" alt="Azurite">
+          <div><span>Azurite</span>
+            <p>Azurite can be found in Indiana, often in association with malachite, in areas with copper deposits near the Ohio River.</p>
+            <a href="https://en.wikipedia.org/wiki/Azurite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        
+        
+        <!--add more list items here if desired-->
+      </ul>
+      <div class="popular-areas" id="popular-areas">
+        <h2>Popular Areas In Indiana</h2>
+        <ul class="list-of-popular-areas">
+          <li class="mineral">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Falls_of_the_Ohio_State_Park.jpg/1200px-Falls_of_the_Ohio_State_Park.jpg">
+            <div><span>Falls of the Ohio State Park</span>
+              <p>Located in Clarksville, Indiana, the Falls of the Ohio State Park is a popular destination for fossil hunters. The park features a 390-million-year-old fossil bed, where visitors can find marine fossils such as corals, sponges, and brachiopods.</p>
+              <a href="https://www.fallsoftheohio.org/" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://external-preview.redd.it/_GNNPlFiCgMaairxvi79SLAltBJ8fj0apneIaJeiBoQ.jpg?auto=webp&s=2c8a6dcf962be803f2a08ff174d36870512f8dcf">
+            <div><span>Lime Creek Road</span>
+              <p>In the northern part of Indiana near Bedford, Lime Creek Road is a well-known spot for finding geodes containing quartz and other minerals. The geodes can be discovered in the limestone outcrops along the road.</p>
+              <a href="#" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://www.onlyinyourstate.com/wp-content/uploads/2017/02/21832846670_798578b8f3_k.jpg">
+            <div><span>St. Paul Stone Quarry</span>
+              <p>St. Paul Stone Quarry in St. Paul, Indiana is an excellent location for collecting crinoid fossils. The quarry allows visitors to search for these ancient marine fossils in the limestone deposits during select times of the year.</p>
+              <a href="https://www.onlyinyourstate.com/indiana/indiana-geological-wonder/" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://www.fs.usda.gov/Internet/FSE_MEDIA/fseprd647581.jpg">
+            <div><span>Hoosier National Forest</span>
+              <p>Hoosier National Forest in south-central Indiana offers various rockhounding opportunities. The area is known for its geodes, chert, and occasional fossil finds, which can be found along creeks, riverbanks, and exposed bedrock.</p>
+              <a href="https://www.fs.usda.gov/hoosier" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://www.georgiasfossils.com/uploads/3/7/6/1/37616615/20170924-144356-resized_1_orig.jpg">
+            <div><span>Glendon Limestone Quarry</span>
+              <p>Located near Aurora, Indiana, the Glendon Limestone Quarry is known for its abundant trilobite fossils. Visitors can search for these ancient marine creatures within the limestone layers, making it an excellent destination for fossil enthusiasts.</p>
+              <a href="https://www.georgiasfossils.com/15b-the-glendon-limestone.html" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="https://res.cloudinary.com/simpleview/image/upload/v1651859073/clients/indiana/Indiana_Dunes_Tourism_IDT_15224_copy_21c47f57-6791-4051-b9de-85e9e6578179.jpg">
+            <div><span>Indiana Dunes National Park</span>
+              <p>Indiana Dunes National Park, along the southern shore of Lake Michigan, offers a variety of rockhounding experiences. The park's beaches are known for their colorful beach glass, while the nearby Calumet area is rich in slag, a byproduct of the steel industry.</p>
+              <a href="https://www.nps.gov/indu/index.htm" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          
+          <!--add more list items here if desired-->
+        </ul>
+      </div>
+    </div>
+
+    </div>
+    <<h2>Geology of Indiana</h2>
+    <p>Indiana's geology is characterized by sedimentary rock formations, primarily limestone, shale, and sandstone, which were formed in shallow marine environments during the Paleozoic Era. The state's landscape is largely the result of glaciation during the Pleistocene Epoch, which left behind rich, fertile soils and a gently rolling topography.</p>
+    <p>Indiana is known for its abundant limestone deposits, which have been quarried for use in construction and as a source of industrial minerals. Fossil-rich Devonian shales and Silurian reefs can also be found in the state, offering insights into Indiana's ancient marine environments and the organisms that once inhabited them.</p>
+    <p>The state's diverse geology provides ample opportunities for rockhounding, from searching for geodes and other minerals in the limestone formations to uncovering fossils in the Devonian shales.</p>    
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/rockhoundingLogo.png" alt="Logo">
+      </div>
+      <p class="copyright">© 2023 Rockhounding.org. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+  <script src="sortRocks.js"></script>
+  <script src="scrollTo.js"></script>
+</body>
+
+</html>

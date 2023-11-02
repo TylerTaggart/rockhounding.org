@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNYQWRCKJ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNYQWRCKJ3');
+  </script>
+
+  <title>Rockhounding in Illinois: Maps and Locations Guide | RockHounding.Org</title>
+  <meta name="description" content="Explore the best rockhounding locations in Illinois with our comprehensive maps and guide. Discover Illinois's rich mineral resources on RockHounding.Org">
+  <meta name="keywords" content="Rockhounding, Illinois, Rockhounding maps in Illinois, Rockhounding locations in Illinois">
+  <meta name="google-adsense-account" content="ca-pub-2987233570389325">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="rockhounding-maps.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987233570389325"
+     crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <header id="top">
+    <div class="logo">
+      <img src="../images/rockhoundingLogo.png" alt="Logo">
+    </div>
+    <h1 class="title">Illinois Rockhounding Map</h1>
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://www.rockhounding.org">Home</a></li>
+        <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
+        <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
+        <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
+        <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
+        <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="left-sidebar">
+    <nav class="left-nav">
+      <ul class="left-nav-links">
+        <h3>Quick Nav</h3>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#maps">Maps</a></li>
+        <li><a href="#popular-rocks">Popular Rocks</a></li>
+        <li><a href="#popular-areas">Popular Areas</a></li>
+        <li><a href="#geological-information">Geology</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+
+  <main>
+    <div class="top-grid">
+      <div class="left-item">
+        <h2>New here?</h2>
+        <img class="non-gallery" src="../images/prospector.png">
+        <p>New to rockhounding and don't know where to start? Not to worry, we will show you the ropes. Click below to
+          head over to our "Getting Started" guide</p>
+        <a href="https://www.rockhounding.org/getting-started" class="button">Getting Started</a>
+      </div>
+      <div class="center-item">
+        <h2>Rocks & Minerals In Illinois</h2>
+        <div class="three-image-gallery">
+          <img class="gallery" src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_256,h_171/https://rockhound.in/wp-content/uploads/2019/11/IMG_0024.jpg">
+          <img class="gallery" src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1024,h_709/https://rockhound.in/wp-content/uploads/2021/01/basalt-1024x709.jpg">
+          <img class="gallery" src="https://rockseeker.com/wp-content/uploads/2022/07/light-colored-chalcedony-1024x803.jpg">
+        </div>
+        <p>Illinois is rich in rockhounding opportunities, thanks to its diverse geology and abundant fossil deposits. From searching for Mazon Creek fossils in the state's northeastern region to uncovering fluorite crystals in the southern Illinois Fluorspar District, there is something for every rockhound in the Land of Lincoln.</p>
+        <button id="full-list-button" class="button">Full List</button>
+      </div>
+      <div class="right-item">
+        <h2>Sponsored Dig Site</h2>
+        <img class="non-gallery" src="../images/crystalsAndMinerals/topazCrystalfadedBackground.png">
+        <p>Own a digsite you would like to advertize in Illinois? Contact us for more information about being our sponsor of the month! Email sponsors@rockhounding.org for more information.</p>
+        <a href="https://topazmountainadventures.com/" class="button" target="_blank">Dig With Us</a>
+      </div>
+    </div>
+    <div class="map" id="maps"><iframe class="map-iframe"
+        src="https://www.google.com/maps/d/embed?mid=1DayN00Ibiuo3qT3Qy477SQbiI_WBT165&ehbc=2E312F"></iframe>
+    </div>
+    <div class="state-list" id="popular-rocks">
+      <h2 id="popular-rocks">Popular Rocks In Illinois</h2>
+      <div class="filter-container">
+        <nav class="type-of-rock">
+          <ul>
+            <li class="nav-filter" data-category="mineral">
+              <img src="./rockhounding-maps-shared-images/mineral.png" alt="Mineral Icon">
+              <span>Mineral</span>
+            </li>
+            <li class="nav-filter" data-category="crystal">
+              <img src="./rockhounding-maps-shared-images/crystal.png" alt="Crystal Icon">
+              <span>Crystal</span>
+            </li>
+            <li class="nav-filter" data-category="metal">
+              <img src="./rockhounding-maps-shared-images/metalBar.png" alt="Metal Icon">
+              <span>Metal</span>
+            </li>
+            <li class="nav-filter" data-category="fossil">
+              <img src="./rockhounding-maps-shared-images/fossil.png" alt="Fossil Icon">
+              <span>Fossil</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="color-of-rock hidden">
+          <ul>
+            <li class="nav-filter" data-category="black">
+              <img src="./rockhounding-maps-shared-images/black.png" alt="Black Icon">
+              <span>Black</span>
+            </li>
+            <li class="nav-filter" data-category="white">
+              <img src="./rockhounding-maps-shared-images/white.png" alt="White Icon">
+              <span>White</span>
+            </li>
+            <li class="nav-filter" data-category="metallic">
+              <img src="./rockhounding-maps-shared-images/metalic.png" alt="Metallic Icon">
+              <span>Metallic</span>
+            </li>
+            <li class="nav-filter" data-category="red">
+              <img src="./rockhounding-maps-shared-images/red.png" alt="Red Icon">
+              <span>Red</span>
+            </li>
+            <li class="nav-filter" data-category="orange">
+              <img src="./rockhounding-maps-shared-images/orange.png" alt="Orange Icon">
+              <span>Orange</span>
+            </li>
+            <li class="nav-filter" data-category="yellow">
+              <img src="./rockhounding-maps-shared-images/yellow.png" alt="Yellow Icon">
+              <span>Yellow</span>
+            </li>
+            <li class="nav-filter" data-category="green">
+              <img src="./rockhounding-maps-shared-images/green.png" alt="Green Icon">
+              <span>Green</span>
+            </li>
+            <li class="nav-filter" data-category="blue">
+              <img src="./rockhounding-maps-shared-images/blue.png" alt="Blue Icon">
+              <span>Blue</span>
+            </li>
+            <li class="nav-filter" data-category="purple">
+              <img src="./rockhounding-maps-shared-images/purple.png" alt="Purple Icon">
+              <span>Purple</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="metal-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="platinum">
+              <img src="./rockhounding-maps-shared-images/platinum.png" alt="Black Icon">
+              <span>Platinum</span>
+            </li>
+            <li class="nav-filter" data-category="gold">
+              <img src="./rockhounding-maps-shared-images/gold.png" alt="White Icon">
+              <span>Gold</span>
+            </li>
+            <li class="nav-filter" data-category="silver">
+              <img src="./rockhounding-maps-shared-images/silver.png" alt="Metallic Icon">
+              <span>Silver</span>
+            </li>
+            <li class="nav-filter" data-category="copper">
+              <img src="./rockhounding-maps-shared-images/copper.png" alt="Red Icon">
+              <span>Copper</span>
+            </li>
+            <li class="nav-filter" data-category="iron">
+              <img src="./rockhounding-maps-shared-images/iron.png" alt="Orange Icon">
+              <span>Iron</span>
+            </li>
+            <li class="nav-filter" data-category="tin">
+              <img src="./rockhounding-maps-shared-images/tin.png" alt="Yellow Icon">
+              <span>Tin</span>
+            </li>
+            <li class="nav-filter" data-category="zinc">
+              <img src="./rockhounding-maps-shared-images/zinc.png" alt="Green Icon">
+              <span>Zinc</span>
+            </li>
+            <li class="nav-filter" data-category="mercury">
+              <img src="./rockhounding-maps-shared-images/mercury.png" alt="Blue Icon">
+              <span>Mercury</span>
+            </li>
+            <li class="nav-filter" data-category="other">
+              <img src="./rockhounding-maps-shared-images/otherMetals.png" alt="Purple Icon">
+              <span>Other</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="fossil-type hidden">
+          <ul>
+            <li class="nav-filter" data-category="body">
+              <img src="./rockhounding-maps-shared-images/body.png" alt="Body Fossil Icon">
+              <span>Body</span>
+            </li>
+            <li class="nav-filter" data-category="trace">
+              <img src="./rockhounding-maps-shared-images/trace.png" alt="Trace Fossil Icon">
+              <span>Trace</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="rocks-found-here">
+        <li class="mineral orange">
+          <img src="../images/crystalsAndMinerals/fluorite.jpg" alt="Fluorite">
+          <div><span>Fluorite</span>
+            <p>Fluorite, the official state mineral of Illinois, is found in the southern part of the state, particularly in the Illinois-Kentucky Fluorspar District.</p>
+            <a href="https://en.wikipedia.org/wiki/Fluorite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral yellow">
+          <img src="../images/crystalsAndMinerals/sphalerite.jpg" alt="Sphalerite">
+          <div><span>Sphalerite</span>
+            <p>Sphalerite is commonly found in Illinois, especially in the northwestern part of the state, where it is associated with lead and zinc deposits.</p>
+            <a href="https://en.wikipedia.org/wiki/Sphalerite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral white">
+          <img src="../images/crystalsAndMinerals/calcite.jpg" alt="Calcite">
+          <div><span>Calcite</span>
+            <p>Calcite is found throughout Illinois, particularly in limestone and dolomite deposits.</p>
+            <a href="https://en.wikipedia.org/wiki/Calcite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral red">
+          <img src="../images/crystalsAndMinerals/jasper.jpg" alt="Jasper">
+          <div><span>Jasper</span>
+            <p>Jasper can be found in various locations across Illinois, particularly in gravel deposits and streambeds.</p>
+            <a href="https://en.wikipedia.org/wiki/Jasper" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="fossil body">
+          <img src="../images/crystalsAndMinerals/trilobite.jpg" alt="Trilobite Fossils">
+          <div><span>Trilobite Fossils</span>
+            <p>Trilobite fossils are found in many parts of Illinois, particularly in the northern region where limestone deposits are common.</p>
+            <a href="https://en.wikipedia.org/wiki/Trilobite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="fossil body">
+          <img src="../images/crystalsAndMinerals/ammonite.jpg" alt="Ammonite Fossils">
+          <div><span>Ammonite Fossils</span>
+            <p>Ammonite fossils can be found in several locations throughout Illinois, especially in areas with sedimentary rock formations.</p>
+            <a href="https://en.wikipedia.org/wiki/Ammonoidea" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="crystal purple">
+          <img src="../images/crystalsAndMinerals/amethyst.png" alt="Amethyst">
+          <div><span>Amethyst</span>
+            <p>Amethyst crystals can be found in Illinois, typically within geodes found in limestone formations and riverbeds.</p>
+            <a href="https://en.wikipedia.org/wiki/Amethyst" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral black">
+          <img src="../images/crystalsAndMinerals/galena.jpg" alt="Galena">
+          <div><span>Galena</span>
+            <p>Galena, a lead sulfide mineral, can be found in the northwestern part of Illinois, especially in the Upper Mississippi Valley Zinc-Lead District.</p>
+            <a href="https://en.wikipedia.org/wiki/Galena" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="crystal white">
+          <img src="../images/crystalsAndMinerals/celestine.jpg" alt="Celestine">
+          <div><span>Celestine</span>
+            <p>Celestine can be found in various locations across Illinois, particularly in sedimentary rock formations and limestone deposits.</p>
+            <a href="https://en.wikipedia.org/wiki/Celestine_(mineral)" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="crystal yellow green">
+          <img src="../images/crystalsAndMinerals/olivine.jpg" alt="Olivine">
+          <div><span>Olivine</span>
+            <p>Olivine can be found in Illinois, usually as small grains within certain types of igneous and metamorphic rocks.</p>
+            <a href="https://en.wikipedia.org/wiki/Olivine" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        <li class="mineral brown">
+          <img src="../images/crystalsAndMinerals/barite.jpg" alt="Barite">
+          <div><span>Barite</span>
+            <p>Barite can be found in various locations across Illinois, particularly in areas with limestone and dolomite deposits.</p>
+            <a href="https://en.wikipedia.org/wiki/Barite" class="read-more" target="_blank">Read More</a>
+          </div>
+        </li>
+        
+        <!--add more list items here if desired-->
+      </ul>
+      <div class="popular-areas" id="popular-areas">
+        <h2>Popular Areas In Illinois</h2>
+        <ul class="list-of-popular-areas">
+          <li class="mineral">
+            <img src="../images/placeholderImg.jpg">
+            <div><span>Hickory Hill Campground</span>
+              <p>Located in southeastern Illinois, Hickory Hill Campground is a family-friendly destination where visitors can hunt for geodes along the nearby creeks. The campground offers an exciting opportunity to uncover beautiful geodes and enjoy a day of outdoor exploration.</p>
+              <a href="https://hickoryhillcampground.com/" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="../images/placeholderImg.jpg">
+            <div><span>Mazon Creek Fossils</span>
+              <p>Collecting Mazon Creek fossils is a popular activity for rockhounds in Illinois. These fascinating fossils, dating back around 300 million years, can be found at various sites throughout the state, including Braidwood and Coal City.</p>
+              <a href="https://en.wikipedia.org/wiki/Mazon_Creek_fossils" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="../images/placeholderImg.jpg">
+            <div><span>Keokuk Geode Beds</span>
+              <p>Located along the Mississippi River in western Illinois, the Keokuk Geode Beds are famous for their stunning geodes filled with various minerals, such as quartz and calcite. The area is a favorite spot for rockhounds seeking to uncover these hidden treasures.</p>
+              <a href="https://www.mindat.org/loc-3377.html" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="../images/placeholderImg.jpg">
+            <div><span>Fluorite Mining in Southern Illinois</span>
+              <p>For many years, the southern Illinois region was known for its fluorite mining industry. Although most mines have since closed, rockhounds can still find traces of fluorite, the state mineral, in the area, including beautiful specimens in shades of purple, blue, and green.</p>
+              <a href="https://en.wikipedia.org/wiki/Illinois%E2%80%93Kentucky_Fluorspar_Mining_District" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="../images/placeholderImg.jpg">
+            <div><span>Starved Rock State Park</span>
+              <p>Starved Rock State Park, located along the Illinois River, offers stunning canyons, waterfalls, and geological formations. While rock collecting is not allowed within the park, visitors can admire the beautiful sandstone and limestone cliffs and learn about the area's geology.</p>
+              <a href="https://www2.illinois.gov/dnr/Parks/Pages/StarvedRock.aspx" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          <li class="mineral">
+            <img src="../images/placeholderImg.jpg">
+            <div><span>Ferne Clyffe State Park</span>
+              <p>Ferne Clyffe State Park in southern Illinois offers visitors the chance to explore picturesque sandstone cliffs, caves, and rock shelters. While collecting is not permitted within the park, the site provides a unique opportunity to learn about the region's geological history.</p>
+              <a href="https://www2.illinois.gov/dnr/Parks/Pages/FerneClyffe.aspx" class="read-more" target="_blank">Read More</a>
+            </div>
+          </li>
+          
+          
+          <!--add more list items here if desired-->
+        </ul>
+      </div>
+    </div>
+
+    </div>
+    <div class="geological-information" id="geological-information">
+      <h2>Geology of Illinois</h2>
+<p>Illinois' geology is characterized by its sedimentary rock formations, primarily limestone, shale, and sandstone, which were formed during the Paleozoic and Mesozoic eras. The state's landscape was heavily influenced by glaciation during the Pleistocene Epoch, which left behind rich, fertile soils and a relatively flat topography.</p>
+<p>The northeastern region of Illinois is home to the famous Mazon Creek fossil beds, where a diverse array of flora and fauna from the Pennsylvanian period have been preserved in siderite concretions. In the southern part of the state, the Illinois Fluorspar District is known for its deposits of fluorite, a colorful mineral used in various industrial applications.</p>
+<p>Illinois' diverse geology offers a variety of rockhounding opportunities, from fossil hunting in the Mazon Creek area to mineral collecting in the state's southern Fluorspar District.</p>
+
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/rockhoundingLogo.png" alt="Logo">
+      </div>
+      <p class="copyright">© 2023 Rockhounding.org. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+  <script src="sortRocks.js"></script>
+  <script src="scrollTo.js"></script>
+</body>
+
+</html>

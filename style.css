@@ -1,0 +1,256 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8B4513; /* Change the background color */
+    color: #F0E68C; /* Change the text color */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 60px;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+  }
+  
+  /* Navigation */
+  .navbar {
+    position: relative;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 37px;
+  }
+  
+  .menu-icon div {
+    height: 4px;
+    background-color: #F0E68C; /* Change the menu-icon color */
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: #8B4513; /* Change the background color */
+    width: 200px;
+    z-index: 1;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add this line */
+  }
+  
+  .nav-links li {
+    padding: 15px 20px;
+  }
+  
+  .nav-links a {
+    color: #F0E68C; /* Change the text color */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #FFD700; /* Change the hover and active text color */
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  body {
+    margin: 0;
+    background-image: url('images/mapBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .top-grid {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin: 24px 96px 48px 96px;
+  }
+  
+  .left-item,
+  .center-item,
+  .right-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+.top-grid h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+  color: #8B4513;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.top-grid img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .top-grid p {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .top-grid .button {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    background-color: #8B4513;
+    color: #F0E68C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #full-list-button {
+    border: none;
+  }
+  
+  .top-grid .button:hover {
+    background-color: #6A350A;
+    color: #F0E68C;
+  }
+
+  .three-image-gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .three-image-gallery .gallery {
+    width: calc(100% / 3 - 10px); /* Subtracting 10px to account for margins */
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .non-gallery {
+    width: 60%; /* Adjust this value to your desired size */
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  /* Footer */
+footer {
+  background-color: #8B4513; /* Match the header background color */
+  color: #F0E68C; /* Match the header text color */
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.copyright {
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+}
+
+/* Add a media query for mobile devices */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .title {
+    font-size: 36px;
+  }
+
+  /* Navigation */
+  .nav-links {
+    width: 100%; /* Update the width */
+    box-shadow: none; /* Remove the box-shadow */
+  }
+
+  .nav-links li {
+    padding: 10px 20px; /* Update the padding */
+  }
+
+  /* Top Grid */
+  .top-grid {
+    display: flex;
+    flex-direction: column; /* Arranges children from top to bottom */
+    margin: 24px 48px 48px 48px;
+  }
+
+  .left-item,
+  .center-item,
+  .right-item {
+    flex: 0 0 auto; /* This will allow the items to keep their original size */
+    width: 100%;  /* Take up the full width */
+    margin-bottom: 24px; /* Add a margin at the bottom of each item */
+  }
+
+  .top-grid h2 {
+    font-size: 24px;
+  }
+
+  .top-grid p {
+    font-size: 18px;
+  }
+
+  .top-grid .button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .three-image-gallery .gallery {
+    width: calc(100% / 2 - 10px); /* Update the width calculation */
+  }
+
+  .non-gallery {
+    width: 100%; /* Update the width */
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+}

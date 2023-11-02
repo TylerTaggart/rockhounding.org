@@ -1,0 +1,123 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1250px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.sub-section h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+  color: #8B4513;
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.sub-section img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  float: left;
+}
+
+.sub-section p {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.sub-section .button {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  background-color: #8B4513;
+  color: #F0E68C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sub-section .button:hover {
+  background-color: #6A350A;
+  color: #F0E68C;
+}
+
+.three-image-gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.three-image-gallery .gallery {
+  width: calc(100% / 3 - 10px);
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.non-gallery {
+  width: 60%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Add a media query for mobile devices */
+@media (max-width: 768px) {
+  .main-section {
+    margin: 24px 16px;
+  }
+
+  .sub-section {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .sub-section h2 {
+    font-size: 24px;
+  }
+
+  .sub-section img {
+    width: 100%; /* Update the width */
+    margin-right: 0; /* Update the margin-right */
+    float: none; /* Reset the float property */
+  }
+
+  .sub-section p {
+    font-size: 18px;
+  }
+
+  .sub-section .button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .three-image-gallery {
+    flex-direction: column;
+  }
+
+  .three-image-gallery .gallery {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .non-gallery {
+    width: 100%;
+  }
+}
