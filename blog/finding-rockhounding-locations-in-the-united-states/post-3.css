@@ -1,0 +1,207 @@
+.central-item {
+    width: 66.66%; 
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+.central-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.gem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.gem {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.gem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cmm-usa {
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    width: 100% !important;
+}
+
+.cmm-usa svg {
+    width: 100%;
+    z-index: 99
+}
+
+.cmm-usa svg path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10
+}
+
+.cmm-usa-hover-state-info {
+    position: relative;
+    margin: -40px auto 20px auto;
+    display: none;
+    box-sizing: border-box;
+    padding: .75em;
+    width: 300px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 20px #999;
+    font-size: 14px;
+    z-index: 100
+}
+
+.cmm-usa-hover-state-info span {
+    display: block;
+    line-height: 1.5em
+}
+
+.cmm-usa-hover-state-info span:first-child {
+    font-weight: bold;
+    text-align: center
+}
+
+.cmm-usa-listview {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0
+}
+
+.cmm-usa-listview ul {
+    vertical-align: top;
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0
+}
+
+.cmm-usa-listview ul li {
+    padding: 0;
+    margin: 0
+}
+
+.cmm-usa-listview ul li span {
+    display: inline-block;
+    position: relative;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    color: black;
+    text-align: center;
+    line-height: 12px;
+    font-weight: bold;
+    border: 1px solid #999;
+    opacity: 1.0;
+    margin-right: .5em
+}
+
+.cmm-usa-listview ul li span::after {
+    content: "\2B9E";
+    position: relative;
+    color: #8B4513;
+    font-size: 12px
+}
+
+.cmm-usa-listview ul li a {
+    display: inline-block;
+    margin: .5em 1em .5em 0;
+    color: #ccc;
+    text-decoration: none
+}
+
+.cmm-usa-listview ul li a.cmm-usa-live-link {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cmm-usa-listview ul li a.cmm-usa-live-link:hover {
+   color: #000;
+   text-decoration: underline;
+   cursor: pointer
+}
+
+.backgroundFill {
+   opacity: 0;
+}
+
+.cmm-usa-listview {
+   font-size: 18px;
+}
+
+.rockhounding-post {
+   font-family: 'Arial', sans-serif; /* Choose the same font-family as the rest of the page */
+   line-height: 1.6;
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 20px;
+   text-align: justify;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+ }
+
+@media (max-width: 768px) {
+   /* Add your mobile-specific styles here */
+   .cmm-usa-listview ul {
+     display: block; /* Change display property to block for better stacking of list items */
+   }
+ 
+   .cmm-usa-listview ul li a {
+     margin: .3em 0; /* Adjust margin for better spacing on mobile devices */
+     padding-left: 40px; /* Add padding-left to make space for the ::after element */
+
+   }
+
+   .cmm-usa-listview ul li span::after {
+       content: "\2B9E";
+       position: relative;
+       color: #8B4513;
+       font-size: 12px;
+   }
+
+
+ }
