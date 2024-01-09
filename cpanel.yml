@@ -1,0 +1,7 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/mx4dlv02mk3i/repositories/rockhounding.org
+        - /bin/cp index.html $DEPLOYPATH
+        - /bin/cp style.css $DEPLOYPATH
+        
