@@ -1,0 +1,47 @@
+.central-item {
+    width: 66.66%; 
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+.central-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+p, ol {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+ul, li, ul, li {
+    font-size: 20px; /* Set the font size to 16 pixels */
+    line-height: 1.5; /* Adjust line height for better readability */
+}

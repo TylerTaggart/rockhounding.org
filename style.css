@@ -195,17 +195,66 @@ footer {
 @media screen and (max-width: 768px) {
   /* Header */
   .title {
-    font-size: 36px;
+    font-size: 22px;
+  }
+
+  .logo img {
+    width: 80px;
+    height: auto;
   }
 
   /* Navigation */
-  .nav-links {
-    width: 100%; /* Update the width */
-    box-shadow: none; /* Remove the box-shadow */
+  .navbar {
+    position: relative;
   }
-
+  
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 37px;
+  }
+  
+  .menu-icon div {
+    height: 4px;
+    background-color: #F0E68C; /* Change the menu-icon color */
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: #8B4513; /* Change the background color */
+    width: 200px;
+    z-index: 1;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add this line */
+  }
+  
   .nav-links li {
-    padding: 10px 20px; /* Update the padding */
+    padding: 15px 20px;
+  }
+  
+  .nav-links a {
+    color: #F0E68C; /* Change the text color */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #FFD700; /* Change the hover and active text color */
+  }
+  
+  .nav-links.show {
+    display: flex;
   }
 
   /* Top Grid */
@@ -237,7 +286,7 @@ footer {
   }
 
   .three-image-gallery .gallery {
-    width: calc(100% / 2 - 10px); /* Update the width calculation */
+    width: calc(100% /  - 100px); /* Update the width calculation */
   }
 
   .non-gallery {
