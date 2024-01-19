@@ -30,43 +30,75 @@ p, ul {
     line-height: 1.5;
 }
 
-p {
+p, ol {
     font-size: 1.25em;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-
 ul {
     list-style-type: disc;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
-.gem-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+ul, li, ul, li {
+    font-size: 20px; /* Set the font size to 16 pixels */
+    line-height: 1.5; /* Adjust line height for better readability */
 }
 
-.gem {
-    width: 48%;
+@media screen and (max-width: 768px) {
+
+.central-item {
+    width: 85%; 
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+
+h2 {
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
-.gem img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
+p, ul {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+p, ol {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2px;
+}
+
+ul, li, ul, li {
+    font-size: 16px; /* Set the font size to 16 pixels */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+
+}
 .cmm-usa {
     display: none;
     margin: 0 auto;
     position: relative;
-    padding: 10px;
-    width: 100% !important;
+    padding: 10px
 }
 
 .cmm-usa svg {
@@ -156,8 +188,7 @@ ul {
 .cmm-usa-listview ul li a.cmm-usa-live-link {
     color: #000;
     text-decoration: none;
-    cursor: pointer;
-    font-size: 14px;
+    cursor: pointer
 }
 
 .cmm-usa-listview ul li a.cmm-usa-live-link:hover {
@@ -180,7 +211,7 @@ ul {
    margin: 0 auto;
    max-width: 1200px;
    padding: 20px;
-   text-align: justify;
+   text-align: left;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
  }
 
@@ -201,6 +232,10 @@ ul {
        position: relative;
        color: #8B4513;
        font-size: 12px;
+   }
+
+   .cmm-usa {
+       width: 90% !important;
    }
 
 
