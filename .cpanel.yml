@@ -4,5 +4,8 @@ deployment:
     - export DEPLOYPATH=/home/mx4dlv02mk3i/public_html/rockhounding.org
     - /bin/cp -R blog $DEPLOYPATH
     - /bin/cp -u blog $DEPLOYPATH
+    - /bin/cp -R rockhounding-maps $DEPLOYPATH
+    - /bin/cp -u rockhounding-maps $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
+    

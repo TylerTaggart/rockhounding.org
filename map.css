@@ -121,26 +121,44 @@
 
 @media (max-width: 768px) {
     /* Add your mobile-specific styles here */
-    .cmm-usa-listview ul {
-      display: block; /* Change display property to block for better stacking of list items */
-    }
-  
-    .cmm-usa-listview ul li a {
-      margin: .3em 0; /* Adjust margin for better spacing on mobile devices */
-      padding-left: 40px; /* Add padding-left to make space for the ::after element */
-
-    }
-
-    .cmm-usa-listview ul li span::after {
-        content: "\2B9E";
-        position: relative;
-        color: #8B4513;
-        font-size: 12px;
-    }
-
-    .cmm-usa {
+        .cmm-usa {
         width: 90% !important;
     }
 
+    .cmm-usa-listview ul li a.cmm-usa-live-link {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .cmm-usa-listview ul li span {
+        display: flex;
+        position: relative;
+        height: 12px;
+        width: 12px;
+        border-radius: 12px;
+        color: black;
+        text-align: center;
+        line-height: 12px;
+        font-weight: bold;
+        border: 1px solid #999;
+        opacity: 1.0;
+        margin-right: 0.5em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .rockhounding-post {
+        font-family: 'Arial', sans-serif; /* Choose the same font-family as the rest of the page */
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 20px;
+        text-align: left;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
 
   }
