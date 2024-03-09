@@ -50,7 +50,70 @@
     </header>
 
     <main>
+        <div class="search-bar-wrapper" id="searchBarWrapper">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button onclick="searchBlog()">Search</button>
+                <button onclick="clearSearch()">Clear</button>
+            </div>
+            <p id="noResultsMessage" style="display: none;">No results found.</p> <!-- New element for displaying no results message -->
+        </div>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    
+                if (scrollPosition > (document.body.clientHeight * 0.2) || scrollPosition > (document.documentElement.clientHeight * 0.2)) {
+                    document.getElementById("searchBarWrapper").classList.add("sticky-search");
+                } else {
+                    document.getElementById("searchBarWrapper").classList.remove("sticky-search");
+                }
+            }
+    
+            function searchBlog() {
+                var searchQuery = document.getElementById("searchInput").value.toLowerCase();
+                var postTitles = document.querySelectorAll(".blog-post h2");
+                var noResultsMessage = document.getElementById("noResultsMessage"); // Get the no results message element
+    
+                var hasResults = false;
+    
+                postTitles.forEach(function(postTitle) {
+                    var titleText = postTitle.textContent.toLowerCase();
+    
+                    if (titleText.includes(searchQuery)) {
+                        postTitle.closest(".blog-post").style.display = "block";
+                        hasResults = true;
+                    } else {
+                        postTitle.closest(".blog-post").style.display = "none";
+                    }
+                });
+    
+                // Show or hide the no results message based on the search results
+                noResultsMessage.style.display = hasResults ? "none" : "block";
+            }
+    
+            function clearSearch() {
+                document.getElementById("searchInput").value = "";
+                var allPosts = document.querySelectorAll(".blog-post");
+                allPosts.forEach(function(post) {
+                    post.style.display = "block";
+                });
+    
+                document.getElementById("noResultsMessage").style.display = "none"; // Hide no results message when clearing search
+            }
+        </script>
+
         <section class="blog">
+                <article class="blog-post">
+                    <img src="images/rocks for tumblers.jpg" alt="Rock weights">
+                    <h2>How to Choose the Best Rocks for Tumbling: A Simple and Practical Method</h2>
+                    <p>Learn how to choose the best rocks for tumbling with this simple and practical method. Discover the types, sources, and preparation of rocks for tumbling.</p>
+                    <p class="post-meta">Date: March 9, 2024</p>
+                    <a href="/blog/how-to-choose-rocks-for-tumbling/index.html">Read More</a>
+                </article>
+
                 <article class="blog-post">
                     <img src="images/big-beautiful-jewel.jpg" alt="Rock weights">
                     <h2>Beyond Diamonds: Unveiling the Rarest Gemstones on Earth</h2>

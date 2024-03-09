@@ -46,6 +46,64 @@
     color: black;
 }
 
+
+.search-bar {
+    margin: 30px auto; /* Adjust margin as needed */
+    text-align: right;
+    margin-right: 5%;
+}
+
+.search-bar input[type="text"] {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.search-bar button {
+    padding: 12px 20px;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #8B4513;
+}
+
+.search-bar-wrapper {
+    position: relative;
+    z-index: 999;
+    transition: top 0.3s ease-in-out;
+}
+
+.sticky-search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    padding: 10px;
+    background-color: #fff; /* Adjust background color as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
+}
+
+.main-content {
+    margin-top: 50px; /* Adjust margin to account for the fixed search bar height */
+}
+
+#noResultsMessage {
+    display: none; /* Hide the message by default */
+    color: black; /* Set the text color */
+    font-size: 30px; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: center; /* Center the text */
+    margin: 150px; /* Add some top margin */
+}
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .blog-post {
