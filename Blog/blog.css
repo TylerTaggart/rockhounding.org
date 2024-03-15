@@ -7,7 +7,7 @@
 }
 
 .blog-post {
-    flex-basis: calc(29% - 20px);  /* 3 columns per row, accounting for 10px margin on each side */
+    flex-basis: calc(29% - 20px); 
     margin: 10px;
     text-align: left;
     padding: 15px;
@@ -48,9 +48,38 @@
 
 
 .search-bar {
-    margin: 30px auto; /* Adjust margin as needed */
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: right;
     margin-right: 5%;
+}
+
+.category-filter {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.category-filter-dropdown {
+    display: none;
+}
+
+.category-filter select {
+    padding: 10px 30px 10px 10px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%238B4513'%3E%3Cpath d='M14.293 7.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 1.414-1.414L11 9.586V5a1 1 0 1 1 2 0v4.586l1.293-1.293z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1px center;
+    appearance: none; 
+}
+
+.category-filter select:hover,
+.category-filter select:focus {
+    border-color: #8B4513; 
 }
 
 .search-bar input[type="text"] {
@@ -60,7 +89,8 @@
     margin-right: 8px;
 }
 
-.search-bar button {
+.search-bar button,
+.category-filter button {
     padding: 12px 20px;
     background-color: #8B4513;
     color: #fff;
@@ -69,7 +99,8 @@
     cursor: pointer;
 }
 
-.search-bar button:hover {
+.search-bar button:hover,
+.category-filter button {
     background-color: #8B4513;
 }
 
@@ -77,6 +108,9 @@
     position: relative;
     z-index: 999;
     transition: top 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sticky-search {
@@ -84,23 +118,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 15%;
     padding: 10px;
-    background-color: #fff; /* Adjust background color as needed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-content {
-    margin-top: 50px; /* Adjust margin to account for the fixed search bar height */
+    margin-top: 50px; 
 }
 
 #noResultsMessage {
-    display: none; /* Hide the message by default */
-    color: black; /* Set the text color */
-    font-size: 30px; /* Set the font size */
-    font-weight: bold; /* Set the font weight */
-    text-align: center; /* Center the text */
-    margin: 150px; /* Add some top margin */
+    display: none; 
+    color: black; 
+    font-size: 30px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 150px; 
 }
 
 
@@ -109,12 +142,56 @@
     .blog-post {
         flex-basis: calc(50% - 20px) !important;
     }
+
+    .search-bar-wrapper {
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar, .category-filter {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .category-filter {
+        text-align: center;
+    }
+
+    .category-filter select {
+        padding: 8px 10px;
+        margin-right: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 10px;
+        outline: none;
+        transition: border-color 0.3s;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%238B4513'%3E%3Cpath d='M14.293 7.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 1.414-1.414L11 9.586V5a1 1 0 1 1 2 0v4.586l1.293-1.293z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1px center;
+        appearance: none; 
+    }
+
+    .search-bar input[type="text"] {
+        width: calc(40% - 10px);
+        padding: 8px 10px;
+        margin-right: 5px;
+    }
+
+    .search-bar button, .category-filter button {
+        width: calc(25% - 5px); 
+        padding: 10px 5px;
+        margin-right: 5px; 
+        font-size: 10px;
+    }
 }
 
 /* Further adjustment for smaller screens */
 @media (max-width: 480px) {
     .blog-post {
         flex-basis: calc(100% - 20px) !important;
-        /* ... other small screen styles ... */
-    }
+           }
+
 }
