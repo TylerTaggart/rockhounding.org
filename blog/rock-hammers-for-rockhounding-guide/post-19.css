@@ -1,0 +1,161 @@
+.central-item {
+    width: 66.66%; 
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+.central-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+p, ol {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul, li, ul, li {
+    font-size: 20px; /* Set the font size to 16 pixels */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.rock-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    float: right; /* Align images to the left */
+    margin-right: 20px; /* Add some space between images and text */
+    padding-left: 5px;
+}
+
+.tumbled-rock {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .tumbled-rock img {
+    margin-left: 20px;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .map {
+    width: 880px; /* This should match the width of your iframe */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .map-iframe {
+    width: 880px;
+    height: 720px;
+  }
+
+@media screen and (max-width: 768px) {
+
+.central-item {
+    width: 85%; 
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+p, ol {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2px;
+}
+
+ul, li, ul, li {
+    font-size: 16px; /* Set the font size to 16 pixels */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.rock-image {
+    display: block;
+    margin: auto;
+    float: none;
+    width: auto;
+}
+
+.tumbled-rock {
+    display: inline;
+    align-items: left;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+  .tumbled-rock img {
+    margin-left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.map {
+    width: 100%;
+    /* Update the width */
+  }
+
+  .map-iframe {
+    width: 100%;
+    /* Update the width */
+    height: 400px;
+    /* Update the height */
+  }
+
+}
