@@ -191,6 +191,30 @@ footer {
   font-family: 'Cinzel', serif;
 }
 
+.banner {
+  background-color: #363636;
+  padding: 10px;
+  text-align: center !important;
+  font-size: 16px;
+  font-weight: semi-bold;
+  color: #F0E68C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner i {
+  margin-right: 10px;
+}
+
+.banner a {
+  color: #F0E68C;
+}
+
+.banner p {
+  margin: 0;
+}
+
 /* Add a media query for mobile devices */
 @media screen and (max-width: 768px) {
   /* Header */
@@ -345,6 +369,10 @@ ul {
 ul, li, ul, li {
     font-size: 16px; /* Set the font size to 16 pixels */
     line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.banner {
+  font-size: 14px;
 }
 
 }
