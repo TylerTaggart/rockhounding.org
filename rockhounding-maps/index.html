@@ -2,62 +2,80 @@
 <html>
 
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNYQWRCKJ3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-XNYQWRCKJ3');
   </script>
+  
+  <!-- HTML Meta Tags -->
   <title>RockHounding Near Me: Find Rockhounding Maps & Locations | RockHounding.Org</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Find the best rockhounding maps near you with our interactive rockhounding maps of all 50 states. Searching for rochounding near me has never been easier! Discover new areas to explore and collect rocks, minerals, and fossils on RockHounding.Org.">
-  <meta name="keywords" content="Rockhounding near me, Rockhounding locations near me, Rockhounding maps">
+  <meta name="description" content="Find the best rockhounding maps near you with our interactive rockhounding maps of all 50 states. Searching for rockhounding near me has never been easier! Discover new areas to explore and collect rocks, minerals, and fossils on RockHounding.Org.">
+  <meta name="keywords" content="Rockhounding near me, Rockhounding locations near me, Rockhounding maps, Rockhounding, Rocks, Minerals, Fossils, Interactive rockhounding map, RockHounding.Org">
+  <meta name="author" content="RockHounding.Org">
   <meta name="google-adsense-account" content="ca-pub-2987233570389325">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="RockHounding Near Me: Find Rockhounding Maps & Locations | RockHounding.Org">
+  <meta itemprop="description" content="Find the best rockhounding maps near you with our interactive rockhounding maps of all 50 states. Searching for rockhounding near me has never been easier! Discover new areas to explore and collect rocks, minerals, and fossils on RockHounding.Org.">
+  
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="../map.css">
   <link rel="stylesheet" href="../style.css">
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987233570389325"
-     crossorigin="anonymous"></script>
+  
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="RockHounding Near Me: Find Rockhounding Maps & Locations">
+  <meta property="og:description" content="Find the best rockhounding maps near you with our interactive rockhounding maps of all 50 states. Searching for rockhounding near me has never been easier! Discover new areas to explore and collect rocks, minerals, and fossils on RockHounding.Org.">
+  <meta property="og:image" content="https://www.rockhounding.org/images/rockhoundingLogo.png">
+  <meta property="og:url" content="https://www.rockhounding.org/rockhounding-maps">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RockHounding Near Me: Find Rockhounding Maps & Locations">
+  <meta name="twitter:description" content="Find the best rockhounding maps near you with our interactive rockhounding maps of all 50 states. Searching for rockhounding near me has never been easier! Discover new areas to explore and collect rocks, minerals, and fossils on RockHounding.Org.">
+  <meta name="twitter:image" content="https://www.rockhounding.org/images/rockhoundingLogo.png">
+  <meta name="twitter:site" content="@RockHoundingOrg">
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987233570389325" crossorigin="anonymous"></script>
 </head>
+
 
 
 <body onload="initMap()">
   <header>
-    <div class="header-row">
-      <div class="logo">
-        <img src="../images/rockhoundingLogo.png" alt="Logo">
-      </div>
-      <h1 class="title">Rockhounding maps</h1>
-      <nav class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
-          <div></div>
-          <div></div>
-        </div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="https://www.rockhounding.org/">Home</a></li>
-          <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
-          <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-          <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-          <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
-          <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
-          <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
-          <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
-          <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-          <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
-        </ul>
-      </nav>
+    <div class="logo">
+      <img src="../images/rockhoundingLogo.png" alt="Logo rockhounding near me maps">
     </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Crystal and Mineral Samples</a></p>
+    <h1 class="title">RockHounding Maps</h1>
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
+        <div></div>
+        <div></div>
       </div>
-    </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://www.rockhounding.org">Home</a></li>
+        <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-maps" class="active">Rockhounding Maps</a></li>
+        <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+        <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
+        <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
+        <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
+        <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
+      </ul>
+    </nav>
   </header>
-
+  <main>
 
 
     <script>
