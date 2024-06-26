@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987233570389325"
      crossorigin="anonymous"></script>
+         <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 
 
@@ -30,7 +32,7 @@
           <div class="logo">
             <img src="../images/rockhoundingLogo.png" alt="Logo">
           </div>
-          <h1 class="title">Getting Started</h1>
+          <h1 class="title">How To Get Started Rochounding</h1>
           <nav class="navbar">
             <div class="menu-icon" onclick="toggleMenu()">
               <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
@@ -51,6 +53,17 @@
             </ul>
           </nav>
         </div>
+        <h2>Hunting for Rocks, Crystals, Geodes, & Gold</h2>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#beginners-checklist">Checklist</a></li>
+                <li><a href="#tree-section">Learning Tree</a></li>
+                <li><a href="#rockhounding-glossary">Rockhounding Glossary</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        
         <div class="header-row">
           <div class="banner">
             <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Crystal and Mineral Samples</a></p>
@@ -58,8 +71,62 @@
         </div>
     </header>
     <main>
+        <section id="beginners-checklist">
+            <h2 class="checklist-title">The Rockhounds Checklist</h2>
+            <div class="checklist-row">
+                <div class="checklist-item">
+                    <img src="../images/rockPick.png" alt="Your First Pick">
+                    <h3>How To Pick Your Pick</h3>
+                    <p>A reliable rock pick is essential for any rockhound. It helps in extracting specimens from the ground and breaking apart rocks to reveal hidden treasures. Check out our comparison table to find the rock pick that works best for you.</p>
+                    <a href="#" class="comparison-button">See Comparison Table</a>
+                </div>
+                <div class="checklist-item">
+                    <img src="../images/backpack.png" alt="Backpacks & Bags">
+                    <h3>Backpacks & Bags That Fit Just One More Rock</h3>
+                    <p>Sturdy backpacks and bags are important for carrying tools and collected specimens. Look for ones with multiple compartments and durable materials. Check out our comparison table to find the bag that works best for you.</p>
+                    <a href="#" class="comparison-button">See Comparison Table</a>
+                </div>
+                <div class="checklist-item">
+                    <img src="../images/chisel.png" alt="Chisels & Brushes">
+                    <h3>Chisels & Brushes</h3>
+                    <p>Chisels are used to split rocks and access hidden specimens, while brushes help clean dirt off rocks and minerals, revealing their true features.  Check out our comparison table to find the chisels and brushes that work best for you.</p>
+                    <a href="#" class="comparison-button">See Comparison Table</a>
+                </div>
+            </div>
+            <div class="checklist-row">
+                <div class="checklist-item">
+                    <img src="../images/gloves.png" alt="Gloves">
+                    <h3>Gloves</h3>
+                    <p>Protective gloves are crucial for safeguarding your hands from sharp edges and rough surfaces.  Check out our comparison table to find thegloves that work best for you.</p>
+                    <a href="#" class="comparison-button">See Comparison Table</a>
+                </div>
+                <div class="checklist-item">
+                    <img src="../images/safetyGlasses.png" alt="Glasses">
+                    <h3>Glasses</h3>
+                    <p>Safety glasses are essential to protect your eyes from flying debris when using tools. Always wear them to ensure your safety while rockhounding.  Check out our comparison table to find safety glasses that work best for you.</p>
+                    <a href="#" class="comparison-button">See Comparison Table</a>
+                </div>
+                <div class="checklist-item">
+                    <img src="../images/firstAidKit.png" alt="First Aid Kits">
+                    <h3>First Aid Kits</h3>
+                    <p>A well-stocked first aid kit is a must-have for any outdoor activity. Ensure it includes bandages, antiseptics, and other essentials.  Check out our comparison table to find the first aid kit that works best for you.</p>
+                    <a href="#" class="comparison-button">See Comparison Table</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tree-section">
+            <div id="tree-container">
+                <svg width="100%" height="600"></svg>
+            </div>
+            <div id="tree-content">
+                <h3>Learn About Rockhounding</h3>
+                <p>Explore various topics related to rockhounding, such as types of rockhounding, essential gear, and techniques. Click on the interactive tree diagram to to the left in order to navigate through different concepts and enhance your knowledge.</p>
+            </div>
+        </section>
         <div class="central-item">
-            <h2 style="text-align: center;">Understanding the Basics of Rockhounding</h2>
+           
+            
             <h3>What is Rockhounding?</h3>
             <p>Rockhounding, also known as rock hunting or amateur geology, is the exciting hobby of searching for and collecting rocks, minerals, fossils, and other natural treasures. It's a fun way to explore the outdoors, learn about geology, and potentially discover valuable specimens. Think of it as a treasure hunt where the Earth is your map!</p>
             
@@ -335,25 +402,46 @@
             <a href="https://www.rockhounding.org/rockhounding-maps" style="align-self: center;" class="button">See Map&gt;&gt;</a>
         </div>
             <br><br><br>
-        <h2>Rockhounding Glossary</h2>
+            <h2 id="rockhounding-glossary">Rockhounding Glossary</h2>
             <ul>
-                <li><strong>Cleavage:</strong> The tendency of a mineral to break along smooth, flat surfaces.</li>
-                <li><strong>Crystal:</strong> A solid material with atoms arranged in a highly ordered, repeating pattern.</li>
-                <li><strong>Fracture:</strong> The way a mineral breaks other than along cleavage planes.</li>
-                <li><strong>Gemstone:</strong> A mineral that is cut and polished for use in jewelry or other adornments.</li>
-                <li><strong>Hardness:</strong> A mineral's resistance to scratching, measured on the Mohs hardness scale.</li>
-                <li><strong>Host Rock:</strong> The rock surrounding a mineral deposit or fossil.</li>
-                <li><strong>Luster:</strong> The way a mineral reflects light (e.g., metallic, glassy, pearly).</li>
-                <li><strong>Matrix:</strong> The surrounding material in which a fossil is embedded.</li>
-                <li><strong>Mineral:</strong> A naturally occurring, inorganic solid with a specific chemical composition and crystal structure.</li>
-                <li><strong>Mohs Hardness Scale:</strong> A scale from 1 (softest) to 10 (hardest) used to compare the hardness of minerals.</li>
-                <li><strong>Rock:</strong> A naturally occurring solid aggregate of one or more minerals.</li>
-                <li><strong>Outcrop:</strong> An exposed rock formation at the Earth's surface.</li>
-                <li><strong>Specific Gravity:</strong> The ratio of a mineral's density to the density of water.</li>
-                <li><strong>Streak:</strong> The color of a mineral's powder when rubbed against a streak plate (unglazed porcelain).</li>
+                <li><strong>Agate:</strong> A variety of chalcedony with fine grain and bright color patterns, often used in jewelry. Agates form in volcanic and metamorphic rocks.</li>
+                <li><strong>Alluvial Deposit:</strong> Sediment deposited by flowing water in riverbeds, floodplains, or deltas, often containing valuable minerals such as gold and gemstones.</li>
+                <li><strong>Amethyst:</strong> A purple variety of quartz used as a gemstone. Amethyst gets its color from iron impurities and is often found in geodes.</li>
+                <li><strong>Biotite:</strong> A common rock-forming mineral in the mica group, characterized by its dark color and sheet-like structure, often found in igneous and metamorphic rocks.</li>
+                <li><strong>Calcite:</strong> A common mineral made of calcium carbonate, forming in sedimentary rocks like limestone and marble. Calcite exhibits double refraction and reacts with hydrochloric acid.</li>
+                <li><strong>Cleavage:</strong> The tendency of a mineral to break along smooth, flat surfaces where atomic bonding is weaker. Common cleavage types include basal, cubic, and rhombohedral.</li>
+                <li><strong>Crystal:</strong> A solid material whose atoms are arranged in a highly ordered, repeating pattern extending in all three spatial dimensions, resulting in various geometric shapes.</li>
+                <li><strong>Fracture:</strong> The way a mineral breaks other than along its cleavage planes, resulting in irregular or curved surfaces. Types of fracture include conchoidal, fibrous, and uneven.</li>
+                <li><strong>Fossil:</strong> The remains or impression of a prehistoric organism preserved in petrified form or as a mold or cast in rock, providing insight into ancient life and environments.</li>
+                <li><strong>Geode:</strong> A hollow rock lined with crystals or other mineral matter, typically found in volcanic rocks. Geodes form when mineral-rich water fills cavities and deposits crystals.</li>
+                <li><strong>Gemstone:</strong> A mineral that has been cut and polished for use in jewelry or other adornments, valued for its rarity, beauty, and durability. Examples include diamonds, rubies, and emeralds.</li>
+                <li><strong>Hardness:</strong> A measure of a mineral's resistance to scratching, assessed using the Mohs hardness scale from 1 (softest) to 10 (hardest). Talc is the softest mineral, and diamond is the hardest.</li>
+                <li><strong>Host Rock:</strong> The rock surrounding a mineral deposit or fossil, providing a context for its formation. Host rocks can include sedimentary, igneous, and metamorphic types.</li>
+                <li><strong>Igneous Rock:</strong> Rock formed through the cooling and solidification of magma or lava, classified as intrusive (plutonic) or extrusive (volcanic) based on where they solidify.</li>
+                <li><strong>Luster:</strong> The way a mineral reflects light, with common descriptors including metallic, glassy (vitreous), pearly, silky, and dull (earthy). Luster helps in mineral identification.</li>
+                <li><strong>Matrix:</strong> The fine-grained material in which larger grains, crystals, or fossils are embedded. The matrix can provide important information about the geological history of a rock.</li>
+                <li><strong>Metamorphic Rock:</strong> Rock that has been transformed by heat, pressure, or chemically active fluids, resulting in new mineral compositions and structures. Examples include schist, gneiss, and marble.</li>
+                <li><strong>Mineral:</strong> A naturally occurring, inorganic solid with a specific chemical composition and crystalline structure. Minerals form through geological processes and are the building blocks of rocks.</li>
+                <li><strong>Mohs Hardness Scale:</strong> A scale from 1 (softest) to 10 (hardest) used to compare the hardness of minerals. Each mineral can scratch those below it on the scale but not those above it.</li>
+                <li><strong>Outcrop:</strong> An exposed rock formation visible on the Earth's surface. Outcrops provide valuable information about the geology of an area and are often studied by geologists.</li>
+                <li><strong>Oxide:</strong> A mineral compound containing oxygen and one or more other elements, often metal. Examples include hematite (iron oxide) and corundum (aluminum oxide).</li>
+                <li><strong>Pegmatite:</strong> A very coarse-grained igneous rock, often containing large crystals and rare minerals such as tourmaline, beryl, and spodumene. Pegmatites form during the final stages of magma crystallization.</li>
+                <li><strong>Quartz:</strong> A common and abundant mineral composed of silicon dioxide, found in many different types of rocks. Quartz is valued for its hardness, clarity, and variety of colors.</li>
+                <li><strong>Rock:</strong> A naturally occurring solid aggregate of one or more minerals or mineraloids. Rocks are classified into three main types: igneous, sedimentary, and metamorphic.</li>
+                <li><strong>Schist:</strong> A type of metamorphic rock characterized by strong foliation and often containing abundant mica. Schist forms under moderate to high temperatures and pressures.</li>
+                <li><strong>Sedimentary Rock:</strong> Rock formed from the accumulation and consolidation of sediment, often containing fossils. Examples include sandstone, shale, and limestone.</li>
+                <li><strong>Silica:</strong> Silicon dioxide, a common component of sand, quartz, and many other minerals. Silica is used in a variety of industrial applications, including glassmaking and electronics.</li>
+                <li><strong>Specific Gravity:</strong> The ratio of a mineral's density compared to the density of water. Specific gravity is an important property in identifying minerals and understanding their composition.</li>
+                <li><strong>Streak:</strong> The color of a mineral's powder when rubbed against a streak plate (unglazed porcelain). Streak is often more consistent and reliable for identification than the color of the mineral itself.</li>
+                <li><strong>Tourmaline:</strong> A complex silicate mineral with a wide range of colors, valued as a gemstone. Tourmaline is often found in pegmatites and can display multiple colors in a single crystal.</li>
+                <li><strong>Vein:</strong> A distinct sheetlike body of crystallized minerals within a rock, often formed by hydrothermal fluids. Veins can contain valuable minerals such as gold, silver, and quartz.</li>
+                <li><strong>Weathering:</strong> The process by which rocks and minerals are broken down by the effects of weather, water, and biological activity, leading to the formation of soil and sediment.</li>
+                <li><strong>Xenolith:</strong> A fragment of rock within an igneous intrusion that is distinct from the main body of the intrusion, often providing information about the conditions of formation.</li>
+                <li><strong>Zeolite:</strong> A group of hydrated aluminosilicate minerals often used in water purification, gas separation, and as catalysts in chemical processes. Zeolites are found in volcanic rocks.</li>
             </ul>
             <br><br><br>
-            <h1>Frequently Asked Questions (FAQ)</h1>
+            
+            <h1 id="faq">Frequently Asked Questions (FAQ)</h1>
 
             <button class="accordion">1. Do I need any special skills to start rockhounding?</button>
             <div class="panel">
@@ -420,7 +508,6 @@
                 }
             </script>
 
-            <h4>I hope this FAQ section helps answer some of your burning questions!</h4>
             <br><br><br>
         </div>
     </main>
@@ -429,7 +516,7 @@
           <div class="footer-logo">
             <img src="../images/rockhoundingLogo.png" alt="Logo">
           </div>
-          <p class="copyright">© 2023 Rockhounding.org. All Rights Reserved.</p>
+          <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
         </div>
       </footer>
     <script>
@@ -439,6 +526,7 @@
         }
     </script>
     <script src="sortProducts.js" defer></script>
+    <script src="getting-started-tree.js"></script>
 
 </body>
 
