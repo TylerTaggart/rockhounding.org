@@ -224,11 +224,11 @@ ul, li, ul, li {
 }
 
 #tree-container {
-  width: 33%;
+  width: 40%;
 }
 
 #tree-content {
-  width: 67%;
+  width: 60%;
   padding: 20px;
   border-left: 1px solid #ccc;
 }
@@ -341,7 +341,7 @@ ul, li, ul, li {
 .main-nav ul {
   display: flex;
   justify-content: center;
-  list-style: none;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   gap: 20px;
@@ -368,20 +368,35 @@ ul, li, ul, li {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  
+  .title {
+    font-size: 18px !important;
+    text-align: center;
+  }
+  
   #tree-section {
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    width: 90%; /* Adjust as needed */
+    box-sizing: border-box;
   }
 
   #tree-container, #tree-content {
-    width: 100%;
+    width: fit-content;
   }
 
   #tree-container {
-    margin-bottom: 20px;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    overflow: hidden; /* Prevent overflow if necessary */
   }
 
+
   .central-item {
+    width: 90%;
     padding: 10px;
   }
 
@@ -449,12 +464,35 @@ ul, li, ul, li {
   }
 
   .main-nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
   .main-nav ul li a {
     font-size: 16px;
+    text-decoration: underline;
     padding: 8px 12px;
   }
+
+  .checklist-title {
+    font-size: 30px;
+  }
+
+  .product {
+    margin-left: 22px;
+    margin-right: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  svg {
+    width: fit-content !important;
+    height: auto !important; 
+    display: block !important;
+  }
+
 }

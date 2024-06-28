@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const width = 600;
-    const height = 600;
+    const svgContainer = document.getElementById('tree-container');
+    const width = svgContainer.clientWidth; // Use container width for responsiveness
+    const height = svgContainer.clientWidth; // Set a fixed height or adjust dynamically
 
     const svg = d3.select("svg")
         .attr("width", width)
