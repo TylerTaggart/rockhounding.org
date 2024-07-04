@@ -201,31 +201,31 @@ document.addEventListener('DOMContentLoaded', function() {
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Rockhounding is the recreational activity of searching for and collecting rocks, minerals, and gemstones in their natural environment. It combines the excitement of exploration with the reward of discovering beautiful and unique natural specimens. Rockhounding can be enjoyed by people of all ages and backgrounds, providing a unique way to connect with nature and learn about the geological processes that shape our planet.</p>
                                    <p>Whether you are exploring your local creek, hiking in the mountains, or visiting a desert landscape, rockhounding offers endless opportunities for discovery. Each outing can yield new and interesting finds, from common quartz crystals to rare gemstones. The key to a successful rockhounding adventure is preparation, patience, and a keen eye for detail.</p>
-                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/getting-started" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'History':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Rockhounding has a rich history dating back to ancient civilizations. Early humans collected rocks and minerals for tools, decoration, and trade. Artifacts made from flint, obsidian, and other materials demonstrate the importance of rocks and minerals in early human societies. Over time, the practice evolved, and by the 19th century, amateur geology became a popular hobby among the scientifically curious.</p>
                                    <p>In the modern era, rockhounding has grown into a well-loved pastime, with enthusiasts forming clubs, attending gem and mineral shows, and exploring new techniques for finding and identifying specimens. The history of rockhounding is intertwined with the development of geology as a science, and many rockhounds contribute valuable knowledge and specimens to the scientific community.</p>
-                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/history-of-rockhounding/index.html" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'Why Rockhound?':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Rockhounding offers a variety of benefits, making it a rewarding hobby for many people. The sense of adventure and the thrill of discovery are major draws. There's nothing quite like the excitement of finding a unique rock or mineral in its natural setting. Rockhounding also provides educational opportunities, helping enthusiasts learn about geology, mineralogy, and the natural world.</p>
                                    <p>Additionally, rockhounding can be a social activity, bringing together people with shared interests. Many rockhounding clubs organize field trips, workshops, and social events, fostering a sense of community. Finally, rockhounding can be financially rewarding. Some finds, such as gold nuggets or high-quality gemstones, can be quite valuable, and many rockhounds sell or trade their specimens.</p>
-                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/why-rockhounding/index.html" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'What about Crystals?':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Crystals are a fascinating aspect of rockhounding. They are formed through various geological processes, including the cooling of molten rock, the evaporation of mineral-rich water, and the high-pressure conditions within the Earth. Crystals are not only beautiful but also hold significant scientific interest, providing insights into the conditions under which they formed.</p>
                                    <p>Common crystals found by rockhounds include quartz, amethyst, garnet, and calcite. Each type of crystal has its own unique properties and formation process. For example, quartz crystals can form in a variety of environments and are known for their clarity and hexagonal shape. Amethyst, a purple variety of quartz, forms in geodes and is prized for its vibrant color.</p>
-                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/top-spots-for-unearthing-gems-in-the-us/index.html" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'What about Gold?':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Gold prospecting is a thrilling part of rockhounding. Gold has fascinated humans for centuries due to its beauty, rarity, and value. Prospecting for gold involves searching for gold deposits in their natural settings, typically in streams, rivers, and old mining areas. Techniques such as panning, sluicing, and metal detecting are commonly used to find gold.</p>
                                    <p>Panning is one of the simplest and oldest methods for finding gold. It involves using a pan to separate gold from sand and gravel in a stream. Sluicing is a more advanced technique that uses a sluice box to process larger amounts of material. Metal detecting is another popular method, particularly for finding gold nuggets. Each technique requires practice and patience but can be highly rewarding.</p>
-                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/precious-metals/" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'Rock Picks & Hammers':
                     contentHtml = `<h3>${d.data.name}</h3>
