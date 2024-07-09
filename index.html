@@ -38,22 +38,19 @@
             <div></div>
           </div>
           <ul class="nav-links" id="navLinks">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
+            <li><a href="https://www.rockhounding.org/">Home</a></li>
             <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-            <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
-            <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
-            <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
-            <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
+            <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main">Gold Prospecting</a></li>
             <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
+            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
             <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-row">
         <div class="banner">
-          <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Crystal and Mineral Samples</a></p>
+          <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
         </div>
       </div>
       </header>
@@ -82,12 +79,121 @@
               mapElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
           </script>
-        <div class="right-item">
-            <h2>Advertise With Us</h2>
-            <img class="non-gallery" src="./images/advertise-with-us.jpg" style="width: 100%;">
-            <p>Elevate your brand by advertising on the top rockhounding site on Google.Contact us today for more information on our advertising options.</p>
-            <a href="mailto:sponsors@rockhounding.org" class="button" target="_blank">Contact Us</a>
-        </div>
+         <div class="right-item">
+        <h2>Sponsored Dig Site</h2>
+        <img class="non-gallery" src="./images/crystalsAndMinerals/topazCrystalfadedBackground.png">
+        <p>Own a digsite you would like to advertise for Amethyst? Contact us for more information about our sponsorship packages.</p>
+        <button id="advertise-button" class="button">Advertise With Us</button>
+      </div>
+      
+<div id="popup-form" class="popup-form">
+  <div class="popup-form-container">
+    <span class="close">&times;</span>
+    <h2>Advertise With Us</h2>
+    <form id="advertise-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="website">Website:</label>
+      <input type="text" id="website" name="website" required>
+      <button type="submit" class="button">Submit</button>
+    </form>
+    <div id="thank-you-message" style="display:none; text-align:center; margin-top:20px; font-family:'Cinzel', serif; font-size:18px; color:#8B4513;">
+      Thank you, we will be in touch soon.
+    </div>
+  </div>
+</div>
+
+<!-- CSS for Popup Form -->
+<style>
+  .popup-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+
+  .popup-form-container {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .popup-form-container label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+
+  .popup-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .popup-form-container .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B4513;
+    color: #F0E68C;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup-form-container .button:hover {
+    background-color: #7A3811;
+  }
+</style>
+
+<!-- JavaScript for Popup Form -->
+<script>
+  document.getElementById('advertise-button').onclick = function() {
+    document.getElementById('popup-form').style.display = 'block';
+  };
+
+  document.getElementsByClassName('close')[0].onclick = function() {
+    document.getElementById('popup-form').style.display = 'none';
+  };
+
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('popup-form')) {
+      document.getElementById('popup-form').style.display = 'none';
+    }
+  };
+
+  document.getElementById('advertise-form').onsubmit = function(e) {
+    e.preventDefault();
+    document.getElementById('advertise-form').style.display = 'none';
+    document.getElementById('thank-you-message').style.display = 'block';
+  };
+</script>
+
     </div>
     <div id="map"></div>
 </main>
@@ -107,10 +213,370 @@
     
     <!-- JS start -->
     <script>
-    var ClickableMap={};(function(){var version='1.0.0';var classPrefix='cmm-usa-';var creditLinkUrl='https://www.clickablemapmaker.com';var stateCount=0;var maxTableColumns=5;var global=this;this.getEleById=function(id){return document.getElementById(id)};this.getEleByQuery=function(query){return document.querySelector(query)};this.stateIdToDomClass=function(stateId){return classPrefix+'state-'+stateId.toLowerCase()};this.version=version;function createBaseGlobalData(){return{version:version,width:'60',widthUnits:'%',fontSize:'12px',fontName:'Cinzel',fill:'#97e2bb',hoverFill:'#ffffff',disabledFill:'#c2c2c2',innerLabelColor:'#000000',outerLabelColor:'#000000',hoverLabelColor:'#D64933',borderType:null,borderStroke:'#49bc95',enableShadows:true,popLink:false,showStateTitleAndDescOnHover:true,showLinksList:false,globalLinkUrl:null,globalJsCallback:null,mapTitle:'Choose your state below'}}function createBaseStatesData(){var statesData={AL:{fullName:'Alabama'},AK:{fullName:'Alaska'},AZ:{fullName:'Arizona'},AR:{fullName:'Arkansas'},CA:{fullName:'California'},CO:{fullName:'Colorado'},CT:{fullName:'Connecticut'},DE:{fullName:'Delaware'},FL:{fullName:'Florida'},GA:{fullName:'Georgia'},HI:{fullName:'Hawaii'},ID:{fullName:'Idaho'},IL:{fullName:'Illinois'},IN:{fullName:'Indiana'},IA:{fullName:'Iowa'},KS:{fullName:'Kansas'},KY:{fullName:'Kentucky'},LA:{fullName:'Louisiana'},ME:{fullName:'Maine'},MD:{fullName:'Maryland'},MA:{fullName:'Massachusetts'},MI:{fullName:'Michigan'},MN:{fullName:'Minnesota'},MS:{fullName:'Mississippi'},MO:{fullName:'Missouri'},MT:{fullName:'Montana'},NE:{fullName:'Nebraska'},NV:{fullName:'Nevada'},NH:{fullName:'New Hampshire'},NJ:{fullName:'New Jersey'},NM:{fullName:'New Mexico'},NY:{fullName:'New York'},NC:{fullName:'North Carolina'},ND:{fullName:'North Dakota'},OH:{fullName:'Ohio'},OK:{fullName:'Oklahoma'},OR:{fullName:'Oregon'},PA:{fullName:'Pennsylvania'},RI:{fullName:'Rhode Island'},SC:{fullName:'South Carolina'},SD:{fullName:'South Dakota'},TN:{fullName:'Tennessee'},TX:{fullName:'Texas'},UT:{fullName:'Utah'},VT:{fullName:'Vermont'},VA:{fullName:'Virginia'},WA:{fullName:'Washington'},WV:{fullName:'West Virginia'},WI:{fullName:'Wisconsin'},WY:{fullName:'Wyoming'}};for(var stateId in statesData){if(!statesData.hasOwnProperty(stateId)){continue}statesData[stateId].title=statesData[stateId].fullName;statesData[stateId].description=null;statesData[stateId].longDescription=null;statesData[stateId].linkUrl=null;statesData[stateId].isDisabled=false;statesData[stateId].isHovering=false;statesData[stateId].cssClass=null;statesData[stateId].overrideFill=null;statesData[stateId].overrideFillEnabled=false;statesData[stateId].overrideHoverFill=null;statesData[stateId].overrideHoverFillEnabled=false;statesData[stateId].overridePopLink=null,stateCount++}return statesData}function stateOn(stateId){if(this.statesData[stateId].isHovering){return}this.statesData[stateId].isHovering=true;var $stateLink=global.getEleByQuery('#'+this.$map.id+' .'+global.stateIdToDomClass(stateId));var $statePath=global.getEleByQuery('#'+this.$map.id+' .'+global.stateIdToDomClass(stateId)+' path');var $stateText=global.getEleByQuery('#'+this.$map.id+' .'+global.stateIdToDomClass(stateId)+' text');if(this.statesData[stateId].isDisabled){$statePath.style.fill=this.globalData.disabledFill;$stateLink.style.cursor='default'}else if(this.statesData[stateId].overrideHoverFillEnabled&&this.statesData[stateId].overrideHoverFill!=null){$statePath.style.fill=this.statesData[stateId].overrideHoverFill;$stateText.style.fill=this.globalData.hoverLabelColor;$stateLink.style.cursor='pointer'}else{$statePath.style.fill=this.globalData.hoverFill;$stateText.style.fill=this.globalData.hoverLabelColor;$stateLink.style.cursor='pointer'}if(this.globalData.showStateTitleAndDescOnHover){var $hoverStateInfo=global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'hover-state-info');var titleText=this.statesData[stateId].title==null?'':this.statesData[stateId].title;var descText=this.statesData[stateId].description==null?'':this.statesData[stateId].description;var longDescText=this.statesData[stateId].longDescription==null?'':this.statesData[stateId].longDescription;var titleSpan=document.createElement('span');var descSpan=document.createElement('span');titleSpan.textContent=titleText;if(longDescText!=''){descSpan.innerHTML=longDescText}else{descSpan.textContent=descText}while($hoverStateInfo.firstChild){$hoverStateInfo.removeChild($hoverStateInfo.firstChild)}$hoverStateInfo.appendChild(titleSpan);$hoverStateInfo.appendChild(descSpan);$hoverStateInfo.style.display='block'}if(!this.statesData[stateId].isDisabled&&this.globalData.enableShadows){statePathBlur=$statePath.cloneNode(true);statePathBlur.setAttribute('filter','url(#'+this.$map.id+'-blur-filter)');statePathBlur.setAttribute('class',classPrefix+'state-shadow');$stateLink.parentNode.appendChild(statePathBlur);$stateLink.parentNode.appendChild($stateLink)}}function stateOff(stateId){this.statesData[stateId].isHovering=false;var $statePath=global.getEleByQuery('#'+this.$map.id+' .'+global.stateIdToDomClass(stateId)+' path');var $stateText=global.getEleByQuery('#'+this.$map.id+' .'+global.stateIdToDomClass(stateId)+' text');var isOuterLabel=$stateText.getAttribute('class')==classPrefix+'outer-label';if(this.globalData.showStateTitleAndDescOnHover){var $hoverStateInfo=global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'hover-state-info');$hoverStateInfo.style.display='none'}if(this.statesData[stateId].isDisabled){$statePath.style.fill=this.globalData.disabledFill}else if(this.statesData[stateId].overrideFillEnabled&&this.statesData[stateId].overrideFill!=null){$statePath.style.fill=this.statesData[stateId].overrideFill;$stateText.style.fill=isOuterLabel?this.globalData.outerLabelColor:this.globalData.innerLabelColor}else{$statePath.style.fill=this.globalData.fill;$stateText.style.fill=isOuterLabel?this.globalData.outerLabelColor:this.globalData.innerLabelColor}var allShadows=document.querySelectorAll('#'+this.$map.id+' .'+classPrefix+'state-shadow');Array.prototype.map.call(Array.prototype.slice.call(allShadows),function(ele){ele.parentNode.removeChild(ele)})}this.create=function(wrapperId){return new this.mapObject(wrapperId)};this.mapObject=function(wrapperId){this.$map=global.getEleById(wrapperId);this.globalData=createBaseGlobalData();this.statesData=createBaseStatesData();for(var stateId in this.statesData){if(!this.statesData.hasOwnProperty(stateId)){continue}(function(stateId){var $stateLink=global.getEleByQuery('#'+this.$map.id+' .'+global.stateIdToDomClass(stateId));var self=this;$stateLink.addEventListener('mouseover',function(e){stateOn.call(self,stateId)});$stateLink.addEventListener('mouseout',function(e){stateOff.call(self,stateId)});$stateLink=null}.call(this,stateId))}global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'blur-filter').setAttribute('id',this.$map.id+'-blur-filter')};this.mapObject.prototype.getDomId=function(){return this.$map.id};this.mapObject.prototype.draw=function(){this.$map.style.width=this.globalData.width+this.globalData.widthUnits;this.$map.style.fontFamily=this.globalData.fontName;this.$map.style.fontSize=this.globalData.fontSize;global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'title').textContent=this.globalData.mapTitle;if(this.globalData.creditLink!=null&&this.globalData.creditLink!=''){global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'credit-link').innerHTML='<a target="_blank" href="'+creditLinkUrl+'"></a>';global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'credit-link a').textContent=this.globalData.creditLink}else{global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'credit-link').innerHTML=''}for(var stateId in this.statesData){if(!this.statesData.hasOwnProperty(stateId)){continue}var stateDomClass=global.stateIdToDomClass(stateId);var $stateTitle=global.getEleByQuery('#'+this.$map.id+' .'+stateDomClass+' title');var $stateDescription=global.getEleByQuery('#'+this.$map.id+' .'+stateDomClass+' desc');$stateTitle.textContent=this.statesData[stateId].title;$stateDescription.textContent=this.statesData[stateId].description;var $statePath=global.getEleByQuery('#'+this.$map.id+' .'+stateDomClass+' path');$statePath.style.stroke=this.globalData.borderStroke;if(this.globalData.borderType!=null){$statePath.style.strokeDasharray=this.globalData.borderType}else{$statePath.style.strokeDasharray='none'}if(this.statesData[stateId].isDisabled){$statePath.style.fill=this.globalData.disabledFill}else if(this.statesData[stateId].overrideFillEnabled&&this.statesData[stateId].overrideFill!=null){$statePath.style.fill=this.statesData[stateId].overrideFill}else{$statePath.style.fill=this.globalData.fill}var $allLabels=document.querySelectorAll('#'+this.$map.id+' .'+stateDomClass+' text');for(var i=0;i<$allLabels.length;++i){$allLabels.item(i).style.fill=this.globalData.innerLabelColor}this.wireStateLink(stateId,false)}var $outerLabels=document.querySelectorAll('#'+this.$map.id+' .'+classPrefix+'outer-label');for(var i=0;i<$outerLabels.length;++i){$outerLabels.item(i).style.fill=this.globalData.outerLabelColor}if(this.globalData.showLinksList){this.displayMapLinksList()}else{global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'listview').innerHTML=''}this.$map.style.display='block'};this.mapObject.prototype.getGlobalData=function(){return this.globalData};this.mapObject.prototype.getStatesData=function(){return this.statesData};this.mapObject.prototype.setGlobalData=function(data){for(var setting in this.globalData){if(!this.globalData.hasOwnProperty(setting)||!data.hasOwnProperty(setting)){continue}this.globalData[setting]=data[setting]}};this.mapObject.prototype.setStatesData=function(data){for(var state in this.statesData){if(!this.statesData.hasOwnProperty(state)||!data.hasOwnProperty(state)){continue}for(var setting in this.statesData[state]){if(!this.statesData[state].hasOwnProperty(setting)||!data[state].hasOwnProperty(setting)){continue}this.statesData[state][setting]=data[state][setting]}}};this.mapObject.prototype.wireStateLink=function(stateId,addLiveClassName,linkType){var clickFn=null;linkType=linkType?linkType:'';var $stateLink=global.getEleByQuery('#'+this.$map.id+' .'+global.stateIdToDomClass(stateId)+linkType);if(this.statesData[stateId].cssClass!=null){$stateLink.setAttribute('class',$stateLink.getAttribute('class')+' '+this.statesData[stateId].cssClass)}if(this.statesData[stateId].isDisabled){clickFn=null}else if(this.statesData[stateId].linkUrl!=null){var self=this;clickFn=function(e){var isPop=false;if(self.statesData[stateId].overridePopLink!=null){isPop=self.statesData[stateId].overridePopLink}else if(self.globalData.popLink){isPop=true}if(isPop){window.open(self.statesData[stateId].linkUrl)}else{document.location.href=self.statesData[stateId].linkUrl}}}else if(this.globalData.globalLinkUrl!=null){var self=this;clickFn=function(e){var normalizedUrl=self.globalData.globalLinkUrl.replaceAll('@state',stateId);var isPop=false;if(self.statesData[stateId].overridePopLink!=null){isPop=self.statesData[stateId].overridePopLink}else if(self.globalData.popLink){isPop=true}if(isPop){window.open(normalizedUrl)}else{document.location.href=normalizedUrl}}}else if(this.globalData.globalJsCallback!=null){var self=this;clickFn=function(e){var fn=window[self.globalData.globalJsCallback];if(typeof fn=='function'){fn(stateId)}else{console.log('Unable to execute function: '+self.globalData.globalJsCallback+'("'+stateId+'")')}}}$stateLink.onclick=clickFn;if(addLiveClassName){var liveLinkClassName=classPrefix+'live-link';$stateLink.className=$stateLink.className.replace(' '+liveLinkClassName,'');if(clickFn!=null){$stateLink.className=$stateLink.className+' '+liveLinkClassName}}};this.mapObject.prototype.displayMapLinksList=function(){var $linkList=global.getEleByQuery('#'+this.$map.id+' .'+classPrefix+'listview');var allListsHtml='';var stateIds=[];for(var stateId in this.statesData){if(!this.statesData.hasOwnProperty(stateId)){continue}stateIds.push(stateId)}var widthPercent=Math.floor(100/maxTableColumns);var itemsPerList=Math.ceil(stateCount/maxTableColumns);var sliceStart=0;for(var i=0;i<maxTableColumns;++i){var slicedIds=stateIds.slice(sliceStart,sliceStart+itemsPerList);sliceStart+=itemsPerList;if(slicedIds.length>0){var ul=document.createElement('UL');ul.style.maxWidth=widthPercent+'%';for(var x=0;x<slicedIds.length;++x){var li=document.createElement('LI');li.appendChild(document.createElement('SPAN'));var a=document.createElement('A');a.className=classPrefix+'state-'+slicedIds[x].toLowerCase()+'-listview';a.textContent=this.statesData[slicedIds[x]].title;li.appendChild(a);ul.appendChild(li)}$linkList.appendChild(ul)}}for(var stateId in this.statesData){if(!this.statesData.hasOwnProperty(stateId)){continue}this.wireStateLink(stateId,true,'-listview')}};if(typeof exports!=='undefined'){module.exports=this}}).apply(ClickableMap);var myUsaMap=ClickableMap.create('cmm-usa');myUsaMap.setGlobalData({"version":"1.0.0","width":"60","widthUnits":"%","fontSize":"12px","fontName":"Cinzel","fill":"#8b4513","hoverFill":"#ff9a57","disabledFill":"#c2c2c2","backgroundFill":"#ffffff","innerLabelColor":"#f0e68c","outerLabelColor":"#843628","hoverLabelColor":"#863428","borderType":null,"borderStroke":"#c1692f","enableShadows":true,"popLink":false,"showStateTitleAndDescOnHover":false,"showLinksList":true,"globalLinkUrl":null,"globalJsCallback":null,"mapTitle":null});myUsaMap.setStatesData({"AL":{"fullName":"Alabama","title":"Alabama","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/alabama.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"AK":{"fullName":"Alaska","title":"Alaska","description":null,"longDescription":null,"linkUrl":"rockhounding-maps/alaska.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"AZ":{"fullName":"Arizona","title":"Arizona","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/arizona.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"AR":{"fullName":"Arkansas","title":"Arkansas","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/arkansas.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"CA":{"fullName":"California","title":"California","description":"Best Rockhounding Map California","longDescription":null,"linkUrl":"/rockhounding-maps/california.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"CO":{"fullName":"Colorado","title":"Colorado","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/colorado.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"CT":{"fullName":"Connecticut","title":"Connecticut","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/connecticut.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"DE":{"fullName":"Delaware","title":"Delaware","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/delaware.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"FL":{"fullName":"Florida","title":"Florida","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/florida.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"GA":{"fullName":"Georgia","title":"Georgia","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/georgia.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"HI":{"fullName":"Hawaii","title":"Hawaii","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/hawaii.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"ID":{"fullName":"Idaho","title":"Idaho","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/idaho.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"IL":{"fullName":"Illinois","title":"Illinois","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/illinois.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"IN":{"fullName":"Indiana","title":"Indiana","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/indiana.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"IA":{"fullName":"Iowa","title":"Iowa","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/iowa.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"KS":{"fullName":"Kansas","title":"Kansas","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/kansas.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"KY":{"fullName":"Kentucky","title":"Kentucky","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/kentucky.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"LA":{"fullName":"Louisiana","title":"Louisiana","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/louisiana.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"ME":{"fullName":"Maine","title":"Maine","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/maine.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"MD":{"fullName":"Maryland","title":"Maryland","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/maryland.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"MA":{"fullName":"Massachusetts","title":"Massachusetts","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/massachusetts.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"MI":{"fullName":"Michigan","title":"Michigan","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/michigan.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"MN":{"fullName":"Minnesota","title":"Minnesota","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/minnesota.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"MS":{"fullName":"Mississippi","title":"Mississippi","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/mississippi.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"MO":{"fullName":"Missouri","title":"Missouri","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/missouri.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"MT":{"fullName":"Montana","title":"Montana","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/montana.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"NE":{"fullName":"Nebraska","title":"Nebraska","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/nebraska.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"NV":{"fullName":"Nevada","title":"Nevada","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/nevada.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"NH":{"fullName":"New Hampshire","title":"New Hampshire","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/new-hampshire.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"NJ":{"fullName":"New Jersey","title":"New Jersey","description":null,"longDescription":null,"linkUrl":"rockhounding-maps/new-jersey.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"NM":{"fullName":"New Mexico","title":"New Mexico","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/new-mexico.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"NY":{"fullName":"New York","title":"New York","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/new-york.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"NC":{"fullName":"North Carolina","title":"North Carolina","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/north-carolina.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"ND":{"fullName":"North Dakota","title":"North Dakota","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/north-dakota.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"OH":{"fullName":"Ohio","title":"Ohio","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/ohio.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"OK":{"fullName":"Oklahoma","title":"Oklahoma","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/oklahoma.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"OR":{"fullName":"Oregon","title":"Oregon","description":"Best Rockhounding Map Oregon","longDescription":null,"linkUrl":"/rockhounding-maps/oregon.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"PA":{"fullName":"Pennsylvania","title":"Pennsylvania","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/pennsylvania.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"RI":{"fullName":"Rhode Island","title":"Rhode Island","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/rhode-island.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"SC":{"fullName":"South Carolina","title":"South Carolina","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/south-carolina.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"SD":{"fullName":"South Dakota","title":"South Dakota","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/south-dakota.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"TN":{"fullName":"Tennessee","title":"Tennessee","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/tennessee.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"TX":{"fullName":"Texas","title":"Texas","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/texas.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"UT":{"fullName":"Utah","title":"Utah","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/utah.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"VT":{"fullName":"Vermont","title":"Vermont","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/vermont.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"VA":{"fullName":"Virginia","title":"Virginia","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/virginia.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"WA":{"fullName":"Washington","title":"Washington","description":"Best Rockhounding Map Washington","longDescription":null,"linkUrl":"/rockhounding-maps/washington.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"WV":{"fullName":"West Virginia","title":"West Virginia","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/west-virginia.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"WI":{"fullName":"Wisconsin","title":"Wisconsin","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/wisconsin.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null},"WY":{"fullName":"Wyoming","title":"Wyoming","description":null,"longDescription":null,"linkUrl":"/rockhounding-maps/wyoming.html","isDisabled":false,"isHovering":false,"cssClass":null,"overrideFill":"#000000","overrideFillEnabled":false,"overrideHoverFill":"#000000","overrideHoverFillEnabled":false,"overridePopLink":null}});myUsaMap.draw();
-    </script>
+      var ClickableMap = {};
+      (function () {
+          var version = '1.0.0';
+          var classPrefix = 'cmm-usa-';
+          var creditLinkUrl = 'https://www.clickablemapmaker.com';
+          var stateCount = 0;
+          var maxTableColumns = 5;
+          var global = this;
+  
+          this.getEleById = function (id) { return document.getElementById(id) };
+          this.getEleByQuery = function (query) { return document.querySelector(query) };
+          this.stateIdToDomClass = function (stateId) { return classPrefix + 'state-' + stateId.toLowerCase() };
+          this.version = version;
+  
+          function createBaseGlobalData() {
+              return {
+                  version: version,
+                  width: '60',
+                  widthUnits: '%',
+                  fontSize: '12px',
+                  fontName: 'Cinzel',
+                  fill: '#97e2bb',
+                  hoverFill: '#ffffff',
+                  disabledFill: '#c2c2c2',
+                  innerLabelColor: '#000000',
+                  outerLabelColor: '#000000',
+                  hoverLabelColor: '#D64933',
+                  borderType: null,
+                  borderStroke: '#49bc95',
+                  enableShadows: true,
+                  popLink: false,
+                  showStateTitleAndDescOnHover: true,
+                  showLinksList: false,
+                  globalLinkUrl: null,
+                  globalJsCallback: null,
+                  mapTitle: 'Choose your state below'
+              };
+          }
+  
+          function createBaseStatesData() {
+              var statesData = {
+                  AL: { fullName: 'Alabama' }, AK: { fullName: 'Alaska' }, AZ: { fullName: 'Arizona' }, AR: { fullName: 'Arkansas' }, CA: { fullName: 'California' }, CO: { fullName: 'Colorado' },
+                  CT: { fullName: 'Connecticut' }, DE: { fullName: 'Delaware' }, FL: { fullName: 'Florida' }, GA: { fullName: 'Georgia' }, HI: { fullName: 'Hawaii' }, ID: { fullName: 'Idaho' },
+                  IL: { fullName: 'Illinois' }, IN: { fullName: 'Indiana' }, IA: { fullName: 'Iowa' }, KS: { fullName: 'Kansas' }, KY: { fullName: 'Kentucky' }, LA: { fullName: 'Louisiana' },
+                  ME: { fullName: 'Maine' }, MD: { fullName: 'Maryland' }, MA: { fullName: 'Massachusetts' }, MI: { fullName: 'Michigan' }, MN: { fullName: 'Minnesota' }, MS: { fullName: 'Mississippi' },
+                  MO: { fullName: 'Missouri' }, MT: { fullName: 'Montana' }, NE: { fullName: 'Nebraska' }, NV: { fullName: 'Nevada' }, NH: { fullName: 'New Hampshire' }, NJ: { fullName: 'New Jersey' },
+                  NM: { fullName: 'New Mexico' }, NY: { fullName: 'New York' }, NC: { fullName: 'North Carolina' }, ND: { fullName: 'North Dakota' }, OH: { fullName: 'Ohio' }, OK: { fullName: 'Oklahoma' },
+                  OR: { fullName: 'Oregon' }, PA: { fullName: 'Pennsylvania' }, RI: { fullName: 'Rhode Island' }, SC: { fullName: 'South Carolina' }, SD: { fullName: 'South Dakota' },
+                  TN: { fullName: 'Tennessee' }, TX: { fullName: 'Texas' }, UT: { fullName: 'Utah' }, VT: { fullName: 'Vermont' }, VA: { fullName: 'Virginia' }, WA: { fullName: 'Washington' },
+                  WV: { fullName: 'West Virginia' }, WI: { fullName: 'Wisconsin' }, WY: { fullName: 'Wyoming' }
+              };
+              for (var stateId in statesData) {
+                  if (!statesData.hasOwnProperty(stateId)) { continue }
+                  statesData[stateId].title = statesData[stateId].fullName;
+                  statesData[stateId].description = null;
+                  statesData[stateId].longDescription = null;
+                  statesData[stateId].linkUrl = null;
+                  statesData[stateId].isDisabled = false;
+                  statesData[stateId].isHovering = false;
+                  statesData[stateId].cssClass = null;
+                  statesData[stateId].overrideFill = null;
+                  statesData[stateId].overrideFillEnabled = false;
+                  statesData[stateId].overrideHoverFill = null;
+                  statesData[stateId].overrideHoverFillEnabled = false;
+                  statesData[stateId].overridePopLink = null, stateCount++
+              }
+              return statesData;
+          }
+  
+          function stateOn(stateId) {
+              if (this.statesData[stateId].isHovering) { return }
+              this.statesData[stateId].isHovering = true;
+              var $stateLink = global.getEleByQuery('#' + this.$map.id + ' .' + global.stateIdToDomClass(stateId));
+              var $statePath = global.getEleByQuery('#' + this.$map.id + ' .' + global.stateIdToDomClass(stateId) + ' path');
+              var $stateText = global.getEleByQuery('#' + this.$map.id + ' .' + global.stateIdToDomClass(stateId) + ' text');
+              if (this.statesData[stateId].isDisabled) {
+                  $statePath.style.fill = this.globalData.disabledFill;
+                  $stateLink.style.cursor = 'default'
+              } else if (this.statesData[stateId].overrideHoverFillEnabled && this.statesData[stateId].overrideHoverFill != null) {
+                  $statePath.style.fill = this.statesData[stateId].overrideHoverFill;
+                  $stateText.style.fill = this.globalData.hoverLabelColor;
+                  $stateLink.style.cursor = 'pointer'
+              } else {
+                  $statePath.style.fill = this.globalData.hoverFill;
+                  $stateText.style.fill = this.globalData.hoverLabelColor;
+                  $stateLink.style.cursor = 'pointer'
+              }
+              if (this.globalData.showStateTitleAndDescOnHover) {
+                  var $hoverStateInfo = global.getEleByQuery('#' + this.$map.id + ' .' + classPrefix + 'hover-state-info');
+                  var titleText = this.statesData[stateId].title == null ? '' : this.statesData[stateId].title;
+                  var descText = this.statesData[stateId].description == null ? '' : this.statesData[stateId].description;
+                  var longDescText = this.statesData[stateId].longDescription == null ? '' : this.statesData[stateId].longDescription;
+                  var titleSpan = document.createElement('span');
+                  var descSpan = document.createElement('span');
+                  titleSpan.textContent = titleText;
+                  if (longDescText != '') { descSpan.innerHTML = longDescText } else { descSpan.textContent = descText }
+                  while ($hoverStateInfo.firstChild) { $hoverStateInfo.removeChild($hoverStateInfo.firstChild) }
+                  $hoverStateInfo.appendChild(titleSpan);
+                  $hoverStateInfo.appendChild(descSpan);
+                  $hoverStateInfo.style.display = 'block'
+              }
+              if (!this.statesData[stateId].isDisabled && this.globalData.enableShadows) {
+                  statePathBlur = $statePath.cloneNode(true);
+                  statePathBlur.setAttribute('filter', 'url(#' + this.$map.id + '-blur-filter)');
+                  statePathBlur.setAttribute('class', classPrefix + 'state-shadow');
+                  $stateLink.parentNode.appendChild(statePathBlur);
+                  $stateLink.parentNode.appendChild($stateLink)
+              }
+          }
+  
+          function stateOff(stateId) {
+              this.statesData[stateId].isHovering = false;
+              var $statePath = global.getEleByQuery('#' + this.$map.id + ' .' + global.stateIdToDomClass(stateId) + ' path');
+              var $stateText = global.getEleByQuery('#' + this.$map.id + ' .' + global.stateIdToDomClass(stateId) + ' text');
+              var isOuterLabel = $stateText.getAttribute('class') == classPrefix + 'outer-label';
+              if (this.globalData.showStateTitleAndDescOnHover) {
+                  var $hoverStateInfo = global.getEleByQuery('#' + this.$map.id + ' .' + classPrefix + 'hover-state-info');
+                  $hoverStateInfo.style.display = 'none'
+              }
+              if (this.statesData[stateId].isDisabled) {
+                  $statePath.style.fill = this.globalData.disabledFill
+              } else if (this.statesData[stateId].overrideFillEnabled && this.statesData[stateId].overrideFill != null) {
+                  $statePath.style.fill = this.statesData[stateId].overrideFill;
+                  $stateText.style.fill = isOuterLabel ? this.globalData.outerLabelColor : this.globalData.innerLabelColor
+              } else {
+                  $statePath.style.fill = this.globalData.fill;
+                  $stateText.style.fill = isOuterLabel ? this.globalData.outerLabelColor : this.globalData.innerLabelColor
+              }
+              var allShadows = document.querySelectorAll('#' + this.$map.id + ' .' + classPrefix + 'state-shadow');
+              Array.prototype.map.call(Array.prototype.slice.call(allShadows), function (ele) { ele.parentNode.removeChild(ele) })
+          }
+  
+          this.create = function (wrapperId) { return new this.mapObject(wrapperId) };
+          this.mapObject = function (wrapperId) {
+              this.$map = global.getEleById(wrapperId);
+              this.globalData = createBaseGlobalData();
+              this.statesData = createBaseStatesData();
+              for (var stateId in this.statesData) {
+                  if (!this.statesData.hasOwnProperty(stateId)) { continue }
+                  (function (stateId) {
+                      var $stateLink = global.getEleByQuery('#' + this.$map.id + ' .' + global.stateIdToDomClass(stateId));
+                      var self = this;
+                      $stateLink.addEventListener('mouseover', function (e) { stateOn.call(self, stateId) });
+                      $stateLink.addEventListener('mouseout', function (e) { stateOff.call(self, stateId) });
+                      $stateLink = null
+                  }.call(this, stateId))
+              }
+              global.getEleByQuery('#' + this.$map.id + ' .' + classPrefix + 'blur-filter').setAttribute('id', this.$map.id + '-blur-filter')
+          };
+  
+          this.mapObject.prototype.getDomId = function () { return this.$map.id };
+          this.mapObject.prototype.draw = function () {
+              this.$map.style.width = this.globalData.width + this.globalData.widthUnits;
+              this.$map.style.fontFamily = this.globalData.fontName;
+              this.$map.style.fontSize = this.globalData.fontSize;
+              global.getEleByQuery('#' + this.$map.id + ' .' + classPrefix + 'title').textContent = this.globalData.mapTitle;
+              if (this.globalData.creditLink != null && this.globalData.creditLink != '') {
+                  global.getEleByQuery('#' + this.$map.id + ' .' + classPrefix + 'credit-link').innerHTML = '<a target="_blank" href="' + creditLinkUrl + '"></a>';
+                  global.getEleByQuery('#' + this.$map.id + ' .' + classPrefix + 'credit-link a').textContent = this.globalData.creditLink
+              } else { global.getEleByQuery('#' + this.$map.id + ' .' + classPrefix + 'credit-link').innerHTML = '' }
+              for (var stateId in this.statesData) {
+                  if (!this.statesData.hasOwnProperty(stateId)) { continue }
+                  var stateDomClass = global.stateIdToDomClass(stateId);
+                  var $stateTitle = global.getEleByQuery('#' + this.$map.id + ' .' + stateDomClass + ' title');
+                  var $stateDescription = global.getEleByQuery('#' + this.$map.id + ' .' + stateDomClass + ' desc');
+                  $stateTitle.textContent = this.statesData[stateId].title;
+                  $stateDescription.textContent = this.statesData[stateId].description;
+                  var $statePath = global.getEleByQuery('#' + this.$map.id + ' .' + stateDomClass + ' path');
+                  $statePath.style.stroke = this.globalData.borderStroke;
+                  if (this.globalData.borderType != null) { $statePath.style.strokeDasharray = this.globalData.borderType } else { $statePath.style.strokeDasharray = 'none' }
+                  if (this.statesData[stateId].isDisabled) { $statePath.style.fill = this.globalData.disabledFill } else if (this.statesData[stateId].overrideFillEnabled && this.statesData[stateId].overrideFill != null) { $statePath.style.fill = this.statesData[stateId].overrideFill } else { $statePath.style.fill = this.globalData.fill }
+                  var $allLabels = document.querySelectorAll('#' + this.$map.id + ' .' + stateDomClass + ' text');
+                  for (var i = 0; i < $allLabels.length; ++i) { $allLabels.item(i).style.fill = this.globalData.innerLabelColor }
+                  this.wireStateLink(stateId, false)
+              }
+              var $outerLabels = document.querySelectorAll('#' + this.$map.id + ' .' + classPrefix + 'outer-label');
+              for (var i = 0; i < $outerLabels.length; ++i) { $outerLabels.item(i).style.fill = this.globalData.outerLabelColor }
+              this.$map.style.display = 'block'
+          };
+          this.mapObject.prototype.getGlobalData = function () { return this.globalData };
+          this.mapObject.prototype.getStatesData = function () { return this.statesData };
+          this.mapObject.prototype.setGlobalData = function (data) {
+              for (var setting in this.globalData) {
+                  if (!this.globalData.hasOwnProperty(setting) || !data.hasOwnProperty(setting)) { continue }
+                  this.globalData[setting] = data[setting]
+              }
+          };
+          this.mapObject.prototype.setStatesData = function (data) {
+              for (var state in this.statesData) {
+                  if (!this.statesData.hasOwnProperty(state) || !data.hasOwnProperty(state)) { continue }
+                  for (var setting in this.statesData[state]) {
+                      if (!this.statesData[state].hasOwnProperty(setting) || !data[state].hasOwnProperty(setting)) { continue }
+                      this.statesData[state][setting] = data[state][setting]
+                  }
+              }
+          };
+          this.mapObject.prototype.wireStateLink = function (stateId, addLiveClassName, linkType) {
+              var clickFn = null;
+              linkType = linkType ? linkType : '';
+              var $stateLink = global.getEleByQuery('#' + this.$map.id + ' .' + global.stateIdToDomClass(stateId) + linkType);
+              if (this.statesData[stateId].cssClass != null) { $stateLink.setAttribute('class', $stateLink.getAttribute('class') + ' ' + this.statesData[stateId].cssClass) }
+              if (this.statesData[stateId].isDisabled) { clickFn = null } else if (this.statesData[stateId].linkUrl != null) {
+                  var self = this;
+                  clickFn = function (e) {
+                      var isPop = false;
+                      if (self.statesData[stateId].overridePopLink != null) { isPop = self.statesData[stateId].overridePopLink } else if (self.globalData.popLink) { isPop = true }
+                      if (isPop) { window.open(self.statesData[stateId].linkUrl) } else { document.location.href = self.statesData[stateId].linkUrl }
+                  }
+              } else if (this.globalData.globalLinkUrl != null) {
+                  var self = this;
+                  clickFn = function (e) {
+                      var normalizedUrl = self.globalData.globalLinkUrl.replaceAll('@state', stateId);
+                      var isPop = false;
+                      if (self.statesData[stateId].overridePopLink != null) { isPop = self.statesData[stateId].overridePopLink } else if (self.globalData.popLink) { isPop = true }
+                      if (isPop) { window.open(normalizedUrl) } else { document.location.href = normalizedUrl }
+                  }
+              } else if (this.globalData.globalJsCallback != null) {
+                  var self = this;
+                  clickFn = function (e) {
+                      var fn = window[self.globalData.globalJsCallback];
+                      if (typeof fn == 'function') { fn(stateId) } else { console.log('Unable to execute function: ' + self.globalData.globalJsCallback + '("' + stateId + '")') }
+                  }
+              }
+              $stateLink.onclick = clickFn;
+              if (addLiveClassName) {
+                  var liveLinkClassName = classPrefix + 'live-link';
+                  $stateLink.className = $stateLink.className.replace(' ' + liveLinkClassName, '');
+                  if (clickFn != null) { $stateLink.className = $stateLink.className + ' ' + liveLinkClassName }
+              }
+          };
+          if (typeof exports !== 'undefined') { module.exports = this }
+      }).apply(ClickableMap);
+      var myUsaMap = ClickableMap.create('cmm-usa');
+      myUsaMap.setGlobalData({
+          "version": "1.0.0", "width": "60", "widthUnits": "%", "fontSize": "12px", "fontName": "Cinzel", "fill": "#8b4513", "hoverFill": "#ff9a57", "disabledFill": "#c2c2c2", "backgroundFill": "#ffffff",
+          "innerLabelColor": "#f0e68c", "outerLabelColor": "#843628", "hoverLabelColor": "#863428", "borderType": null, "borderStroke": "#c1692f", "enableShadows": true, "popLink": false,
+          "showStateTitleAndDescOnHover": false, "showLinksList": false, "globalLinkUrl": null, "globalJsCallback": null, "mapTitle": null
+      });
+      myUsaMap.setStatesData({
+          "AL": { "fullName": "Alabama", "title": "Alabama", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/alabama.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "AK": { "fullName": "Alaska", "title": "Alaska", "description": null, "longDescription": null, "linkUrl": "rockhounding-maps/alaska.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "AZ": { "fullName": "Arizona", "title": "Arizona", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/arizona.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "AR": { "fullName": "Arkansas", "title": "Arkansas", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/arkansas.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "CA": { "fullName": "California", "title": "California", "description": "Best Rockhounding Map California", "longDescription": null, "linkUrl": "/rockhounding-maps/california.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "CO": { "fullName": "Colorado", "title": "Colorado", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/colorado.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "CT": { "fullName": "Connecticut", "title": "Connecticut", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/connecticut.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "DE": { "fullName": "Delaware", "title": "Delaware", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/delaware.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "FL": { "fullName": "Florida", "title": "Florida", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/florida.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "GA": { "fullName": "Georgia", "title": "Georgia", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/georgia.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "HI": { "fullName": "Hawaii", "title": "Hawaii", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/hawaii.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "ID": { "fullName": "Idaho", "title": "Idaho", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/idaho.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "IL": { "fullName": "Illinois", "title": "Illinois", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/illinois.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "IN": { "fullName": "Indiana", "title": "Indiana", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/indiana.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "IA": { "fullName": "Iowa", "title": "Iowa", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/iowa.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "KS": { "fullName": "Kansas", "title": "Kansas", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/kansas.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "KY": { "fullName": "Kentucky", "title": "Kentucky", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/kentucky.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "LA": { "fullName": "Louisiana", "title": "Louisiana", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/louisiana.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "ME": { "fullName": "Maine", "title": "Maine", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/maine.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "MD": { "fullName": "Maryland", "title": "Maryland", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/maryland.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "MA": { "fullName": "Massachusetts", "title": "Massachusetts", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/massachusetts.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "MI": { "fullName": "Michigan", "title": "Michigan", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/michigan.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "MN": { "fullName": "Minnesota", "title": "Minnesota", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/minnesota.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "MS": { "fullName": "Mississippi", "title": "Mississippi", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/mississippi.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "MO": { "fullName": "Missouri", "title": "Missouri", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/missouri.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "MT": { "fullName": "Montana", "title": "Montana", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/montana.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "NE": { "fullName": "Nebraska", "title": "Nebraska", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/nebraska.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "NV": { "fullName": "Nevada", "title": "Nevada", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/nevada.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "NH": { "fullName": "New Hampshire", "title": "New Hampshire", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/new-hampshire.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "NJ": { "fullName": "New Jersey", "title": "New Jersey", "description": null, "longDescription": null, "linkUrl": "rockhounding-maps/new-jersey.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "NM": { "fullName": "New Mexico", "title": "New Mexico", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/new-mexico.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "NY": { "fullName": "New York", "title": "New York", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/new-york.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "NC": { "fullName": "North Carolina", "title": "North Carolina", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/north-carolina.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "ND": { "fullName": "North Dakota", "title": "North Dakota", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/north-dakota.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "OH": { "fullName": "Ohio", "title": "Ohio", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/ohio.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "OK": { "fullName": "Oklahoma", "title": "Oklahoma", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/oklahoma.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "OR": { "fullName": "Oregon", "title": "Oregon", "description": "Best Rockhounding Map Oregon", "longDescription": null, "linkUrl": "/rockhounding-maps/oregon.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "PA": { "fullName": "Pennsylvania", "title": "Pennsylvania", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/pennsylvania.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "RI": { "fullName": "Rhode Island", "title": "Rhode Island", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/rhode-island.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "SC": { "fullName": "South Carolina", "title": "South Carolina", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/south-carolina.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "SD": { "fullName": "South Dakota", "title": "South Dakota", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/south-dakota.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "TN": { "fullName": "Tennessee", "title": "Tennessee", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/tennessee.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "TX": { "fullName": "Texas", "title": "Texas", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/texas.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "UT": { "fullName": "Utah", "title": "Utah", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/utah.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "VT": { "fullName": "Vermont", "title": "Vermont", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/vermont.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "VA": { "fullName": "Virginia", "title": "Virginia", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/virginia.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "WA": { "fullName": "Washington", "title": "Washington", "description": "Best Rockhounding Map Washington", "longDescription": null, "linkUrl": "/rockhounding-maps/washington.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "WV": { "fullName": "West Virginia", "title": "West Virginia", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/west-virginia.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "WI": { "fullName": "Wisconsin", "title": "Wisconsin", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/wisconsin.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null },
+          "WY": { "fullName": "Wyoming", "title": "Wyoming", "description": null, "longDescription": null, "linkUrl": "/rockhounding-maps/wyoming.html", "isDisabled": false, "isHovering": false, "cssClass": null, "overrideFill": "#000000", "overrideFillEnabled": false, "overrideHoverFill": "#000000", "overrideHoverFillEnabled": false, "overridePopLink": null }
+      });
+      myUsaMap.draw();
+  </script>
+  
     <!-- JS end -->
     <!-- End of clickable map code -->
+
+    <section id="state-list">
+      <h2>Explore Rockhounding Maps by State</h2>
+      <div class="state-list-container">
+          <ul>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/alabama.html">Alabama</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/alaska.html">Alaska</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/arizona.html">Arizona</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/arkansas.html">Arkansas</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/california.html">California</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/colorado.html">Colorado</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/connecticut.html">Connecticut</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/delaware.html">Delaware</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/florida.html">Florida</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/georgia.html">Georgia</a></li>
+          </ul>
+          <ul>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/hawaii.html">Hawaii</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/idaho.html">Idaho</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/illinois.html">Illinois</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/indiana.html">Indiana</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/iowa.html">Iowa</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/kansas.html">Kansas</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/kentucky.html">Kentucky</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/louisiana.html">Louisiana</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/maine.html">Maine</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/maryland.html">Maryland</a></li>
+          </ul>
+          <ul>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/massachusetts.html">Massachusetts</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/michigan.html">Michigan</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/minnesota.html">Minnesota</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/mississippi.html">Mississippi</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/missouri.html">Missouri</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/montana.html">Montana</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/nebraska.html">Nebraska</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/nevada.html">Nevada</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/new-hampshire.html">New Hampshire</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/new-jersey.html">New Jersey</a></li>
+          </ul>
+          <ul>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/new-mexico.html">New Mexico</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/new-york.html">New York</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/north-carolina.html">North Carolina</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/north-dakota.html">North Dakota</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/ohio.html">Ohio</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/oklahoma.html">Oklahoma</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/oregon.html">Oregon</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/pennsylvania.html">Pennsylvania</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/rhode-island.html">Rhode Island</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/south-carolina.html">South Carolina</a></li>
+          </ul>
+          <ul>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/south-dakota.html">South Dakota</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/tennessee.html">Tennessee</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/texas.html">Texas</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/utah.html">Utah</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/vermont.html">Vermont</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/virginia.html">Virginia</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/washington.html">Washington</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/west-virginia.html">West Virginia</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/wisconsin.html">Wisconsin</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps/wyoming.html">Wyoming</a></li>
+          </ul>
+      </div>
+  </section>
+  
+  
+  
     <div class="rockhounding-post" id="rockhounding-post">
       <h2>The Ultimate Guide to Rockhounding in the United States: Agates, Crystals, Gemstones, and More!</h2>
     
@@ -132,7 +598,7 @@
       <h2>Best Places to Rockhound in the United States</h2>
       <p>If you're an ardent rockhound, you know that location is everything. The United States is a treasure trove of rockhounding opportunities, featuring a diverse range of geological formations that yield a stunning array of rocks, minerals, gemstones, and fossils. While you can always perform an online search for "best places to rockhound" or "rockhounding near me," true enthusiasts know that in-depth guidebooks and specialized rockhounding maps are invaluable resources.</p>
 
-      <p>Let's start our journey on the Pacific Coast, particularly in Oregon, where rockhounding opportunities abound. Oregon's coastlines are legendary among rockhounds for their rich deposits of agates, jasper, and petrified wood. The coastal towns along Highway 101 serve as ideal bases for excursions to hunt for these geological wonders. From Brookings in the south to Astoria in the north, each stretch of sand offers a chance to find agates and other gemstones shaped and polished by eons of ocean tides.</p>
+      <p>Let's start our journey on the Pacific Coast, particularly in Oregon, where rockhounding opportunities abound. Oregon’s coastlines are legendary among rockhounds for their rich deposits of agates, jasper, and petrified wood. The coastal towns along Highway 101 serve as ideal bases for excursions to hunt for these geological wonders. From Brookings in the south to Astoria in the north, each stretch of sand offers a chance to find agates and other gemstones shaped and polished by eons of ocean tides.</p>
       
       <p>Moving eastward, Utah emerges as a rockhound's paradise with its diverse geological formations. From the topaz-filled Thomas Range to the garnet and hematite mines in the northern regions, Utah offers a cornucopia of mineral wealth. But it's not just about gemstones; Utah is equally rich in fossil deposits. Areas like the Uinta Mountains and Dinosaur National Monument offer ample opportunities for fossil hunting, adding another layer to Utah's rockhounding allure.</p>
       
@@ -142,9 +608,9 @@
       
       <p>For those interested in gold panning, the states of California, Alaska, and Colorado are rich hunting grounds. The history of the Gold Rush is deeply embedded in these regions, and even today, you can find amateur and professional gold panners sifting through mountain streams and riverbeds in search of this precious metal.</p>
       
-      <p>So whether you're a seasoned expert looking for a new challenge or a beginner trying to figure out the best place to start, the United States offers something for every rockhound. With detailed guidebooks and interactive rockhounding maps, you'll be well-equipped to plan your next expedition and discover the geological wonders that make each region unique.</p>
+      <p>So whether you’re a seasoned expert looking for a new challenge or a beginner trying to figure out the best place to start, the United States offers something for every rockhound. With detailed guidebooks and interactive rockhounding maps, you'll be well-equipped to plan your next expedition and discover the geological wonders that make each region unique.</p>
     
-      <h2>Agates: The Rockhounder's Delight</h2>
+      <h2>Agates: The Rockhounder’s Delight</h2>
       <p>Agates are among the most sought-after geological wonders for rockhounds. Often found alongside riverbeds, beaches, and volcanic regions, agates are prized for their striking bands and vivid colors. Agate hunting is especially popular in states like Oregon, Washington, and Minnesota. Some rockhounds even specialize solely in agate hunting, combing through local terrains to unearth these natural wonders.</p>
     
       <h2>Crystals: The Mystical Geological Wonders</h2>
@@ -173,7 +639,7 @@
       <p>For those who prefer to stay close to home, the good news is that rockhounding opportunities are abundant in nearly every state. Use our maps of the best rockhounding in each state to find excellent free spots to rockhound near me. Additionally, each states page will feature many paid digsites if you would like to hunt for some incredible specimins! From riverbeds and public lands to beaches and mountainsides. Armed with a good map and perhaps some local advice, you can find treasure right in your own backyard.</p>
     
       <h2>Join the Rockhounding Community</h2>
-      <p>Whether you're a seasoned expert or a newcomer looking to learn the ropes, the rockhounding community is an invaluable resource. Online forums, local clubs, and social media groups offer a wealth of information, from the best rockhounding locations to tips on how to identify and preserve your finds.</p>
+      <p>Whether you’re a seasoned expert or a newcomer looking to learn the ropes, the rockhounding community is an invaluable resource. Online forums, local clubs, and social media groups offer a wealth of information, from the best rockhounding locations to tips on how to identify and preserve your finds.</p>
     
       <h2>Embark on Your Rockhounding Adventure Today</h2>
       <p>In essence, rockhounding offers an unparalleled treasure-hunting experience that appeals to people of all ages and expertise levels. The thrill of discovery, the beauty of geological wonders, and the camaraderie of a shared hobby make rockhounding a fulfilling endeavor. So, why wait? Embark on your next rockhounding expedition today!</p>
@@ -184,7 +650,7 @@
         <div class="footer-logo">
           <img src="./images/rockhoundingLogo.png" alt="Logo">
         </div>
-        <p class="copyright">© 2023 Rockhounding.org. All Rights Reserved.</p>
+        <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
       </div>
     </footer>
 </html>

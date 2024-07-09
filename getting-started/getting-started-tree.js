@@ -201,61 +201,61 @@ document.addEventListener('DOMContentLoaded', function() {
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Rockhounding is the recreational activity of searching for and collecting rocks, minerals, and gemstones in their natural environment. It combines the excitement of exploration with the reward of discovering beautiful and unique natural specimens. Rockhounding can be enjoyed by people of all ages and backgrounds, providing a unique way to connect with nature and learn about the geological processes that shape our planet.</p>
                                    <p>Whether you are exploring your local creek, hiking in the mountains, or visiting a desert landscape, rockhounding offers endless opportunities for discovery. Each outing can yield new and interesting finds, from common quartz crystals to rare gemstones. The key to a successful rockhounding adventure is preparation, patience, and a keen eye for detail.</p>
-                                   <a href="https://www.rockhounding.org/getting-started" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'History':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Rockhounding has a rich history dating back to ancient civilizations. Early humans collected rocks and minerals for tools, decoration, and trade. Artifacts made from flint, obsidian, and other materials demonstrate the importance of rocks and minerals in early human societies. Over time, the practice evolved, and by the 19th century, amateur geology became a popular hobby among the scientifically curious.</p>
                                    <p>In the modern era, rockhounding has grown into a well-loved pastime, with enthusiasts forming clubs, attending gem and mineral shows, and exploring new techniques for finding and identifying specimens. The history of rockhounding is intertwined with the development of geology as a science, and many rockhounds contribute valuable knowledge and specimens to the scientific community.</p>
-                                   <a href="https://www.rockhounding.org/history-of-rockhounding/index.html" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'Why Rockhound?':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Rockhounding offers a variety of benefits, making it a rewarding hobby for many people. The sense of adventure and the thrill of discovery are major draws. There's nothing quite like the excitement of finding a unique rock or mineral in its natural setting. Rockhounding also provides educational opportunities, helping enthusiasts learn about geology, mineralogy, and the natural world.</p>
                                    <p>Additionally, rockhounding can be a social activity, bringing together people with shared interests. Many rockhounding clubs organize field trips, workshops, and social events, fostering a sense of community. Finally, rockhounding can be financially rewarding. Some finds, such as gold nuggets or high-quality gemstones, can be quite valuable, and many rockhounds sell or trade their specimens.</p>
-                                   <a href="https://www.rockhounding.org/why-rockhounding/index.html" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'What about Crystals?':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Crystals are a fascinating aspect of rockhounding. They are formed through various geological processes, including the cooling of molten rock, the evaporation of mineral-rich water, and the high-pressure conditions within the Earth. Crystals are not only beautiful but also hold significant scientific interest, providing insights into the conditions under which they formed.</p>
                                    <p>Common crystals found by rockhounds include quartz, amethyst, garnet, and calcite. Each type of crystal has its own unique properties and formation process. For example, quartz crystals can form in a variety of environments and are known for their clarity and hexagonal shape. Amethyst, a purple variety of quartz, forms in geodes and is prized for its vibrant color.</p>
-                                   <a href="https://www.rockhounding.org/blog/top-spots-for-unearthing-gems-in-the-us/index.html" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'What about Gold?':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Gold prospecting is a thrilling part of rockhounding. Gold has fascinated humans for centuries due to its beauty, rarity, and value. Prospecting for gold involves searching for gold deposits in their natural settings, typically in streams, rivers, and old mining areas. Techniques such as panning, sluicing, and metal detecting are commonly used to find gold.</p>
                                    <p>Panning is one of the simplest and oldest methods for finding gold. It involves using a pan to separate gold from sand and gravel in a stream. Sluicing is a more advanced technique that uses a sluice box to process larger amounts of material. Metal detecting is another popular method, particularly for finding gold nuggets. Each technique requires practice and patience but can be highly rewarding.</p>
-                                   <a href="https://www.rockhounding.org/precious-metals/" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'Rock Picks & Hammers':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Essential tools for any rockhound, rock picks and hammers are used to extract specimens from the ground. Look for durable, high-quality tools that can withstand heavy use. Rock picks have a pointed end for breaking rocks and a flat end for prying them apart. Hammers, often referred to as geologist's hammers or rock hammers, are used to break rocks and split them open to reveal the minerals inside.</p>
                                    <p>When choosing a rock pick or hammer, consider the type of rock you will be working with and the weight of the tool. Heavier tools are better for breaking tough rocks, while lighter tools are easier to carry and use for extended periods. Safety is also important, so always wear protective gear such as gloves and safety glasses when using these tools.</p>
-                                   <a href="https://www.rockhounding.org/best-rock-picks-for-rockhounding.html" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'Chisels':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Chisels are used in conjunction with rock hammers to split rocks and access hidden specimens. They come in various sizes and shapes to suit different tasks. Cold chisels are commonly used for rockhounding because they are designed to be struck with a hammer. Pointed chisels are ideal for creating cracks in rocks, while flat chisels are used to widen those cracks and split the rock apart.</p>
                                    <p>Using chisels effectively requires practice and precision. Always strike the chisel with controlled, steady blows to avoid damaging the rock or the chisel. It's also important to protect your hands and eyes by wearing gloves and safety glasses. Regularly inspect your chisels for signs of wear and replace them as needed to ensure they remain effective and safe to use.</p>
-                                   <a href="https://www.rockhounding.org/best-chisels-for-rockhounding.html" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                     break;
                     case 'Gloves':
                         contentHtml = `<h3>${d.data.name}</h3>
                                        <p>Protective gloves are essential for rockhounding. They protect your hands from sharp edges and rough surfaces while providing a better grip on tools and specimens. Look for gloves that are durable, comfortable, and provide a good range of motion. Leather gloves are a popular choice for their durability, while gloves with reinforced fingertips offer extra protection when handling sharp rocks and tools.</p>
                                        <p>When choosing gloves, consider the types of environments you'll be working in. If you'll be working in wet conditions, waterproof gloves can keep your hands dry and comfortable. For hot environments, breathable gloves can prevent your hands from getting too sweaty. Always ensure your gloves fit well to avoid blisters and discomfort during extended use.</p>
-                                       <a href="https://www.rockhounding.org/best-gloves.html" class="learn-more-button">Learn More</a>`;
+                                       <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                         break;
                     case 'Safety Glasses':
                         contentHtml = `<h3>${d.data.name}</h3>
                                        <p>Safety glasses are crucial to protect your eyes from flying debris when using tools. Always wear them to ensure your safety while rockhounding. Safety glasses should fit snugly and comfortably, providing clear vision without fogging up. Look for glasses with impact-resistant lenses and side shields for extra protection.</p>
                                        <p>For those who wear prescription glasses, consider getting safety glasses that fit over your regular glasses or invest in prescription safety glasses. Anti-scratch and anti-fog coatings can enhance the durability and usability of your safety glasses. Remember, eye protection is one of the most important safety measures you can take while rockhounding.</p>
-                                       <a href="https://www.rockhounding.org/best-safety-glasses.html" class="learn-more-button">Learn More</a>`;
+                                       <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                         break;
                     case 'Bags and Backpacks':
                         contentHtml = `<h3>${d.data.name}</h3>
                                        <p>Having a sturdy bag or backpack is important for carrying your tools and collected specimens. Look for ones with multiple compartments and strong straps. A good rockhounding backpack should be durable, comfortable, and able to carry heavy loads without straining your back. Consider backpacks with padded straps and back panels for added comfort during long outings.</p>
                                        <p>Some backpacks come with built-in hydration systems, which are handy for staying hydrated in the field. Additional features to look for include tool loops, reinforced bottoms, and weather-resistant materials. Choose a backpack that fits your specific needs and the types of environments you'll be exploring.</p>
-                                       <a href="https://www.rockhounding.org/best-backpacks-for-rockhounding.html" class="learn-more-button">Learn More</a>`;
+                                       <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                         break;
                     case 'Brushes & Spray Bottles':
                         contentHtml = `<h3>${d.data.name}</h3>
@@ -267,13 +267,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         contentHtml = `<h3>${d.data.name}</h3>
                                        <p>A first aid kit is a must-have for any outdoor activity, including rockhounding. Ensure it is stocked with essentials like bandages, antiseptics, and pain relievers. Your first aid kit should also include items like tweezers, scissors, adhesive tape, and a first aid manual. Customize your kit based on your personal needs and the environments you plan to explore.</p>
                                        <p>In addition to basic first aid supplies, consider adding items like sunscreen, insect repellent, and blister treatments. It's also a good idea to carry a whistle and an emergency blanket for added safety. Regularly check and restock your first aid kit to ensure all items are in good condition and within their expiration dates.</p>
-                                       <a href="https://www.rockhounding.org/best-first-aid-kits.html" class="learn-more-button">Learn More</a>`;
+                                       <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                         break;
                     case 'Use our maps':
                         contentHtml = `<h3>${d.data.name}</h3>
                                        <p>Our maps are a great resource for finding rockhounding locations. They provide detailed information on where to find various types of rocks and minerals. Our maps include GPS coordinates, site descriptions, and tips on what to look for in each location. They are regularly updated to ensure you have the most accurate and useful information available.</p>
                                        <p>Using our maps can save you time and effort in locating promising rockhounding sites. They are designed to be user-friendly and accessible, whether you're a beginner or an experienced rockhound. Don't forget to follow local regulations and obtain any necessary permits before visiting a new site. Always practice responsible rockhounding by respecting the environment and other collectors.</p>
-                                       <a href="https://www.rockhounding.org/rockhounding-maps/" class="learn-more-button">Learn More</a>`;
+                                       <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                         break;
                     
                         case 'Verify With Google Search':

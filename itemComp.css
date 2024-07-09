@@ -24,22 +24,16 @@ h2 {
 
 /* Comparison Grid Styles */
 .comparison-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    align-items: start;
-    height: 100%; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .product-column {
-    display: flex;               /* Use flexbox layout */
-    flex-direction: column;      /* Stack children vertically */
-    justify-content: space-between; /* Distribute space evenly */
     background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
     padding: 10px;
     border-radius: 5px;
-    text-align: center;
-    height: 100%; 
+    text-align: left;
 }
 
 .product-column p {

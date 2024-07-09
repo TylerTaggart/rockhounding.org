@@ -16,7 +16,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Discover the best rockhounding locations in Tennessee with our comprehensive maps and guide. Explore Tennessee's diverse mineral resources on RockHounding.Org. Find top spots for rock hounding, crystal hunting, gem hunting, and fossil finding in Tennessee.">
-  <meta name="keywords" content="Gem mining near me, Rockhounding, Rock hounding, Rock hunting, Crystal hunting, Gem hunting, Fossil hunting, Tennessee, Minerals, Maps, Locations, RockHounding in Tennessee, Rockhounding maps in Tennessee, Rockhounding locations in Tennessee, Rockhounding near me, Crystal hunting near me, Gem hunting near me, Fossil hunting near me">
+  <meta name="keywords" content="Rockhounding, Rock hounding, Rock hunting, Crystal hunting, Gem hunting, Fossil hunting, Tennessee, Minerals, Maps, Locations, RockHounding in Tennessee, Rockhounding maps in Tennessee, Rockhounding locations in Tennessee, Rockhounding near me, Crystal hunting near me, Gem hunting near me, Fossil hunting near me">
   <meta name="author" content="RockHounding.Org">
   <meta name="google-adsense-account" content="ca-pub-2987233570389325">
 
@@ -56,7 +56,9 @@
   <header>
     <div class="header-row">
       <div class="logo">
-        <img src="../images/rockhoundingLogo.png" alt="Logo">
+        <a href="https://www.rockhounding.org">
+          <img src="../images/rockhoundingLogo.png" alt="Logo">
+        </a>
       </div>
       <h1 class="title">Tennessee RockHounding Map</h1>
       <nav class="navbar">
@@ -65,32 +67,30 @@
           <div></div>
           <div></div>
         </div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="https://www.rockhounding.org/">Home</a></li>
-          <li><a href="https://www.rockhounding.org/rocks-and-minerals">Rocks & Minerals</a></li>
-          <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-          <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-          <li><a href="https://www.rockhounding.org/rockhounding-resources">Rockhounding Resources</a></li>
-          <li><a href="https://www.rockhounding.org/shaping-and-polishing">Shaping and Polishing</a></li>
-          <li><a href="https://www.rockhounding.org/archeology-and-fossils">Archeology & Fossils</a></li>
-          <li><a href="https://www.rockhounding.org/precious-metals">Precious Metals</a></li>
-          <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-          <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
-        </ul>
+       <ul class="nav-links" id="navLinks">
+              <li><a href="https://www.rockhounding.org/">Home</a></li>
+              <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
+              <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main">Gold Prospecting</a></li>
+              <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
+              <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+              <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+            </ul>
       </nav>
     </div>
     <div class="header-row">
       <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Crystal and Mineral Samples</a></p>
+        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
       </div>
     </div>
   </header>
   <aside class="left-sidebar">
-    <nav class="left-nav">
+       <nav class="left-nav">
       <ul class="left-nav-links">
         <h3>Quick Nav</h3>
         <li><a href="#top">Top</a></li>
         <li><a href="#maps">Maps</a></li>
+        <li><a href="#products">Best Gear</a></li>
         <li><a href="#popular-rocks">Popular Rocks</a></li>
         <li><a href="#popular-areas">Popular Areas</a></li>
         <li><a href="#geological-information">Geology</a></li>
@@ -122,8 +122,118 @@
         <h2>Sponsored Dig Site</h2>
         <img class="non-gallery" src="../images/crystalsAndMinerals/topazCrystalfadedBackground.png">
         <p>Own a digsite you would like to advertize in Tennessee? Contact us for more information about being our sponsor of the month! Email sponsors@rockhounding.org for more information.</p>
-        <a href="https://topazmountainadventures.com/" class="button" target="_blank">Dig With Us</a>
+
+        <button id="advertise-button" class="button">Advertise With Us</button>
       </div>
+      
+<div id="popup-form" class="popup-form">
+  <div class="popup-form-container">
+    <span class="close">&times;</span>
+    <h2>Advertise With Us</h2>
+    <form id="advertise-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="website">Website:</label>
+      <input type="text" id="website" name="website" required>
+      <button type="submit" class="button">Submit</button>
+    </form>
+    <div id="thank-you-message" style="display:none; text-align:center; margin-top:20px; font-family:'Cinzel', serif; font-size:18px; color:#8B4513;">
+      Thank you, we will be in touch soon.
+    </div>
+  </div>
+</div>
+
+<!-- CSS for Popup Form -->
+<style>
+  .popup-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+
+  .popup-form-container {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .popup-form-container label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+
+  .popup-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .popup-form-container .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B4513;
+    color: #F0E68C;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup-form-container .button:hover {
+    background-color: #7A3811;
+  }
+</style>
+
+<!-- JavaScript for Popup Form -->
+<script>
+  document.getElementById('advertise-button').onclick = function() {
+    document.getElementById('popup-form').style.display = 'block';
+  };
+
+  document.getElementsByClassName('close')[0].onclick = function() {
+    document.getElementById('popup-form').style.display = 'none';
+  };
+
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('popup-form')) {
+      document.getElementById('popup-form').style.display = 'none';
+    }
+  };
+
+  document.getElementById('advertise-form').onsubmit = function(e) {
+    e.preventDefault();
+    document.getElementById('advertise-form').style.display = 'none';
+    document.getElementById('thank-you-message').style.display = 'block';
+  };
+</script>
+
     </div>
     <div class="map" id="maps"><iframe class="map-iframe"
         src="https://www.google.com/maps/d/u/0/embed?mid=1-nIdHgVq1laSkIKiQd-EHTVDAyvfu18&ehbc=2E312F&noprof=1"></iframe>
@@ -132,31 +242,31 @@
       </div>
     </div>
 
-    <div class="best-products">
+    <div class="best-products" id="products">
       <h2>Must Have Rockhounding Tools</h2>
       <div class="product-card">
-        <img src="../productImages/picks/pick1.png" alt="Rock Picks">
+        <img src="../products/productImages/picks/pick1.png" alt="Rock Picks">
         <h3>Rock Picks</h3>
         <p>Find the best rock picks for all your gem hunting adventures.</p>
-        <a href="https://www.rockhounding.org/best-rock-picks-for-rockhounding.html" class="button" target="_blank">See Comparison Chart</a>
+        <a href="https://www.rockhounding.org/products/best-rock-picks-for-rockhounding.html" class="button" target="_blank">See Comparison Chart</a>
       </div>
       <div class="product-card">
-        <img src="../productImages/gloves/gloves1.png" alt="Gloves">
+        <img src="../products/productImages/gloves/gloves1.png" alt="Gloves">
         <h3>Gloves</h3>
         <p>Protect your hands with the best gloves for gem hunting.</p>
-        <a href="https://www.rockhounding.org/best-gloves.html" class="button" target="_blank">See Comparison Chart</a>
+        <a href="https://www.rockhounding.org/products/best-gloves.html" class="button" target="_blank">See Comparison Chart</a>
       </div>
       <div class="product-card">
-        <img src="../productImages/bags/backpack4.png" alt="Bags">
+        <img src="../products/productImages/bags/backpack4.png" alt="Bags">
         <h3>Bags</h3>
         <p>Carry your finds with ease using the best bags for gem hunting.</p>
-        <a href="https://www.rockhounding.org/best-backpacks-for-rockhounding.html" class="button" target="_blank">See Comparison Chart</a>
+        <a href="https://www.rockhounding.org/products/best-backpacks-for-rockhounding.html" class="button" target="_blank">See Comparison Chart</a>
       </div>
       <div class="product-card">
-        <img src="../productImages/chisels/chisel3.png" alt="Chisels">
+        <img src="../products/productImages/chisels/chisel3.png" alt="Chisels">
         <h3>Chisels</h3>
         <p>Discover the best chisels for extracting gems and minerals.</p>
-        <a href="https://www.rockhounding.org/best-chisels-for-rockhounding.html" class="button" target="_blank">See Comparison Chart</a>
+        <a href="https://www.rockhounding.org/products/best-chisels-for-rockhounding.html" class="button" target="_blank">See Comparison Chart</a>
       </div>
     </div>
 
