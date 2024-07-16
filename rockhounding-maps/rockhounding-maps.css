@@ -128,6 +128,28 @@ h2 {
   font-size: 34px;
 }
 
+.guidebook-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.guidebook-button .button {
+  padding: 15px 25px;
+  background-color: #8B4513; /* Brown color */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.guidebook-button .button:hover {
+  background-color: #A0522D; /* Slightly lighter brown for hover */
+}
+
 .rocks-found-here {
   list-style: none;
   padding: 0;
