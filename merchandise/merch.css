@@ -1,0 +1,45 @@
+/* Custom CSS for merch.html */
+
+.merch-nav {
+    background-color: #8B4513; /* Brown color */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .merch-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .merch-nav ul li {
+    margin: 0 15px;
+  }
+  
+  .merch-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .merch-nav ul li a:hover {
+    background-color: #A0522D; /* Lighter brown color for hover */
+    border-radius: 5px;
+  }
+  
+  main section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  main section h2 {
+    font-size: 28px;
+    color: #8B4513; /* Brown color */
+    text-align: center;
+  }
+  

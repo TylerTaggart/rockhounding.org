@@ -16,7 +16,7 @@
 
   <!-- Meta Descriptions and Keywords -->
   <meta name="description" content="Discover the best gem mining locations for Hematite with our comprehensive guide. Explore rockhounding, gem hunting, crystal hunting, and more on RockHounding.Org. Find top spots for Hematite in the United States.">
-  <meta name="keywords" content="Gem Mining near me, Gem Mining, Hematite, Rockhounding, Gem hunting, Crystal hunting, Hematite mines, Hematite locations, Rockhounding near me, Gem hunting near me, Crystal hunting near me">
+  <meta name="keywords" content="Gem Mining near me, Gem Mining, Hematite, where to find hematite, hematite near me, Rockhounding, Gem hunting, Crystal hunting, Hematite mines, Hematite locations, Rockhounding near me, Gem hunting near me, Crystal hunting near me">
 
   <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-2987233570389325">
@@ -117,10 +117,10 @@
         </script>
       </div>
       <div class="right-item">
-        <h2>Sponsored Dig Site</h2>
-        <img class="non-gallery" src="../images/crystalsAndMinerals/topazCrystalfadedBackground.png">
-        <p>Own a digsite you would like to advertise? Contact us for more information about our sponsorship packages.</p>
-        <button id="advertise-button" class="button">Advertise With Us</button>
+        <h2>Shop Our Merch!</h2>
+        <img class="non-gallery" src="../images/tshirt1.png" alt="T-Shirt">
+        <p>We have tons of cool t-shirts, hats, water bottles, and stickers. Show off your love for rockhounding with our high-quality merchandise.</p>
+        <a href="https://www.rockhounding.org/merchandise/index.html" class="button">Visit Store</a>
       </div>
 
       <div id="popup-form" class="popup-form">
@@ -231,6 +231,7 @@
         };
       </script>
     </div>
+    <h2>Where To Find Hematite Near Me</h2>
 
     <div class="map" id="maps">
       <iframe class="map-iframe" src="https://www.google.com/maps/d/u/4/embed?mid=1AIDNLMNk7XJMrxiUaMf7Kh3w5X4JNRk&ehbc=2E312F&noprof=1"></iframe>
@@ -246,21 +247,24 @@
           <li><a href="https://www.rockhounding.org/gem-mining/agate.html">Agate</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/amethyst.html">Amethyst</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/aquamarine.html">Aquamarine</a></li>
+          <li><a href="https://www.rockhounding.org/gem-mining/azurite.html">Azurite</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/citrine.html">Citrine</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/fluorite.html">Fluorite</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/garnet.html">Garnet</a></li>
-          <li><a href="https://www.rockhounding.org/gem-mining/herkimer-diamond.html">Herkimer Diamond</a></li>
+          <li><a href="https://www.rockhounding.org/gem-mining/geodes.html">Geodes</a></li>
         </ul>
         <ul>
-          <li><a href="https://www.rockhounding.org/gem-mining/hematite.html" class="active">Hematite</a></li>
+          <li><a href="https://www.rockhounding.org/gem-mining/herkimer-diamond.html">Herkimer Diamond</a></li>
+          <li><a href="https://www.rockhounding.org/gem-mining/hematite.html">Hematite</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/jade.html">Jade</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/labradorite.html">Labradorite</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/malachite.html">Malachite</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/morganite.html">Morganite</a></li>
+          <li><a href="https://www.rockhounding.org/gem-mining/obsidian.html">Obsidian</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/opal.html">Opal</a></li>
-          <li><a href="https://www.rockhounding.org/gem-mining/peridot.html">Peridot</a></li>
         </ul>
         <ul>
+          <li><a href="https://www.rockhounding.org/gem-mining/peridot.html">Peridot</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/quartz.html">Quartz</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/ruby.html">Ruby</a></li>
           <li><a href="https://www.rockhounding.org/gem-mining/sapphire.html">Sapphire</a></li>
@@ -273,7 +277,21 @@
           <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html.html">Gold</a></li>
         </ul>
       </div>
+    
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const pageTitle = document.querySelector('head title').textContent.trim();
+          const links = document.querySelectorAll('.gemstone-list-container a');
+          
+          links.forEach(link => {
+            if (pageTitle.includes(link.textContent.trim())) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
     </section>
+    
 
     <div class="best-products" id="products">
       <h2>Must Have Gem Hunting Tools</h2>
