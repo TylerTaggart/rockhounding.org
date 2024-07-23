@@ -27,6 +27,7 @@ header {
     font-size: 60px;
     font-family: 'Cinzel', serif;
     margin: 0;
+    text-align: center;
   }
   
   /* Navigation */
@@ -337,9 +338,9 @@ footer {
   }
 
   .central-item {
-    width: 85%; 
+    width: 90% !important; 
     margin: 0 auto; 
-    padding: 20px;  
+    padding: 5px;  
 }
 
 

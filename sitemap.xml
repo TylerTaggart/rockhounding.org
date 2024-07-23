@@ -1,276 +1,810 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.rockhounding.org/</loc>
+    <loc>https://www.rockhounding.org/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/</loc>
+    <loc>https://www.rockhounding.org/rockhounding-maps/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.rockhounding.org/rockhounding-resources/</loc>
-  </url>
-  <url>
-    <loc>https://www.rockhounding.org/precious-metals/</loc>
-  </url>
+  <!-- State pages within rockhounding-maps -->
   <url>
     <loc>https://www.rockhounding.org/rockhounding-maps/washington.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/oregon.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/oregon.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/california.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/california.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/idaho.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/idaho.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/nevada.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/nevada.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/arizona.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/arizona.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/utah.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/utah.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/new-mexico.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/new-mexico.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/colorado.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/colorado.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/wyoming.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/wyoming.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/montana.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/north-dakota.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/south-dakota.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/nebraska.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/kansas.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/oklahoma.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/texas.html</loc>
-  </url>
-    <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/missouri.html</loc>
-  </url>
-    <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/minnesota.html</loc>
-  </url>
-    <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/iowa.html</loc>
-  </url>
-    <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/louisiana.html</loc>
-  </url>
-    <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/florida.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/south-carolina.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/north-carolina.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/tennessee.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/kentucky.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/virginia.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/west-virginia.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/ohio.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/michigan.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/georgia.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/indiana.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/wisconson.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/illinois.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/alabama.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/alabama.html</loc>
-  </url>
-   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/mississippi.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/montana.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-  <loc>https://www.rockhounding.org/rockhounding-maps/connecticut.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/north-dakota.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/delaware.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/south-dakota.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/maine.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/nebraska.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/maryland.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/kansas.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/massachusetts.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/oklahoma.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/new-hampshire.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/texas.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/new-jersey.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/missouri.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/new-york.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/minnesota.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/pennsylvania.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/iowa.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/rhode-island.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/louisiana.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/rockhounding-maps/vermont.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/florida.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/best-rockhounding-tools-for-beginners/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/south-carolina.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/how-to-identify-minerals-and-rocks-for-rockhounding-enthusiasts/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/north-carolina.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/finding-rockhounding-locations-in-the-united-states/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/tennessee.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/best-rockhounding-sites-for-families-in-the-us/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/kentucky.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/rockhounding-in-winter-guide/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/virginia.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/rockhounding-tools-for-winter/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/west-virginia.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/indoor-rockhounding-activities-winter-guide/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/ohio.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/rockhounding-gift-ideas/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/michigan.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/2024-rockhound-calendar/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/georgia.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/rockhounding-clubs-in-the-usa/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/indiana.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/creative-tips-and-tricks-in-rock-tumbling-and-polishing/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/wisconson.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/top-spots-for-unearthing-gems-in-the-us/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/illinois.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/reddish-rocks-formation-and-properties/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/alabama.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/purple-crystals-and-gemstones/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/mississippi.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/understanding-rock-weight/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/connecticut.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/rarest-gemstones/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/delaware.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/how-to-choose-rocks-for-tumbling/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/maine.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/agate-rocks-in-us/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/maryland.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/beyond-flint-exploring-the-world-of-chert-rocks/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/massachusetts.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/rock-hammers-for-rockhounding-guide/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/new-hampshire.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/copperas-mountain/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/new-jersey.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/herkimer-diamonds/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/new-york.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/jasper-stone/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/pennsylvania.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/hematite-vs-black-tourmaline/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/rhode-island.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/gem-mining-near-me/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/vermont.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/geodes-near-me/index.html</loc>
+      <loc>https://www.rockhounding.org/rockhounding-maps/hawaii.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+  </url>
+  <!-- Add similar entries for all other states -->
+  <url>
+    <loc>https://www.rockhounding.org/rockhounding-resources/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/quartz-gemstones/index.html</loc>
+    <loc>https://www.rockhounding.org/lapidary/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Merchandise pages -->
+  <url>
+    <loc>https://www.rockhounding.org/marchandise/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Product pages -->
+  <url>
+    <loc>https://www.rockhounding.org/products/best-backpacks-for-rockhounding.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/silver-rocks-minerals/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-chisels-for-rockhounding.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/best-rockhounding-sites-near-me/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-first-aid-kits.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/collecting-amethyst-meaning-uses-properties-guide/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-gloves.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/everything-about-jade-ultimate-guide/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-gold-pan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/best-rock-identification-apps/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-gold-sluice-box.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/mohs-hardness-scale/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-metal-detector.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/onyx-collectors-guide/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-rock-picks-for-rockhounding.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/south-padre-island-geology/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-safety-glasses.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/precious-metals-gears-and-resources/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-scoops-and-shovels.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/prospecting-for-precious-metals/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-brushes-and-spray-for-rockhounding.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/opal-hotspots-global-guide/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-dredges-for-gold-prospecting.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.rockhounding.org/blog/crystal-cleaning-guide/index.html</loc>
+    <loc>https://www.rockhounding.org/products/best-state-rockhounding-guidebooks.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://www.rockhounding.org/products/electrolytes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/products/energy-bars.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/products/other-snacks.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Latest finds pages -->
+  <url>
+    <loc>https://www.rockhounding.org/latest-finds/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Gold prospecting pages -->
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/prospecting-getting-started.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/prospecting-main.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/prospecting-resources.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/gold-prospecting-in-streams.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/gold-prospecting-tips-banks-gullies-hills.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/history-of-gold.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/local-gold-prospecting-clubs.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gold-prospecting/why-gold-prospecting.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Getting started pages -->
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/cutting-in-lapidary.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/ethical-collecting-while-rockhounding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/history-of-rockhounding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/lapidary-for-beginners.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/leave-no-trace-while-rockhounding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/local-rockhounding-clubs.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/polishing-in-lapidary.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/private-property-for-rockhounding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/rockhounding-in-streams.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/rockhounding-tips-banks-gullies-road-cuts-hills.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/setting-displaying-gemstones.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/shaping-in-lapidary.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/spraying-rocks-to-see-them-wet.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/tips-for-rockhounding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/getting-started/why-rockhounding.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Gem mining pages -->
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/agate.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/amethyst.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/aquamarine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/citrine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/fluorite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/garnet.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/gem-mining-near-me.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/geodes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/hematite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/herkimer-diamond.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/jade.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/labradorite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/malachite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/morganite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/obsidian.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/opal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/peridot.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/quartz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/ruby.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/sapphire.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/topaz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/tourmaline.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/turquoise.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/gem-mining/zircon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+  <loc>https://www.rockhounding.org/blog/how-to-identify-minerals-and-rocks-for-rockhounding-enthusiasts/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/finding-rockhounding-locations-in-the-united-states/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/best-rockhounding-sites-for-families-in-the-us/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rockhounding-in-winter-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rockhounding-tools-for-winter/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/indoor-rockhounding-activities-winter-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rockhounding-gift-ideas/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/2024-rockhound-calendar/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rockhounding-clubs-in-the-usa/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/creative-tips-and-tricks-in-rock-tumbling-and-polishing/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/top-spots-for-unearthing-gems-in-the-us/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/reddish-rocks-formation-and-properties/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/purple-crystals-and-gemstones/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/understanding-rock-weight/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rarest-gemstones/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/how-to-choose-rocks-for-tumbling/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/agate-rocks-in-us/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/beyond-flint-exploring-the-world-of-chert-rocks/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rock-hammers-for-rockhounding-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/copperas-mountain/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/herkimer-diamonds/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/jasper-stone/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/hematite-vs-black-tourmaline/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/gem-mining-near-me/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/geodes-near-me/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/quartz-gemstones/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/silver-rocks-minerals/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/best-rockhounding-sites-near-me/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/collecting-amethyst-meaning-uses-properties-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/everything-about-jade-ultimate-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/best-rock-identification-apps/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/mohs-hardness-scale/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/onyx-collectors-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/south-padre-island-geology/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/precious-metals-gears-and-resources/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/prospecting-for-precious-metals/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/opal-hotspots-global-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/crystal-cleaning-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rockhounding-in-hoboken-usa-guide/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/rose-quartz-tips-for-collectors-and-buyers/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/where-to-find-gold-in-the-us/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
 </urlset>
+
+  
+  

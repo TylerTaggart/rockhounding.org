@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         contentHtml = `<h3>${d.data.name}</h3>
                                        <p>Brushes and spray bottles are used to clean dirt off rocks and minerals, making it easier to see their features. They are especially useful in the field. Soft-bristle brushes are ideal for gently removing dirt and debris without scratching the specimens. Harder brushes can be used for tougher cleaning tasks, but be careful not to damage delicate specimens.</p>
                                        <p>Spray bottles filled with water can help reveal the true colors and details of rocks and minerals. This can be particularly useful when trying to identify specimens in the field. A small, portable spray bottle is easy to carry and can make a big difference in your rockhounding experience. Make sure to keep your brushes and spray bottles clean to avoid cross-contamination between specimens.</p>
-                                       <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                       <a href="https://www.rockhounding.org/products/best-brushes-and-spray-for-rockhounding.html" class="learn-more-button">Learn More</a>`;
                         break;
                     case 'First Aid Kit':
                         contentHtml = `<h3>${d.data.name}</h3>
@@ -346,25 +346,25 @@ document.addEventListener('DOMContentLoaded', function() {
                             contentHtml = `<h3>${d.data.name}</h3>
                                            <p>Shaping involves grinding and sanding rocks into desired forms. Various tools like grinders and sanders are used to achieve smooth surfaces and specific shapes. The shaping process allows you to transform rough rocks into beautiful, polished pieces that highlight their natural beauty.</p>
                                            <p>Start with coarse grinding to remove excess material and create the basic shape. Progress to finer grits for smoothing and refining the surface. Use water or cutting oil to keep the rock cool and reduce dust. Hand tools, such as files and rasps, can also be used for more detailed shaping work. Patience and attention to detail are key to achieving a professional finish. As you gain experience, you can experiment with different techniques to create intricate and unique designs.</p>
-                                           <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                           <a href="https://www.rockhounding.org/getting-started/shaping-in-lapidary.html" class="learn-more-button">Learn More</a>`;
                             break;
                         case 'Polishing':
                             contentHtml = `<h3>${d.data.name}</h3>
                                            <p>Polishing rocks brings out their natural beauty. Use polishing wheels and compounds to achieve a glossy finish on your specimens. Polishing is the final step in the lapidary process, transforming a rough surface into a mirror-like shine that enhances the colors and patterns of the rock.</p>
                                            <p>Begin with coarse polishing compounds to remove minor scratches and imperfections. Progress to finer compounds for a smoother and more reflective surface. Use a polishing wheel or lap, applying light pressure and keeping the rock moving to avoid heat buildup. Polishing can also be done by hand with a cloth and polishing paste, though this method requires more time and effort. Properly maintained polishing equipment will yield the best results. Always wear protective gear, such as safety glasses and gloves, to protect yourself from dust and debris.</p>
-                                           <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                           <a href="https://www.rockhounding.org/getting-started/polishing-in-lapidary.html" class="learn-more-button">Learn More</a>`;
                             break;
                         case 'Setting or Displaying':
                             contentHtml = `<h3>${d.data.name}</h3>
                                            <p>Displaying your rockhounding finds can be as rewarding as finding them. Learn techniques for setting stones in jewelry or creating attractive displays for your collection. There are many ways to showcase your specimens, from simple shelves and cases to elaborate custom displays that highlight their unique features.</p>
                                            <p>For jewelry, consider setting stones in pendants, rings, or earrings. Wire wrapping, bezel setting, and prong setting are popular techniques for securing stones in jewelry. For larger specimens, display stands and mounts can be used to hold them securely and enhance their visual appeal. Grouping similar specimens together can create a cohesive and striking display. Proper lighting is also important to highlight the colors and details of your collection. Whether you choose to display your finds at home or share them with others at rock shows and exhibitions, taking the time to present them well can greatly enhance your appreciation of their beauty.</p>
-                                           <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                           <a href="https://www.rockhounding.org/getting-started/setting-displaying-gemstones.html" class="learn-more-button">Learn More</a>`;
                             break;
                         case 'Buying & Selling':
                             contentHtml = `<h3>${d.data.name}</h3>
                                            <p>Buying and selling rocks and minerals is a common part of the rockhounding community. Visit shop.rockhounding.org to buy and sell specimens from fellow enthusiasts. The rockhounding market offers a wide range of opportunities to acquire new specimens and share your finds with others.</p>
                                            <p>When buying rocks and minerals, research the seller and the specimen to ensure you are getting a fair deal. Look for reputable dealers and ask for detailed information about the specimen's origin and characteristics. When selling, provide clear descriptions and high-quality photos of your specimens. Transparency and honesty are key to building trust with buyers. Participating in rock shows, online marketplaces, and auctions can help you connect with other collectors and expand your network. Whether you are looking to add to your collection or share your finds with others, the buying and selling aspect of rockhounding can be both profitable and enjoyable.</p>
-                                           <a href="https://www.rockhounding.org/" class="learn-more-button">Learn More</a>`;
+                                           <a href="https://shop.rockhounding.org/" class="learn-more-button">Learn More</a>`;
                             break;
                         
                 default:
