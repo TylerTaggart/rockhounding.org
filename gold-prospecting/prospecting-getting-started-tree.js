@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 "name": "Etiquette",
                 "class": "prospecting-etiquette",
                 "children": [
-                    { "name": "Leave No Trace" },
-                    { "name": "Ethical Collecting" },
-                    { "name": "Private Property" }
+                    { "name": "Leave No Trace Prospecting" },
+                    { "name": "Ethical Collecting while Prospecting" },
+                    { "name": "Gold prospecting on private property" }
                 ]
             },
             {
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Dredges are used to extract gold from underwater deposits. They are more complex and expensive than other gold prospecting tools but can be highly effective in the right conditions. Dredging involves using a suction hose to vacuum up sediment from the riverbed, which is then processed to extract gold.</p>
                                    <p>When using a dredge, ensure you have the necessary permits and follow environmental regulations. Dredging can have a significant impact on the ecosystem, so it's important to minimize your environmental footprint. Regularly maintain and clean your dredge to ensure optimal performance and safety. Dredging can be a highly productive method for finding gold, especially in areas with rich underwater deposits.</p>
-                                   <a href="https://www.rockhounding.org//best-dredges-for-gold-prospecting.html" class="learn-more-button">Learn More</a>`;
+                                   <a href="https://www.rockhounding.org/products/best-dredges-for-gold-prospecting.html" class="learn-more-button">Learn More</a>`;
                     break;
                 case 'Gloves':
                     contentHtml = `<h3>${d.data.name}</h3>
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                    <p>When collecting gold, consider the impact of your actions on the ecosystem. Take care not to disturb plants, animals, or geological features unnecessarily. Collecting responsibly also means sharing your knowledge with others and promoting conservation efforts within the prospecting community. By practicing ethical collecting, you contribute to the sustainability of the hobby and the preservation of natural resources.</p>
                                    <a href="https://www.rockhounding.org/getting-started/ethical-collecting-while-rockhounding.html" class="learn-more-button">Learn More</a>`;
                     break;
-                case 'Gold prospecting on private property)':
+                case 'Gold prospecting on private property':
                     contentHtml = `<h3>${d.data.name}</h3>
                                    <p>Always get permission before prospecting on private property. Respect the landowner's rules and leave the area as you found it to maintain good relationships and access for future visits. Building trust with landowners is crucial for gaining access to private lands and can lead to discovering new and promising prospecting sites.</p>
                                    <p>When seeking permission, be clear about your intentions and respectful of the landowner's concerns. Offer to share your finds or provide information about the local geology in return for access. Remember to follow any specific guidelines the landowner provides and to express your gratitude for their cooperation. Maintaining a positive relationship with landowners can benefit the entire prospecting community.</p>
