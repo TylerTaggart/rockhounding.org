@@ -1,0 +1,359 @@
+/* About Section */
+#about-dig-sites.about-dig-sites {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
+
+#about-dig-sites h2 {
+  font-size: 2em;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+#about-dig-sites .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#about-dig-sites .text-block {
+  flex: 1;
+  padding: 10px;
+}
+
+#about-dig-sites p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about-dig-sites .left-image,
+#about-dig-sites .right-image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+#about-dig-sites .left-image {
+  order: -1; /* This ensures the image appears to the left */
+}
+
+/* Found Here Section */
+#found-here-dig-sites.found-here-dig-sites {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
+
+#found-here-dig-sites h2 {
+  font-size: 2em;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+#found-here-dig-sites p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#found-here-dig-sites ul {
+  list-style-type: disc;
+  margin: 0 auto 20px auto;
+  padding-left: 20px;
+  text-align: left;
+  width: 75%;
+}
+
+#found-here-dig-sites ul li {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#found-here-dig-sites ul li a {
+  color: #8b4513;
+  text-decoration: none;
+}
+
+#found-here-dig-sites ul li a:hover {
+  text-decoration: underline;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-item {
+  width: 30%;
+  text-align: center;
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.image-item p {
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+}
+
+/* Location Section */
+#location-dig-sites.location-dig-sites {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
+
+#location-dig-sites h2 {
+  font-size: 2em;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+#location-dig-sites p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#location-dig-sites iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+}
+
+
+/* Recommended Gear and Tips Section */
+#recommended-dig-sites.recommended-dig-sites {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
+
+#recommended-dig-sites h1,
+#recommended-dig-sites h2 {
+  font-size: 2em;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+#recommended-dig-sites p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#recommended-dig-sites ul {
+  list-style-type: disc;
+  margin: 0 auto 20px auto;
+  padding-left: 20px;
+  text-align: left;
+  width: 75%;
+}
+
+#recommended-dig-sites ul li {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tips-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tips-section .text-block {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.tips-section img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.tips-section .left-image {
+  order: -1; /* This ensures the image appears to the left */
+}
+
+.recommended-gear {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.gear-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 23%;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.gear-card:hover {
+  transform: translateY(-10px);
+}
+
+.gear-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.gear-card h3 {
+  font-family: 'Cinzel', serif;
+  color: #8b4513;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.gear-card p {
+  font-size: 1em;
+  line-height: 1.4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #8b4513;
+}
+
+/* Other Dig Sites Section */
+#other-dig-sites-dig-sites.other-dig-sites-dig-sites {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
+
+#other-dig-sites-dig-sites h2 {
+  font-size: 2em;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+#other-dig-sites-dig-sites p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dig-site-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dig-site-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 23%;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.dig-site-card:hover {
+  transform: translateY(-10px);
+}
+
+.dig-site-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.dig-site-card h3 {
+  font-family: 'Cinzel', serif;
+  color: #8b4513;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.dig-site-card p {
+  font-size: 1em;
+  line-height: 1.4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #8b4513;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .recommended-gear, .other-dig-sites-dig-sites {
+    justify-content: center;
+  }
+
+  .gear-card, .dig-site-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gear-card, .dig-site-card {
+    width: 100%;
+  }
+}
