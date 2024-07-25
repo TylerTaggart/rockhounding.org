@@ -1,0 +1,278 @@
+.central-item {
+    width: 66.66%; 
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+.central-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+p, ol {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul, li, ul, li {
+    font-size: 20px; /* Set the font size to 16 pixels */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.rock-image {
+    width: 200px !important; 
+    height: auto !important;
+    float: right !important; 
+    margin-right: 20px !important; 
+    padding-left: 5px !important;
+}
+
+.tumbled-rock {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .tumbled-rock img {
+    margin-left: 20px;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .map {
+    width: 880px; /* This should match the width of your iframe */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .map-iframe {
+    width: 880px;
+    height: 720px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.table-img {
+    width: 100% !important;
+    height: auto;
+}
+
+.image-column {
+    width: 20%;
+}
+
+/* Checklist Styles */
+.checklist-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #8B4513;
+    margin: 40px 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #beginners-checklist {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .checklist-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .checklist-item {
+    width: 28%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .checklist-item img {
+    width: 256px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .checklist-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .checklist-item p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .comparison-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F0E68C;
+    background-color: #8B4513;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: auto;
+  }
+
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #8B4513;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    align-items: center;
+  }
+  .button:hover {
+    background: #bd6222;
+  }
+
+@media screen and (max-width: 768px) {
+
+.central-item {
+    width: 85%; 
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+p, ol {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2px;
+}
+
+ul, li, ul, li {
+    font-size: 16px; /* Set the font size to 16 pixels */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.rock-image {
+    display: block !important;
+    margin: auto !important;
+    float: none !important;
+    width: auto !important;
+}
+
+.tumbled-rock {
+    display: inline;
+    align-items: left;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+  .tumbled-rock img {
+    margin-left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.map {
+    width: 100%;
+    /* Update the width */
+  }
+
+  .map-iframe {
+    width: 100%;
+    /* Update the width */
+    height: 400px;
+    /* Update the height */
+  }
+
+  .checklist-title {
+    font-size: 30px;
+  }
+
+  .checklist-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checklist-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+}
