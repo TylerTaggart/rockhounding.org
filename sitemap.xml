@@ -262,6 +262,42 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+<!-- Digsite pages -->
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/dig-sites-near-me.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/utah/dugway-geode-beds.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/utah/top-utah-digsites.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/utah/topaz-mountain.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/utah/u-dig-fossil-quarry.html.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/utah/wah-wah-mountains.html.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Washington/hansen-creek.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <!-- Merchandise pages -->
   <url>
     <loc>https://www.rockhounding.org/marchandise/index.html</loc>
