@@ -357,3 +357,113 @@ a:hover {
     width: 100%;
   }
 }
+
+/* Individual Dig Site Section */
+.dig-site {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 75%;
+}
+
+.dig-site h3 {
+  font-size: 1.5em;
+  color: #8b4513;
+  margin-bottom: 15px;
+}
+
+.dig-site .content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dig-site img {
+  max-width: 25%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.dig-site .text-wrapper {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.dig-site p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dig-site a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #8b4513;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.dig-site a.button:hover {
+  background-color: #a0522d;
+}
+
+/* Mobile Optimizations for Top Utah Dig Sites Section */
+@media (max-width: 768px) {
+  #top-dig-sites,
+  .dig-site {
+    width: 90%;
+  }
+
+  .dig-site img,
+  .dig-site .text-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .dig-site {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #top-dig-sites,
+  .dig-site {
+    width: 100%;
+  }
+}
+
+/* Top Dig Sites Section */
+#top-dig-sites.top-dig-sites {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
+
+#top-dig-sites h2 {
+  font-size: 2em;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+#top-dig-sites p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
