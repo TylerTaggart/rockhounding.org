@@ -308,6 +308,76 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Washington/liberty-gold-mine.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Washington/racehorse-creek.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Washington/stonewall-creek.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Washington/top-washington-digsites.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/california/benitoite-mining-company.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/california/oceanview-mine.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/california/pala-chief-mine.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/california/top-california-digsites.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Colorado/devils-head.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Colorado/dinosaur-ridge.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Colorado/pikes-peak.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Colorado/top-utah-digsites.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/Colorado/wah-wah-mountains.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.rockhounding.org/locations-and-dig-sites/oregon/spectrum-mine.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <!-- Merchandise pages -->
   <url>
     <loc>https://www.rockhounding.org/marchandise/index.html</loc>
@@ -849,7 +919,21 @@
   <changefreq>monthly</changefreq>
   <priority>0.5</priority>
 </url>
-
+<url>
+  <loc>https://www.rockhounding.org/blog/hag-stones-everything-you-need-to-know/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/comprehensive-guide-to-gypsum-properties-uses-and-applications/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.rockhounding.org/blog/tigers-eye-all-you-need-to-know/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
 </urlset>
 
   
