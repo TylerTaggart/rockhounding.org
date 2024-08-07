@@ -26,35 +26,42 @@
    
   <body onload="initMap()">
     <header>
-      <div class="header-row">
-        <div class="logo">
-          <img src="images/rockhoundingLogo.png" alt="Logo">
-        </div>
-        <h1 class="title">RockHounding.Org</h1>
-        <nav class="navbar">
-          <div class="menu-icon" onclick="toggleMenu()">
-            <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
-            <div></div>
-            <div></div>
+        <div class="header-row">
+          <div class="logo">
+            <img src="images/rockhoundingLogo.png" alt="Logo">
           </div>
-          <ul class="nav-links" id="navLinks">
-            <li><a href="https://www.rockhounding.org/">Home</a></li>
-            <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-            <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
-            <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Gem Mining & Crystal Hunting</a></li>
-            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
-            <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-            <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header-row">
-        <div class="banner">
-          <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          <h1 class="title">RockHounding.Org</h1>
+          <nav class="navbar">
+            <ul class="nav-links" id="navLinks">
+              <li><a href="https://www.rockhounding.org/">Home</a></li>
+              <li>
+                <a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a>
+                <div class="dropdown-content">
+                  <a href="https://www.rockhounding.org/rockhounding-maps">State Rockhounding Maps</a>
+                  <a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal & Gemstone Maps</a>
+                </div>
+              </li>
+              <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+              <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+              <li><a href="https://shop.rockhounding.org">Rock & Crystal Market</a></li>
+              <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+              <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+              <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </nav>
         </div>
-      </div>
+        <div class="header-row">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
       </header>
+      
       
 <main>
     <div class="top-grid">
@@ -71,9 +78,9 @@
                 <img class="gallery" src="https://i.ebayimg.com/images/g/RtEAAOSwD71ldtfx/s-l1600.jpg">
                 <img class="gallery" src="https://jtssharksteeth.com/wp-content/uploads/2022/09/jtmeg3-9.jpg">
             </div>
-            <p>These three stunning pieces have been submitted from our community around the world. The image on the left is a stunning malachite crystal, growing in a very unique formation. In the middle is a large amythest geode with fantastic crystal structure. On the right is a fossilized megaladon tooth found on the beaches of Oregon.</p>
-            <a class="button" onclick="scrollToMap();">Find Rocks Near Me!</a>
-          </div>
+            <p>These three stunning pieces have been found by the rockhounding community around the world. The image on the left is a stunning malachite crystal, growing in a very unique formation. In the middle is a large amythest geode with fantastic crystal structure. On the right is a fossilized megaladon tooth found on the beaches of Oregon.</p>
+            <a class="button" href="https://www.rockhounding.org/rockhounding-maps/">Find Rocks Near Me!</a>
+        </div>
           <script>
             function scrollToMap() {
               const mapElement = document.getElementById('map');
@@ -82,7 +89,7 @@
           </script>
 <div class="right-item">
   <h2>Shop Our Merch!</h2>
-  <img class="non-gallery" src="./images/tshirt1.png" alt="T-Shirt">
+  <img class="non-gallery" src="./images/socks1.png" alt="T-Shirt">
   <p>We have tons of cool t-shirts, hats, water bottles, and stickers. Show off your love for rockhounding with our high-quality merchandise.</p>
   <a href="https://www.rockhounding.org/merchandise/index.html" class="button">Visit Store</a>
 </div>
