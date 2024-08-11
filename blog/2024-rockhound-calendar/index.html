@@ -39,32 +39,56 @@
       <h1 class="title">RockHounding.Org</h1>
       <nav class="navbar">
         <div class="menu-icon" onclick="toggleMenu()">
-          <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
+          <div></div> <!-- these three divs give the 3 menu bars life. Do not delete-->
           <div></div>
           <div></div>
         </div>
         <ul class="nav-links" id="navLinks">
-          <li><a href="https://www.rockhounding.org/">Home</a></li>
-          <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-          <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
-            <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Gem Mining & Crystal Hunting</a></li>
-          <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
-          <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-          <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-          <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+            <li><a href="https://www.rockhounding.org/">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Rockhounding Map</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                    <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+            <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+            <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+            <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
         </ul>
       </nav>
     </div>
-    <div class="header-row">
+    <div class="horizontal-menu"> <!-- New line for horizontal menu on larger screens -->
+      <ul class="horizontal-nav-links">
+        <li><a href="https://www.rockhounding.org/">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Rockhounding Map</a>
+            <ul class="dropdown-content">
+                <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+        <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+        <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+        <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+        <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+        <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+      </ul>
+    </div>
+    <div class="header-banner">
       <div class="banner">
         <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
       </div>
     </div>
-    </header>
+  </header>
 
     <main>
         <section class="central-item">
-            <h2>2024 Rockhound’s Calendar: Must-Attend Mineral Shows and Conferences in the United States and Canada</h2>
+            <h2>2024 Rockhound's Calendar: Must-Attend Mineral Shows and Conferences in the United States and Canada</h2>
             <img src="../2024-rockhound-calendar/images/Rockhound Events 2024.jpg" alt="Rockhounding Clubs in the USA">
             <p>Calling all rockhounds, mineral enthusiasts, and gem aficionados! Get ready to dust off your hammers, polish your loupes, and mark your calendars, because 2024 is shaping up to be an epic year for rockhounding events across the United States and Canada. From dazzling gem shows to insightful conferences, there's something for every level of collector – and every corner of North America.</p>
 
@@ -108,12 +132,12 @@
 
             <h3>6. Northwest Federation of Mineralogical Societies Annual Show (Hermiston, Oregon, May 10-12)</h3>
             <p>Spark a love for rocks in the whole family! This fun-filled show boasts an array of vendors, educational exhibits, interactive demos, and captivating events like gold panning and kids' activities. Explore, learn, and maybe even score some treasures together, creating memories that will last a lifetime.</p>
-            <p><a href="http://northwestfederation.org/Shows.asp">This is the annual show of the Northwest Federation of Mineralogical Societies</a>, featuring vendors, exhibits, demos, gold panning, kids’ activities, raffle, and auctions. The show will be held on May 10-12, 2024, in Hermiston, Oregon.</p>
+            <p><a href="http://northwestfederation.org/Shows.asp">This is the annual show of the Northwest Federation of Mineralogical Societies</a>, featuring vendors, exhibits, demos, gold panning, kids' activities, raffle, and auctions. The show will be held on May 10-12, 2024, in Hermiston, Oregon.</p>
 
             <h2>2024 Rockhounding Calendar for Canada</h2>
             <img src="../2024-rockhound-calendar/images/Mineral events in 2024.jpg" alt="Rockhounding Clubs in the USA">
             <h3>1. PDAC 2024 Convention</h3>
-            <p><a href="https://www.pdac.ca/convention">The PDAC Convention</a> is the world’s premier mineral exploration and mining convention. It is held every March at the Metro Toronto Convention Centre in Canada. This year's event will be held on Mar 03, 2024, from 08:00 am to 12:00 pm at the Metro Toronto Convention Centre (some events and networking will take place at Fairmont Royal York Hotel).</p>
+            <p><a href="https://www.pdac.ca/convention">The PDAC Convention</a> is the world's premier mineral exploration and mining convention. It is held every March at the Metro Toronto Convention Centre in Canada. This year's event will be held on Mar 03, 2024, from 08:00 am to 12:00 pm at the Metro Toronto Convention Centre (some events and networking will take place at Fairmont Royal York Hotel).</p>
             <p>The convention attracts up to 30,000 attendees from over 130 countries and covers all aspects of the mineral industry, from exploration to investment.</p>
             <p>The PDAC Convention offers a comprehensive and diverse technical program, featuring presentations, panels, workshops, and courses on the latest developments and best practices in mineral exploration and mining. The convention also hosts a trade show, where exhibitors showcase their products and services, and an investors exchange, where companies pitch their projects and opportunities to potential investors.</p>
             <p>The PDAC Convention is also a great place to network and connect with industry leaders, experts, peers, and partners. The convention organizes various events and activities, such as receptions, luncheons, awards, and socials, to facilitate and enhance the exchange of ideas and information.</p>

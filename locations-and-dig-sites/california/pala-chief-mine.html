@@ -72,11 +72,11 @@
         </ul>
       </nav>
     </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
   </header>
 
   <main>
@@ -93,7 +93,7 @@
         <div class="content-wrapper">
           <div class="text-block">
             <p>Unlike the Oceanview Mine fee dig, no equipment is provided for the Chief Dig. You must bring your own gear. Suggested tools include screens, two five-gallon buckets, gloves, a rock hammer and chisels, a small hand-held garden rake, and a small shovel. Some water is available at key places on the hill, but it is recommended to bring bottled water for hydration.</p>
-            <p>The Pala Chief Mine digs are held on some Sundays only, from 7:30 AM (sharp) until four hours after the start. Wear clothing you don't mind getting dirty and bring your own lunch, drinks, hats, and sunscreen. If this doesn’t sound right for you, please sign up for the Oceanview Mine dig, which is suitable for all ages and provides tools year-round, three days a week.</p>
+            <p>The Pala Chief Mine digs are held on some Sundays only, from 7:30 AM (sharp) until four hours after the start. Wear clothing you don't mind getting dirty and bring your own lunch, drinks, hats, and sunscreen. If this doesn't sound right for you, please sign up for the Oceanview Mine dig, which is suitable for all ages and provides tools year-round, three days a week.</p>
             <p>The various mines and prospects on the west side of the mountain have produced a wide variety of minerals. You can find tourmalines, aquamarines, morganites, triphane, kunzite, and more. Quartz crystals are regularly found, ranging from smoky to citrine to optical-grade clear crystals. The tourmalines come in a variety of colors, from black schorls to red and blue elbaites and nearly everything in between. Nice specimens of feldspar and cleavelandite are also regularly found.</p>
           </div>
         <img src="../dig-site-images/palaChiefMine2.png" alt="Pala Chief Mine Digging" class="right-image">
@@ -230,12 +230,19 @@
       <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
     </div>
   </footer>
-  <script>
-    function toggleMenu() {
-      var navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle("show");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+          var navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("show");
+        }
+        // JavaScript to toggle dropdown on click (for mobile)
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    const dropdownContent = dropdown.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+      </script>
 </body>
 
 </html>

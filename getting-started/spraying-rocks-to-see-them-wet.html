@@ -54,28 +54,52 @@
           <h1 class="title">Tips for Spraying Rocks to See Them Wet</h1>
           <nav class="navbar">
             <div class="menu-icon" onclick="toggleMenu()">
-              <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
+              <div></div> <!-- these three divs give the 3 menu bars life. Do not delete-->
               <div></div>
               <div></div>
             </div>
             <ul class="nav-links" id="navLinks">
-              <li><a href="https://www.rockhounding.org/">Home</a></li>
-              <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-              <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
-              <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Gem Mining & Crystal Hunting</a></li>
-              <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
-              <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-              <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-              <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+                <li><a href="https://www.rockhounding.org/">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Rockhounding Map</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                        <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+                <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+                <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+                <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+                <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+                <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
             </ul>
           </nav>
         </div>
-        <div class="header-row">
+        <div class="horizontal-menu"> <!-- New line for horizontal menu on larger screens -->
+          <ul class="horizontal-nav-links">
+            <li><a href="https://www.rockhounding.org/">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Rockhounding Map</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                    <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+            <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+            <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+            <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="header-banner">
           <div class="banner">
-            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Crystal and Mineral Samples</a></p>
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
           </div>
         </div>
-    </header>
+      </header>
     <main>
         <section class="central-item">
             <p><img src="../getting-started/images/Enhancing rock appearance with water.jpg"></p>
@@ -112,7 +136,7 @@
             <p>Maximize the effectiveness of spraying with these tips:</p>
             <ul>
                 <li><strong>Best Practices:</strong> Spray in short bursts to control the amount of water. Aim for even coverage without oversaturating the rock. Use natural light or a well-lit area to accurately see the changes in the rock's appearance.</li>
-                <li><strong>Avoiding Common Mistakes:</strong> Don’t spray too close, as this can cause water spots. Avoid using hard water, which can leave mineral deposits. If hard water is your only option, wipe the rock gently with a soft cloth after spraying to remove excess minerals.</li>
+                <li><strong>Avoiding Common Mistakes:</strong> Don't spray too close, as this can cause water spots. Avoid using hard water, which can leave mineral deposits. If hard water is your only option, wipe the rock gently with a soft cloth after spraying to remove excess minerals.</li>
                 <li><strong>Adjusting Techniques for Different Rock Types:</strong> Porous rocks may require more water to achieve the desired effect, while non-porous rocks need less. Adjust your technique based on the rock's absorption rate. For very porous rocks, consider using a spray bottle with a finer mist to avoid excessive water penetration.</li>
                 <li><strong>Sunlight:</strong> Hold the rock in sunlight while spraying for optimal visibility of the colors and patterns.</li>
                 <li><strong>Magnifying Glass:</strong> Use a magnifying glass to examine the wet surface in detail and uncover intricate details.</li>
@@ -129,8 +153,8 @@
             <h2>Alternatives to Spraying</h2>
             <p>Explore other methods to enhance the appearance of rocks:</p>
             <ul>
-                <li><strong>Using Sealants or Oils:</strong> Apply a thin layer of mineral oil, baby oil, or a clear sealant to create a long-lasting wet look. Sealants can provide a permanent gloss but may alter the rock’s appearance. Oils are temporary and need reapplication but can be a good alternative for short-term displays.</li>
-                <li><strong>Pros and Cons:</strong> Sealants can enhance the appearance permanently but may change the rock’s natural look. Oils are less invasive and can be washed off, but they need frequent reapplication and can attract dust and dirt.</li>
+                <li><strong>Using Sealants or Oils:</strong> Apply a thin layer of mineral oil, baby oil, or a clear sealant to create a long-lasting wet look. Sealants can provide a permanent gloss but may alter the rock's appearance. Oils are temporary and need reapplication but can be a good alternative for short-term displays.</li>
+                <li><strong>Pros and Cons:</strong> Sealants can enhance the appearance permanently but may change the rock's natural look. Oils are less invasive and can be washed off, but they need frequent reapplication and can attract dust and dirt.</li>
             </ul>
 
             <h2>Maintaining the Wet Look</h2>

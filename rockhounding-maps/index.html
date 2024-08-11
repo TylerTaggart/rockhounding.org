@@ -61,29 +61,53 @@
       </div>
       <h1 class="title">RockHounding Maps</h1>
       <nav class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
-          <div></div>
-          <div></div>
-        </div>
-       <ul class="nav-links" id="navLinks">
-              <li><a href="https://www.rockhounding.org/">Home</a></li>
-              <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-              <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
-            <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Gem Mining & Crystal Hunting</a></li>
-            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
-              <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-              <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-              <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+            <div class="menu-icon" onclick="toggleMenu()">
+              <div></div> <!-- these three divs give the 3 menu bars life. Do not delete-->
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="https://www.rockhounding.org/">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Rockhounding Map</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                        <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+                <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+                <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+                <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+                <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+                <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
             </ul>
-      </nav>
-    </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
-  </header>
+          </nav>
+        </div>
+        <div class="horizontal-menu"> <!-- New line for horizontal menu on larger screens -->
+          <ul class="horizontal-nav-links">
+            <li><a href="https://www.rockhounding.org/">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Rockhounding Map</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                    <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+            <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+            <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+            <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
+      </header>
   <main>
 
 
@@ -468,10 +492,10 @@
 <div class="rockhounding-post" id="rockhounding-post">
   <h2>Rockhounding in the United States</h2>
   
-  <p>Rockhounding is an enthralling, family-friendly activity that offers more than just a chance to be outdoors. It presents both novices and experts with opportunities to explore the United States' geological richness. Here at RockHounding.Org, we’re devoted to aiding rockhounding enthusiasts at all levels. Our rockhounding maps and expert tips ensure that your next rockhounding excursion is both productive and enjoyable.</p>
+  <p>Rockhounding is an enthralling, family-friendly activity that offers more than just a chance to be outdoors. It presents both novices and experts with opportunities to explore the United States' geological richness. Here at RockHounding.Org, we're devoted to aiding rockhounding enthusiasts at all levels. Our rockhounding maps and expert tips ensure that your next rockhounding excursion is both productive and enjoyable.</p>
   
   <h3>Discover Rockhounding Near Me: From Coast to Coast</h3>
-  <p>Ever typed "rockhounding near me" in a search bar, only to be overwhelmed by the myriad of choices? The U.S. is replete with awe-inspiring rockhounding locations that span from the Appalachian Mountains in the East to the quartz-rich regions of the Pacific Northwest. Whether you reside in Oregon, Utah, Arizona, or any of the other treasure-laden states, you’re never too far from a rockhounding paradise.</p>
+  <p>Ever typed "rockhounding near me" in a search bar, only to be overwhelmed by the myriad of choices? The U.S. is replete with awe-inspiring rockhounding locations that span from the Appalachian Mountains in the East to the quartz-rich regions of the Pacific Northwest. Whether you reside in Oregon, Utah, Arizona, or any of the other treasure-laden states, you're never too far from a rockhounding paradise.</p>
   
   <h3>The Importance of Rockhounding Maps</h3>
   <p>For those new to the activity, rockhounding maps are invaluable resources. They offer detailed guides to the best rockhounding locations near you, helping to transform an ordinary outing into a treasure hunt. These maps often feature information about what minerals, fossils, or gemstones you're likely to find and are ideal companions for your rockhounding journeys.</p>
@@ -479,8 +503,8 @@
   <h3>Rockhounding in Oregon: A Jewel of the Pacific Northwest</h3>
   <p>One of the top-ranking destinations that appear when you search for "rockhounding near me" in the U.S. is undoubtedly Oregon. The state is a haven for enthusiasts, offering a diverse range of minerals including agates, jasper, and the Oregon state gem: the sunstone. Rockhounding maps specific to Oregon highlight areas rich in thundereggs, petrified wood, and even fossils, making it a versatile destination for any rockhound.</p>
   
-  <h3>The Geological Wonders of Utah’s Rockhounding Sites</h3>
-  <p>Utah is another gem, quite literally, for rockhounds. The state is best known for its red rock landscapes and opportunities to collect topaz, red beryl, geodes, and even dinosaur bones. Whether you’re a beginner or a seasoned expert, Utah’s rockhounding locations offer something for everyone.</p>
+  <h3>The Geological Wonders of Utah's Rockhounding Sites</h3>
+  <p>Utah is another gem, quite literally, for rockhounds. The state is best known for its red rock landscapes and opportunities to collect topaz, red beryl, geodes, and even dinosaur bones. Whether you're a beginner or a seasoned expert, Utah's rockhounding locations offer something for everyone.</p>
 
   <h3>Arizona: A Rockhounding Hotspot</h3>
   <p>Arizona's arid climate preserves a wide array of mineral specimens. The state is a haven for those seeking turquoise, fire agate, and a variety of quartz crystals. Arizona's rockhounding maps direct enthusiasts to the best locations for unearthing petrified wood, wulfenite, and even gold.</p>

@@ -72,11 +72,11 @@
         </ul>
       </nav>
     </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
   </header>
 
   <main>
@@ -86,7 +86,7 @@
         <img src="../dig-site-images/oceanviewMine1.png" alt="Oceanview Mine" class="left-image">
         <div class="text-block">
             <p>Visit the Oceanview Mine for a chance to find your own gems—tourmalines, kunzites, morganites, and more! Your visit offers a unique view of the only actively working underground mine in the world-famous Pala Gem mining district. Come visit us for this one-of-a-kind experience—like nothing else in the world.</p>
-            <p>A visit to the Oceanview Mine allows you to screen the dump piles of material we take out of our mine and find the gems we’ve missed—and we miss a lot! You get to keep everything you find at no extra charge; the standard dig fee allows you to keep all you find and take home one 5-gallon bucket of rocks that you have screened and washed.</p>
+            <p>A visit to the Oceanview Mine allows you to screen the dump piles of material we take out of our mine and find the gems we've missed—and we miss a lot! You get to keep everything you find at no extra charge; the standard dig fee allows you to keep all you find and take home one 5-gallon bucket of rocks that you have screened and washed.</p>
             <p>Guests also get a jeep tour of Chief Mountain where you can see all of the currently active mines and prospects, as well as views of the famous Pala Chief, Tourmaline Queen, and other historic mines. We've taken care of everything you need. We provide you with screens, water, buckets, and shovels—and most importantly, a big pile of gem-rich dirt and gravel taken from our mines!</p>
           </div>
         </div>
@@ -229,12 +229,19 @@
       <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
     </div>
   </footer>
-  <script>
-    function toggleMenu() {
-      var navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle("show");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+          var navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("show");
+        }
+        // JavaScript to toggle dropdown on click (for mobile)
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    const dropdownContent = dropdown.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+      </script>
 </body>
 
 </html>

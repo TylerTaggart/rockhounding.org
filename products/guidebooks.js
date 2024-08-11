@@ -3,14 +3,14 @@ const guidebooks = [
         title: "Southeast Treasure Hunter's Gem & Mineral Guide",
         url: "https://amzn.to/3zxvt73",
         image: "1",
-        description: "Whether you’re digging for the first time or are an experienced rockhound or “prospector,” with a simple rock hammer and a little luck, you too can strike it rich ... or at the very least, have fun trying.\n\nThis guide offers you easy-to-use information on the ins and outs of “fee dig” mining, complete with locations, costs, tips on technique, entertaining legends and important information on everything from safety kits to the location of the nearest restrooms.",
+        description: "Whether you're digging for the first time or are an experienced rockhound or “prospector,” with a simple rock hammer and a little luck, you too can strike it rich ... or at the very least, have fun trying.\n\nThis guide offers you easy-to-use information on the ins and outs of “fee dig” mining, complete with locations, costs, tips on technique, entertaining legends and important information on everything from safety kits to the location of the nearest restrooms.",
         states: ["Missouri", "Arkansas", "Louisiana", "Mississippi", "Tennessee", "Kentucky", "West Virginia", "Virginia", "North Carolina", "South Carolina", "Georgia", "Florida"]
     },
     {
         title: "Rockhounding Alaska: A Guide to 80 of the State's Best Rockhounding Sites",
         url: "https://amzn.to/4bCkabf",
         image: "2",
-        description: "Rockhounding Alaska is a must-have book for collecting rocks, minerals, and fossils in the Last Frontier. This guidebook features an overview of the state’s geologic history as well as a site-by-site guide to seventy-five collecting locations that stretch from Kodiak Island to the Arctic Circle, with treasures ranging from ancient fossilized sea creatures to precious gems and gold nuggets.",
+        description: "Rockhounding Alaska is a must-have book for collecting rocks, minerals, and fossils in the Last Frontier. This guidebook features an overview of the state's geologic history as well as a site-by-site guide to seventy-five collecting locations that stretch from Kodiak Island to the Arctic Circle, with treasures ranging from ancient fossilized sea creatures to precious gems and gold nuggets.",
         states: ["Alaska"]
     },
     {
@@ -28,10 +28,10 @@ const guidebooks = [
         states: ["Arizona"]
     },
     {
-        title: "Rockhounding Arizona: A Guide to the State’s Best Rockhounding Sites",
+        title: "Rockhounding Arizona: A Guide to the State's Best Rockhounding Sites",
         url: "https://amzn.to/3S2Zdz7",
         image: "5",
-        description: "Explore the mineral-rich region of Arizona with veteran rockhound Robert Beard’s Rockhounding Arizona, 3rd Edition. Fully revised and updated, unearth treasures from the state’s best rockhounding locations, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state’s geologic history as well as site-by-site chapters, Rockhounding Arizona is the ideal resource for rock seekers and collectors of all ages and experience levels.",
+        description: "Explore the mineral-rich region of Arizona with veteran rockhound Robert Beard's Rockhounding Arizona, 3rd Edition. Fully revised and updated, unearth treasures from the state's best rockhounding locations, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state's geologic history as well as site-by-site chapters, Rockhounding Arizona is the ideal resource for rock seekers and collectors of all ages and experience levels.",
         states: ["Arizona"]
     },
     {
@@ -52,7 +52,7 @@ const guidebooks = [
         title: "Rockhounding Northern California: A Guide to the Region's Best Rockhounding Sites",
         url: "https://amzn.to/4bB1UyW",
         image: "8",
-        description: "Explore the mineral-rich region of Northern California with Rockhounding Northern California and unearth the state’s best rockhounding sites, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state’s geologic history as well as a site-by-site guide to the best rockhounding locations, Rockhounding Northern California is the ideal resource for rockhounds of all ages and experience levels.",
+        description: "Explore the mineral-rich region of Northern California with Rockhounding Northern California and unearth the state's best rockhounding sites, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state's geologic history as well as a site-by-site guide to the best rockhounding locations, Rockhounding Northern California is the ideal resource for rockhounds of all ages and experience levels.",
         states: ["California"]
     },
     {
@@ -101,14 +101,14 @@ const guidebooks = [
         title: "Rockhounding Idaho: A Guide to 99 of the State's Best Rockhounding Sites",
         url: "https://amzn.to/4eTLvbH",
         image: "15",
-        description: "A complete guide to finding, collecting, and preparing the state’s gems & minerals.\nRockhounding Idaho is a must-have book for anyone interested in collecting rocks, minerals, fossils, and gold in the Gem State. Completely up-to-date with over 200 GPS coordinates in ninety-nine collecting locales, it covers popular and widely known fee-dig operations as well as four-wheel-drive adventures into the desert, and long winding drives through the mountains. The result is a complete and accurate guide to the state’s vast riches.",
+        description: "A complete guide to finding, collecting, and preparing the state's gems & minerals.\nRockhounding Idaho is a must-have book for anyone interested in collecting rocks, minerals, fossils, and gold in the Gem State. Completely up-to-date with over 200 GPS coordinates in ninety-nine collecting locales, it covers popular and widely known fee-dig operations as well as four-wheel-drive adventures into the desert, and long winding drives through the mountains. The result is a complete and accurate guide to the state's vast riches.",
         states: ["Idaho"]
     },
     {
         title: "Rockhounding Idaho: A Guide to 99 of the State's Best Rockhounding Sites",
         url: "https://amzn.to/3XRS4FJ",
         image: "16",
-        description: "A complete guide to finding, collecting, and preparing the state’s gems & minerals.\nRockhounding Idaho is a must-have book for anyone interested in collecting rocks, minerals, fossils, and gold in the Gem State. Completely up-to-date with over 200 GPS coordinates in ninety-nine collecting locales, it covers popular and widely known fee-dig operations as well as four-wheel-drive adventures into the desert, and long winding drives through the mountains. The result is a complete and accurate guide to the state’s vast riches.",
+        description: "A complete guide to finding, collecting, and preparing the state's gems & minerals.\nRockhounding Idaho is a must-have book for anyone interested in collecting rocks, minerals, fossils, and gold in the Gem State. Completely up-to-date with over 200 GPS coordinates in ninety-nine collecting locales, it covers popular and widely known fee-dig operations as well as four-wheel-drive adventures into the desert, and long winding drives through the mountains. The result is a complete and accurate guide to the state's vast riches.",
         states: ["Idaho"]
     },
     {
@@ -122,7 +122,7 @@ const guidebooks = [
         title: "Rocks & Minerals of Wisconsin, Illinois & Iowa",
         url: "https://amzn.to/3VVXcpx",
         image: "18",
-        description: "Identify and collect rocks and minerals with the perfect guide to the Heartland. With this famous field guide by Dan R. Lynch and Bob Lynch, field identification is simple and informative. The book features comprehensive entries for 96 rocks and minerals, from common rocks to rare finds. That means you’re more likely to identify what you’ve found. The authors know rocks and took their own full-color photographs to depict the detail needed for identification—no more guessing from line drawings. The field guide’s easy-to-use format helps you to quickly find what you need to know and where to look.",
+        description: "Identify and collect rocks and minerals with the perfect guide to the Heartland. With this famous field guide by Dan R. Lynch and Bob Lynch, field identification is simple and informative. The book features comprehensive entries for 96 rocks and minerals, from common rocks to rare finds. That means you're more likely to identify what you've found. The authors know rocks and took their own full-color photographs to depict the detail needed for identification—no more guessing from line drawings. The field guide's easy-to-use format helps you to quickly find what you need to know and where to look.",
         states: ["Wisconsin", "Illinois", "Iowa"]
     },
     {
@@ -136,7 +136,7 @@ const guidebooks = [
         title: "Rockhounding & Prospecting: Upper Midwest",
         url: "https://amzn.to/3LetbfX",
         image: "20",
-        description: "Agates, copper, gold—you want to find them! But if you’re searching without a plan, the odds are stacked against you. Whether you’re new to rock hunting or already hold an interest, prospecting is the way to maximize your success. This beginner’s guide by rockhounding expert Jim Magnuson helps you to confidently hunt for a variety of collectible and valuable gems and minerals, including agates, fossils, geodes, and gold.",
+        description: "Agates, copper, gold—you want to find them! But if you're searching without a plan, the odds are stacked against you. Whether you're new to rock hunting or already hold an interest, prospecting is the way to maximize your success. This beginner's guide by rockhounding expert Jim Magnuson helps you to confidently hunt for a variety of collectible and valuable gems and minerals, including agates, fossils, geodes, and gold.",
         states: ["Michigan", "Kansas", "Minnesota", "Wisconsin"]
     },
     {
@@ -157,14 +157,14 @@ const guidebooks = [
         title: "Michigan Rocks & Minerals: A Field Guide to the Great Lake State",
         url: "https://amzn.to/3VW8Fpa",
         image: "23",
-        description: "Identify and collect rocks and minerals with the perfect guide to the Great Lake State! With this famous field guide by Dan R. Lynch and Bob Lynch, field identification is simple and informative. The book features comprehensive entries for 96 rocks and minerals, from common rocks to rare finds. That means you’re more likely to identify what you’ve found. The authors know rocks and took their own full-color photographs to depict the detail needed for identification—no more guessing from line drawings. The field guide’s easy-to-use format helps you to quickly find what you need to know and where to look.",
+        description: "Identify and collect rocks and minerals with the perfect guide to the Great Lake State! With this famous field guide by Dan R. Lynch and Bob Lynch, field identification is simple and informative. The book features comprehensive entries for 96 rocks and minerals, from common rocks to rare finds. That means you're more likely to identify what you've found. The authors know rocks and took their own full-color photographs to depict the detail needed for identification—no more guessing from line drawings. The field guide's easy-to-use format helps you to quickly find what you need to know and where to look.",
         states: ["Michigan"]
     },
     {
         title: "Lake Superior Rocks & Minerals Field Guide",
         url: "https://amzn.to/3LijVas",
         image: "24.png",
-        description: "Get the perfect guide to rocks and minerals of the Lake Superior region! With the new edition of this famous guide by Bob Lynch and Dan R. Lynch, field identification is simple and informative. This book features comprehensive entries for 75 rocks and minerals, from common rocks to rare finds. That means you’re more likely to identify what you’ve found. The authors know rocks and took their own full-color photographs to depict the detail needed for identification—no more guessing from line drawings. The entries are organized by area, so you can find rocks unique to each state or common to all three. The field guide’s easy-to-use format helps you to quickly find what you need to know and where to look.",
+        description: "Get the perfect guide to rocks and minerals of the Lake Superior region! With the new edition of this famous guide by Bob Lynch and Dan R. Lynch, field identification is simple and informative. This book features comprehensive entries for 75 rocks and minerals, from common rocks to rare finds. That means you're more likely to identify what you've found. The authors know rocks and took their own full-color photographs to depict the detail needed for identification—no more guessing from line drawings. The entries are organized by area, so you can find rocks unique to each state or common to all three. The field guide's easy-to-use format helps you to quickly find what you need to know and where to look.",
         states: ["Minnesota"]
     },
     {
@@ -234,14 +234,14 @@ const guidebooks = [
         title: "Rockhounding Oregon: A Guide to the State's Best Rockhounding Sites",
         url: "https://amzn.to/4fa92p9",
         image: "34",
-        description: "This book provides detailed directions and GPS coordinates to the best rockhounding sites in Oregon, with valuable tips on what to tools to bring and how to conduct your search. Comprehensive lists of minerals or fossils for each site and excellent color photos will help you know what to look for and to identify what you’ve found. Information on clubs, rock shops, museums, and special attractions are provided. Rockhounding Oregon is a must-have for anyone interested in collecting their own minerals, gems, and fossils in the region.",
+        description: "This book provides detailed directions and GPS coordinates to the best rockhounding sites in Oregon, with valuable tips on what to tools to bring and how to conduct your search. Comprehensive lists of minerals or fossils for each site and excellent color photos will help you know what to look for and to identify what you've found. Information on clubs, rock shops, museums, and special attractions are provided. Rockhounding Oregon is a must-have for anyone interested in collecting their own minerals, gems, and fossils in the region.",
         states: ["Oregon"]
     },
     {
         title: "Rockhounding Oregon: A Guide to the State's Best Rockhounding Sites",
         url: "https://amzn.to/45WK6Ns",
         image: "35",
-        description: "Fully revised and updated, this book provides detailed directions and GPS coordinates to the best rockhounding sites in Oregon, with valuable tips on what tools to bring and how to conduct your search. Comprehensive lists of minerals or fossils for each site and excellent color photos will help you know what to look for and to identify what you’ve found. Information on clubs, rock shops, museums, and special attractions are provided. Rockhounding Oregon is a must-have for anyone interested in collecting their own minerals, gems, and fossils in the region.",
+        description: "Fully revised and updated, this book provides detailed directions and GPS coordinates to the best rockhounding sites in Oregon, with valuable tips on what tools to bring and how to conduct your search. Comprehensive lists of minerals or fossils for each site and excellent color photos will help you know what to look for and to identify what you've found. Information on clubs, rock shops, museums, and special attractions are provided. Rockhounding Oregon is a must-have for anyone interested in collecting their own minerals, gems, and fossils in the region.",
         states: ["Oregon"]
     },
     {
@@ -266,17 +266,17 @@ const guidebooks = [
         states: ["Utah"]
     },
     {
-        title: "Rockhounding Virginia: A Guide to the State’s Best Rockhounding Sites",
+        title: "Rockhounding Virginia: A Guide to the State's Best Rockhounding Sites",
         url: "https://amzn.to/3zzSKWh",
         image: "39",
-        description: "Explore the mineral-rich region of Virginia with veteran rockhound Robert Beard’s Rockhounding Virginia and unearth the state’s best rockhounding sites, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state’s geologic history as well as a site-by-site guide to the best rockhounding locations, Rockhounding Virginia is the ideal resource for rockhounds of all ages and experience levels.",
+        description: "Explore the mineral-rich region of Virginia with veteran rockhound Robert Beard's Rockhounding Virginia and unearth the state's best rockhounding sites, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state's geologic history as well as a site-by-site guide to the best rockhounding locations, Rockhounding Virginia is the ideal resource for rockhounds of all ages and experience levels.",
         states: ["Virginia"]
     },
     {
         title: "Rockhounding Washington: A Guide to the State's Best Sites",
         url: "https://amzn.to/45UmCbX",
         image: "40",
-        description: "This book provides detailed directions and GPS coordinates to the best rockhounding sites in Washington, with valuable tips on what to tools to bring and how to conduct your search. Comprehensive lists of minerals or fossils for each site and excellent color photos will help you know what to look for and to identify what you’ve found. Information on clubs, rock shops, museums, and special attractions are provided. Rockhounding Washington is a must-have for anyone interested in collecting their own minerals, gems, and fossils in the region.",
+        description: "This book provides detailed directions and GPS coordinates to the best rockhounding sites in Washington, with valuable tips on what to tools to bring and how to conduct your search. Comprehensive lists of minerals or fossils for each site and excellent color photos will help you know what to look for and to identify what you've found. Information on clubs, rock shops, museums, and special attractions are provided. Rockhounding Washington is a must-have for anyone interested in collecting their own minerals, gems, and fossils in the region.",
         states: ["Washington"]
     },
     {
@@ -290,7 +290,7 @@ const guidebooks = [
         title: "Rockhounding Wisconsin: A Guide to the State's Best Sites",
         url: "https://amzn.to/3We48jm",
         image: "42",
-        description: "Explore the mineral-rich region of Wisconsin with veteran rockhound Robert Beard’s Rockhounding Wisconsin and unearth the state’s best rockhounding sites, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state’s geologic history as well as a site-by-site guide to the best rockhounding locations, Rockhounding Wisconsin is the ideal resource for rockhounds of all ages and experience levels.",
+        description: "Explore the mineral-rich region of Wisconsin with veteran rockhound Robert Beard's Rockhounding Wisconsin and unearth the state's best rockhounding sites, ranging from popular and commercial sites to numerous lesser-known areas. Featuring an overview of the state's geologic history as well as a site-by-site guide to the best rockhounding locations, Rockhounding Wisconsin is the ideal resource for rockhounds of all ages and experience levels.",
         states: ["Wisconsin"]
     },
     {

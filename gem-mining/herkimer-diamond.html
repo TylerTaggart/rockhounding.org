@@ -60,29 +60,53 @@
       </div>
       <h1 class="title">Gem Mining: Herkimer Diamonds Map</h1>
       <nav class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
-          <div></div>
-          <div></div>
-        </div>
-       <ul class="nav-links" id="navLinks">
-              <li><a href="https://www.rockhounding.org/">Home</a></li>
-              <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-              <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
-            <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Gem Mining & Crystal Hunting</a></li>
-            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
-              <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-              <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-              <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+            <div class="menu-icon" onclick="toggleMenu()">
+              <div></div> <!-- these three divs give the 3 menu bars life. Do not delete-->
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="https://www.rockhounding.org/">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Rockhounding Map</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                        <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+                <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+                <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+                <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+                <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+                <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
             </ul>
-      </nav>
-    </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
-  </header>
+          </nav>
+        </div>
+        <div class="horizontal-menu"> <!-- New line for horizontal menu on larger screens -->
+          <ul class="horizontal-nav-links">
+            <li><a href="https://www.rockhounding.org/">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Rockhounding Map</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                    <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+            <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+            <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+            <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
+      </header>
   <aside class="left-sidebar">
        <nav class="left-nav">
         <ul class="left-nav-links">
@@ -340,12 +364,19 @@
       <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
     </div>
   </footer>
-  <script>
-    function toggleMenu() {
-      var navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle("show");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+          var navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("show");
+        }
+        // JavaScript to toggle dropdown on click (for mobile)
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    const dropdownContent = dropdown.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+      </script>
 <script>
   function openTab(event, tabName) {
     var i, tabcontent, tablinks;

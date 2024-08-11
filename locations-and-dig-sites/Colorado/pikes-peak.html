@@ -72,11 +72,11 @@
         </ul>
       </nav>
     </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
   </header>
 
   <main>
@@ -211,7 +211,7 @@
           <a href="https://www.rockhounding.org/locations-and-dig-sites/colorado/devils-head.html">
             <img src="../dig-site-images/devilsHeadMountain.jpg" alt="Devil's Head Mountain">
             <h3>Devil's Head Mountain</h3>
-            <p>Situated in the Pike National Forest, Devil’s Head offers pegmatite veins rich in smoky quartz, amazonite, and topaz, making it a popular spot for collectors.</p>
+            <p>Situated in the Pike National Forest, Devil's Head offers pegmatite veins rich in smoky quartz, amazonite, and topaz, making it a popular spot for collectors.</p>
           </a>
         </div>
         <div class="dig-site-card">
@@ -236,12 +236,19 @@
       <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
     </div>
   </footer>
-  <script>
-    function toggleMenu() {
-      var navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle("show");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+          var navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("show");
+        }
+        // JavaScript to toggle dropdown on click (for mobile)
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    const dropdownContent = dropdown.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+      </script>
 </body>
 
 </html>

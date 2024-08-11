@@ -1,35 +1,38 @@
 /* Custom CSS for merch.html */
 
 .merch-nav {
-    background-color: #8B4513; /* Brown color */
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .merch-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .merch-nav ul li {
-    margin: 0 15px;
-  }
-  
-  .merch-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-  }
-  
-  .merch-nav ul li a:hover {
-    background-color: #A0522D; /* Lighter brown color for hover */
-    border-radius: 5px;
-  }
+  background-color: #8B4513; /* Brown color */
+  text-align: center;
+  padding: 10px 0;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.merch-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.merch-nav ul li {
+  margin: 0 15px;
+}
+
+.merch-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevent text from wrapping within the item */
+}
+
+.merch-nav ul li a:hover {
+  background-color: #A0522D; /* Lighter brown color for hover */
+  border-radius: 5px;
+}
   
   main section {
     padding: 50px 20px;
@@ -43,3 +46,29 @@
     text-align: center;
   }
   
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .merch-nav ul {
+      justify-content: flex-start;
+  }
+
+  .merch-nav ul li {
+      margin: 0 10px;
+  }
+
+  .merch-nav ul li a {
+      font-size: 16px;
+      padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .merch-nav ul li {
+      margin: 0 5px;
+  }
+
+  .merch-nav ul li a {
+      font-size: 14px;
+      padding: 4px;
+  }
+}

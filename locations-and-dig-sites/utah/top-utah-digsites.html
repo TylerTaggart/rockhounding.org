@@ -72,11 +72,11 @@
         </ul>
       </nav>
     </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
   </header>
 
   <main>
@@ -150,12 +150,19 @@
       <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
     </div>
   </footer>
-  <script>
-    function toggleMenu() {
-      var navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle("show");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+          var navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("show");
+        }
+        // JavaScript to toggle dropdown on click (for mobile)
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    const dropdownContent = dropdown.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+      </script>
 </body>
 
 </html>

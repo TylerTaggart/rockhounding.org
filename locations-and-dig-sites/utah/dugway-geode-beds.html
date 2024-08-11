@@ -72,11 +72,11 @@
         </ul>
       </nav>
     </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
   </header>
 
   <main>
@@ -134,7 +134,7 @@
       <p>The geode beds are divided into a public dig site and a private dig site. The public site is free to access and offers a great opportunity for finding geodes with minimal effort. The private site, managed by a local company, offers more intensive rockhounding experiences for a fee.</p>
       <p><strong>How to get there:</strong><br>
       From Salt Lake City take I-80 westbound until you reach the Tooele turnoff (exit 99). Travel south on Highway 36 for about 40.5 miles to the Pony Express Road (which is the dirt road just past Faust). Turn west (right) and proceed 50.1 miles on the Pony Express Road to the Dugway geode bed turnoff. Turn north (right), proceed up the dirt road and look for recent diggings.<br><br>
-      Recently, people have bypassed the turnoff because the sign to the geode bed area was missing. Please note at the time of this writing, there is a temporary sign indicating the correct direction to the geode bed area; however, please use your vehicle’s odometer to determine distance to the geode bed turnoff.<br><br>
+      Recently, people have bypassed the turnoff because the sign to the geode bed area was missing. Please note at the time of this writing, there is a temporary sign indicating the correct direction to the geode bed area; however, please use your vehicle's odometer to determine distance to the geode bed turnoff.<br><br>
       <strong>Where to collect:</strong><br>
       Geodes can be found approximately 1 to 2 miles north/northeast of the turnoff. The easiest technique is to find an area of past excavations and start digging to locate the proper horizon where the geodes can be found. There are two main excavation pits managed by the BLM where geodes can easily be found, but collecting geodes is not limited to just the pits. Look for signage as you drive in for pit locations. You will be digging in a soft, unconsolidated material that is susceptible to caving, so please be careful! Examine all stones that are encountered. The geodes are fairly easy to recognize due to their spherical shape and lightweight. Most geodes are 2 to 3 inches in diameter and are typically lined with small quartz crystals that give the cavity a sugary appearance. I collected fragments and whole geodes near UTM map coordinates 12S 0317569 4416919.</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.833572341601!2d-113.13777567990111!3d39.894049064576805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b29306df85fb3f%3A0x418dd6e267d6f0a6!2sDugway%20Geode%20Beds!5e1!3m2!1sen!2sus!4v1722439608053!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -236,12 +236,19 @@
       <p class="copyright">© 2024 Rockhounding.org. All Rights Reserved.</p>
     </div>
   </footer>
-  <script>
-    function toggleMenu() {
-      var navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle("show");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+          var navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("show");
+        }
+        // JavaScript to toggle dropdown on click (for mobile)
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    const dropdownContent = dropdown.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+      </script>
 </body>
 
 </html>
