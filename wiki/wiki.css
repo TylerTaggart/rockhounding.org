@@ -1,0 +1,165 @@
+/* Main Wiki Layout */
+.wiki-main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F5F5DC; /* Light beige background */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Contain the main element within 80% of the screen */
+    margin: 0 auto; /* Center the main element horizontally */
+}
+
+
+/* Sidebar */
+.wiki-sidebar {
+    background-color: #8B4513; /* Same color as header */
+    padding: 20px;
+    color: #F0E68C; /* Same text color as header */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wiki-sidebar h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.wiki-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wiki-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.wiki-sidebar ul li a {
+    color: #F0E68C;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+}
+
+.wiki-sidebar ul li a:hover {
+    color: #FFD700;
+}
+
+/* Sidebar Subcategory Styling */
+.wiki-sidebar ul ul {
+    margin-left: 40px; /* Indent the subcategories */
+    font-size: 0.9em;  /* Make the text slightly smaller */
+}
+
+.wiki-sidebar ul ul li {
+    margin-bottom: 5px; /* Add a bit of space between subcategory items */
+}
+
+.wiki-sidebar ul ul li a {
+    color: #F0E68C; /* Ensure the subcategory links match the rest of the sidebar */
+}
+
+.wiki-sidebar ul ul li a:hover {
+    color: #FFD700; /* Change color on hover for subcategory links */
+}
+
+/* Content Area */
+.wiki-content {
+    background-color: #FFF8DC; /* Lighter beige for content area */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wiki-content h1,
+.wiki-content h2,
+.wiki-content h3 {
+    font-family: 'Cinzel', serif;
+    color: #8B4513;
+}
+
+.wiki-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.wiki-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.wiki-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wiki-content p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Wiki Section Styling */
+.wiki-section {
+    background-color: #FFF8DC; /* Light beige background for sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wiki-section:hover {
+    background-color: #F0E68C; /* Slightly darker beige on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wiki-link {
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the entire section clickable */
+    text-decoration: none; /* Remove underline from links */
+
+}
+
+/* Links in Content Area */
+.wiki-content a {
+    color: #8B4513;
+}
+
+.wiki-content a:hover {
+    color: #FFD700;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 1168px) {
+    .wiki-main {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        padding: 10px;
+    }
+
+    .wiki-sidebar {
+        margin-bottom: 20px; /* Add spacing between sidebar and content */
+    }
+
+    .wiki-content h1 {
+        font-size: 28px;
+    }
+
+    .wiki-content h2 {
+        font-size: 24px;
+    }
+
+    .wiki-content h3 {
+        font-size: 20px;
+    }
+
+    .wiki-content p {
+        font-size: 16px;
+    }
+
+    .wiki-sidebar ul li a {
+        font-size: 16px;
+    }
+}
