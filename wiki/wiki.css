@@ -123,6 +123,18 @@
 
 }
 
+.video-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the two videos */
+  }
+  
+  .video-container {
+    flex: 1;
+    max-width: 48%; /* Adjust to ensure videos are evenly spaced */
+  }
+  
+
 /* Links in Content Area */
 .wiki-content a {
     color: #8B4513;
