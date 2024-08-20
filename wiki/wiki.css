@@ -38,7 +38,7 @@
 .wiki-sidebar ul li a {
     color: #F0E68C;
     font-size: 18px;
-    font-family: 'Cinzel', serif;
+    font-family: 'Lato', serif;
 }
 
 .wiki-sidebar ul li a:hover {
@@ -122,6 +122,18 @@
     text-decoration: none; /* Remove underline from links */
 
 }
+
+.video-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the two videos */
+  }
+  
+  .video-container {
+    flex: 1;
+    max-width: 48%; /* Adjust to ensure videos are evenly spaced */
+  }
+  
 
 /* Links in Content Area */
 .wiki-content a {
