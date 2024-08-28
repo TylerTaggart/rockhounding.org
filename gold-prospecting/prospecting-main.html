@@ -48,38 +48,60 @@
 
 
 <body>
-    <header>
+  <header>
     <div class="header-row">
       <div class="logo">
-        <a href="https://www.rockhounding.org">
-          <img src="../images/rockhoundingLogo.png" alt="Logo">
-        </a>
+        <img src="../images/rockhoundingLogo.png" alt="Logo">
       </div>
-      <h1 class="title">RockHounding.Org</h1>
-      <nav class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div></div> <!-- these three divs are what give the 3 menu bars life. Do not delete-->
-          <div></div>
-          <div></div>
-        </div>
-       <ul class="nav-links" id="navLinks">
-              <li><a href="https://www.rockhounding.org/">Home</a></li>
-              <li><a href="https://www.rockhounding.org/rockhounding-maps">Rockhounding Maps</a></li>
-              <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
-            <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Gem Mining & Crystal Hunting</a></li>
-            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
-              <li><a href="https://shop.rockhounding.org">Marketplace</a></li>
-              <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
-              <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+      <h1 class="title">Gold Prospecting Near Me</h1>
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+            <div></div> <!-- these three divs give the 3 menu bars life. Do not delete-->
+            <div></div>
+            <div></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="https://www.rockhounding.org/">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Rockhounding Map</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                        <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+                <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+                <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+                <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+                <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+                <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
             </ul>
-      </nav>
-    </div>
-    <div class="header-row">
-      <div class="banner">
-        <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
-      </div>
-    </div>
-</header>
+        </nav>
+        </div>
+        <div class="horizontal-menu"> <!-- New line for horizontal menu on larger screens -->
+        <ul class="horizontal-nav-links">
+            <li><a href="https://www.rockhounding.org/">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Rockhounding Map</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://www.rockhounding.org/rockhounding-maps/">State Maps</a></li>
+                    <li><a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html">Crystal Maps</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.rockhounding.org/getting-started">Beginner Resources</a></li>
+            <li><a href="https://www.rockhounding.org/gold-prospecting/prospecting-main.html">Gold Prospecting</a></li>
+            <li><a href="https://shop.rockhounding.org">Rock and Crystal Marketplace</a></li>
+            <li><a href="https://www.rockhounding.org/latest-finds">Latest Finds</a></li>
+            <li><a href="https://www.rockhounding.org/merchandise/index.html">Merch Shop</a></li>
+            <li><a href="https://www.rockhounding.org/blog">Blog</a></li>
+        </ul>
+        </div>
+        <div class="header-banner">
+          <div class="banner">
+            <p><a href="https://shop.rockhounding.org/">Visit Rockhounds Marketplace: Buy and Sell Gemstones, Crystals &, Mineral Samples</a></p>
+          </div>
+        </div>
+    </header>
     <main>
         <div class="top-grid">
             <div class="left-item">
@@ -422,7 +444,7 @@
                   <div class="text-and-photo"> <img class="gallery" src="./prospecting-images/ewaste.png">
                       <p>Finding precious metals in their natural state can be extremely rewarding and fun. However, that is not the only way to find precious metals. Due to the explosion of technology over the last few decades, and the rampant consumer culture, people throw away precious metals literally every day. You can find (and extract) precious metals from electronics, wires, and all sorts of other places if you know how to look.</p>
                   </div>
-                  <a href="www.rockhounding.org/precious-gemstones" class="button">Gemstone Prospecting</a>
+                  <a href="https://www.rockhounding.org/products/best-metal-detector.html" class="button">Metal Detecting</a>
               </div>
               <div class="sub-section">
                   <h2>Finding Gemstones</h2>
@@ -432,7 +454,7 @@
                           sapphire.
                           Click the link to learn more about where to find these gemstones and how to identify them.</p>
                   </div>
-                  <a href="www.rockhounding.org/precious-gemstones" class="button">Gemstone Prospecting</a>
+                  <a href="https://www.rockhounding.org/gem-mining/gem-mining-near-me.html" class="button">Gemstone Prospecting</a>
               </div>
 
     </main>
