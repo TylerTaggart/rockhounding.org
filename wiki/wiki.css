@@ -144,6 +144,43 @@
     color: #FFD700;
 }
 
+/* Big List Styling */
+.big-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 15px; /* Spacing between list items */
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.big-list li {
+    background-color: #F5F5DC; /* Light beige background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center text for uniformity */
+}
+
+.big-list li:hover {
+    background-color: #F0E68C; /* Slightly darker beige on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.big-list a {
+    color: #8B4513;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.big-list a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
 /* Media Queries for Mobile */
 @media screen and (max-width: 1168px) {
     .wiki-main {
