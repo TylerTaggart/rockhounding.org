@@ -177,8 +177,50 @@
     width: 100%;
 }
 
+.ul,li {
+    font-size: 18px;
+}
+
 .big-list a:hover {
     color: #FFD700; /* Gold color on hover */
+}
+
+.crystal-image {
+    width: 100%; /* Adjust this to a specific width if needed */
+    max-width: 300px; /* Set a maximum width to maintain consistency */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+    display: block; /* Ensures the image takes up the full width available to it */
+    margin: 0; /* Remove centering */
+}
+
+/* Info Box */
+.infobox {
+    background-color: #FFFFFF; /* White background for the infobox */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    float: right; /* Align the infobox to the right */
+    width: 30%; /* The infobox will take up 30% of the width of the container */
+    margin: 0 0 20px 20px; /* Adds margin to the bottom and left for spacing */
+    font-family: 'Lora', serif; /* Matches the content font */
+}
+
+.infobox img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.infobox p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.infobox strong {
+    color: #8B4513; /* Matches the headers color */
 }
 
 /* Media Queries for Mobile */
@@ -210,5 +252,16 @@
 
     .wiki-sidebar ul li a {
         font-size: 16px;
+    }
+
+    .infobox {
+        float: none; /* Remove float for mobile view */
+        width: 90%; /* Full width on mobile */
+        margin: 20px 0; /* Spacing around the infobox on mobile */
+        padding: 15px; /* Slightly reduce padding on mobile */
+    }
+
+    .infobox p {
+        font-size: 14px; /* Slightly smaller text on mobile */
     }
 }
