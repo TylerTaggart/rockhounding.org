@@ -46,6 +46,90 @@
   order: -1; /* This ensures the image appears to the left */
 }
 
+/* CSS for Dig Site List Section */
+#digsite-list {
+  width: 60%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#digsite-list h2 {
+  font-size: 2em;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+.digsite-list-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.digsite-list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.digsite-list-container ul li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Style for state names */
+.digsite-list-container ul li a.state {
+  color: #8b4513;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Style for dig sites under each state (indentation and smaller font size) */
+.digsite-list-container ul ul {
+  margin-left: 20px; /* Indent for sub-lists (dig sites) */
+}
+
+.digsite-list-container ul ul li {
+  margin-bottom: 8px;
+}
+
+.digsite-list-container ul ul li a {
+  color: #8b4513;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Active state styling for dig sites */
+li a.active {
+  background-color: #f0e68c; /* Softer background color for the active item */
+  color: #8b4513; /* Text color that complements the background */
+  font-weight: bold; /* Make the text bold for emphasis */
+  border-radius: 4px; /* Slightly rounded corners for a smoother look */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Hover effects for dig sites */
+.digsite-list-container ul ul li a:hover {
+  color: white;
+  background-color: #8b4513;
+  padding: 5px 1px;
+  border-radius: 5px;
+}
+
+/* Hover effects for state names */
+.digsite-list-container ul li a.state:hover {
+  color: #a0522d;
+}
+
 /* Found Here Section */
 #found-here-dig-sites.found-here-dig-sites {
   margin: 40px auto;
