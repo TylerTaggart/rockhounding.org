@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sidebarContent = `
+        <button class="close-btn">✖</button>
         <nav>
           <h3>Contents</h3>
           <ul>
@@ -75,21 +76,25 @@ document.addEventListener("DOMContentLoaded", function () {
         </nav>
     `;
 
-    document.querySelector(".wiki-sidebar").innerHTML = sidebarContent;
+    // Insert the content into the sidebar
+    const sidebar = document.querySelector(".wiki-sidebar");
+    sidebar.innerHTML = sidebarContent;
 
-    const currentPath = window.location.pathname;
-    const sidebarLinks = document.querySelectorAll(".wiki-sidebar a");
+    // Create the floating button
+    const floatingButton = document.createElement('div');
+    floatingButton.classList.add('floating-btn');
+    floatingButton.textContent = 'Wiki Menu'; // Text-based button
+    document.body.appendChild(floatingButton);
 
-    let activeLink = null;
-    let maxMatchLength = 0;
+    // Add click event to the floating button to toggle the sidebar
+    floatingButton.addEventListener('click', function () {
+        sidebar.classList.toggle('show'); // Toggles the 'show' class to display the sidebar
+    });
 
-    sidebarLinks.forEach(link => {
-        const linkPath = new URL(link.href).pathname;
-        
-        if (currentPath.includes(linkPath) && linkPath.length > maxMatchLength) {
-            activeLink = link;
-            maxMatchLength = linkPath.length;
-        }
+    // Add click event to the close icon inside the sidebar
+    const closeButton = sidebar.querySelector('.close-btn');
+    closeButton.addEventListener('click', function () {
+        sidebar.classList.remove('show'); // Hide the sidebar
     });
 
     if (activeLink) {

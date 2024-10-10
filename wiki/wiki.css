@@ -144,6 +144,10 @@
     color: #FFD700;
 }
 
+.close-btn {
+    display: none;
+}
+
 /* Big List Styling */
 .big-list {
     display: grid;
@@ -231,8 +235,58 @@
     }
 
     .wiki-sidebar {
-        margin-bottom: 20px; /* Add spacing between sidebar and content */
+        display: none; /* Sidebar is hidden on mobile by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%; /* Takes up 80% of screen width */
+        height: 100%; /* Full height */
+        background-color: #8B4513; /* Sidebar background color */
+        padding: 20px;
+        z-index: 1000; /* Ensures it's above other content */
+        overflow-y: auto; /* Scroll if content is too long */
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+        transform: translateX(-100%); /* Hides it off-screen initially */
+        transition: transform 0.3s ease-in-out; /* Smooth slide-in effect */
     }
+
+    /* Sidebar is visible when the .show class is added */
+    .wiki-sidebar.show {
+        display: block;
+        transform: translateX(0); /* Slides the sidebar in */
+    }
+
+    /* Floating button that will toggle the sidebar */
+    .floating-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #8B4513; /* Matches sidebar color */
+        color: white;
+        padding: 15px;
+        border-radius: 10%; /* Round button */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for the button */
+        z-index: 1001; /* Ensures button is above all other elements */
+        cursor: pointer;
+    }
+
+    /* Hover effect for the floating button */
+    .floating-btn:hover {
+        background-color: #FFD700; /* Change button color on hover */
+    }
+
+    .close-btn {
+        display: block; /* Show on mobile */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        color: #FFD700; /* Gold color */
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+    }
+
 
     .wiki-content h1 {
         font-size: 28px;
