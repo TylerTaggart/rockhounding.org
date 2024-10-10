@@ -232,6 +232,7 @@
     .wiki-main {
         grid-template-columns: 1fr; /* Single column on mobile */
         padding: 10px;
+        width: 90%;
     }
 
     .wiki-sidebar {

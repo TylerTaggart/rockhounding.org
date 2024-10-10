@@ -195,6 +195,19 @@
 
   <script src="../../../wiki-script.js"></script>
   <script src="../../sidebar.js"></script>
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+    // JavaScript to toggle dropdown on click (for mobile)
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.addEventListener('click', () => {
+                const dropdownContent = dropdown.querySelector('.dropdown-content');
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+  </script>
 </body>
 
 </html>
